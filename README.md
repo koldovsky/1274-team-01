@@ -23,3 +23,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 ```
 # Team members
 - Stepanenko Roman
+- Bal Olena
