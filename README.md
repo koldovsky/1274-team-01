@@ -28,3 +28,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Dolhopolova Yuliia
 - Chernyshova Mariia
 - Bratsykhina Lada
+- Dulenchuk Andrii
