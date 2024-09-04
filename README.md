@@ -21,5 +21,5 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
     if (loadedPartialsCount === totalPartials) init();
 });
 ```
-# Team member
+# Team members
 - Stepanenko Roman
