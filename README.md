@@ -25,4 +25,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Olivenbaum Maria
 - Stepanenko Roman
 - Bal Olena
-- Dolhopolova Yuliiagit add .
+- Dolhopolova Yuliia
