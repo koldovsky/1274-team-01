@@ -27,3 +27,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Bal Olena
 - Dolhopolova Yuliia
 - Chernyshova Mariia
+- Bratsykhina Lada
