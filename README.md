@@ -26,3 +26,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Stepanenko Roman
 - Bal Olena
 - Dolhopolova Yuliia
+- Chernyshova Mariia
