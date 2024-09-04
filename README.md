@@ -22,5 +22,6 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 });
 ```
 # Team members
+- Olivenbaum Maria
 - Stepanenko Roman
 - Bal Olena
