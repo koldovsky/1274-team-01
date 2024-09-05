@@ -34,3 +34,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Oleh Hanhal
 - Dzhus Nazar
 - Haiduk Maksym
+- Kardash Illia
