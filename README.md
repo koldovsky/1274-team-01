@@ -33,3 +33,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Kryvoruchko Iryna
 - Oleh Hanhal
 - Dzhus Nazar
+- Haiduk Maksym
