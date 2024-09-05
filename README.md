@@ -29,3 +29,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Chernyshova Mariia
 - Bratsykhina Lada
 - Dulenchuk Andrii
+- Vladyslav Drushliak
