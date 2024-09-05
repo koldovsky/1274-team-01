@@ -35,3 +35,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Dzhus Nazar
 - Haiduk Maksym
 - Kardash Illia
+- Bekish Khrystyna
