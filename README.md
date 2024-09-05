@@ -31,3 +31,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Dulenchuk Andrii
 - Vladyslav Drushliak
 - Kryvoruchko Iryna
+- Oleh Hanhal
