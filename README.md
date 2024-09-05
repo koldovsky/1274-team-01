@@ -36,3 +36,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Haiduk Maksym
 - Kardash Illia
 - Bekish Khrystyna
+- Andrii Osetskyi
