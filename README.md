@@ -27,7 +27,6 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Bal Olena
 - Dolhopolova Yuliia
 - Chernyshova Mariia
-- Bratsykhina Lada
 - Dulenchuk Andrii
 - Vladyslav Drushliak
 - Kryvoruchko Iryna
@@ -37,3 +36,5 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Kardash Illia
 - Bekish Khrystyna
 - Andrii Osetskyi
+- Bratsykhina Lada
+- Oleh Ranchuk 
