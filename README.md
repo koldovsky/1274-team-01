@@ -37,3 +37,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Bekish Khrystyna
 - Andrii Osetskyi
 - Bratsykhina Lada
+- OlehRanchuk 
