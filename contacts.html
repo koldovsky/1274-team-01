@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
-
-</body>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header></header>
+    <main class="main">
+      <section class="main__collaborate">
+        <article class="collaborate__container">
+          <div class="collaborate__header">
+            <p class="collaborate__subtitle">\ LET'S COLLABORATE \</p>
+          </div>
+          <h2 class="collaborate__title">
+            We're Delighted to Connect with You!
+          </h2>
+          <p class="collaborate__description">
+            Whether you're ready to embark on a new lighting design project or
+            seeking expert advice, we're here to help.
+          </p>
+          <p class="collaborate__text">
+            Please don't hesitate to reach out to us using the contact
+            information below. We look forward to hearing from you and bringing
+            your vision to light!
+          </p>
+          <ul class="collaborate__list">
+            <li class="collaborate__item">
+              ✔ Schedule a consultation to discuss your and explore our
+              services;
+            </li>
+            <li class="collaborate__item">
+              ✔ Receive personalized recommendations and expert guidance;
+            </li>
+            <li class="collaborate__item">
+              ✔ Collaborate with us to bring your vision to life with custom
+              lighting solutions;
+            </li>
+            <li class="collaborate__item">
+              ✔ Get answers to your questions and inquiries promptly and
+              efficiently.
+            </li>
+          </ul>
+          <p class="collaborate__cta">Let's Work Together!</p>
+        </article>
+        <form class="collaborate__registration" action="" method="POST">
+          <input
+            type="text"
+            name="full-name"
+            placeholder="Enter your name*"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            pattern="^\+?\d{1,3}[-.\s]?\d{3}[-.\s]?\d{3}[-.\s]?\d{4}$"
+            placeholder="Enter your phone number*"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your e-mail*"
+            required
+          />
+          <input type="text" name="message" placeholder="Type your message" />
+          <input type="submit" value="Contact Us" disabled />
+        </form>
+      </section>
+      <iframe
+        class="main__map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13810.665495562038!2d-74.22864444536509!3d43.30725086143071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1725534207788!5m2!1sru!2sua"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </main>
+    <footer></footer>
+  </body>
 </html>
