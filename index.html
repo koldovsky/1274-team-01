@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="git
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header></header>
-    <main>
-      <!--13 Maksym Haiduk -->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-about-us.partial.html"></section>
-      <!--Added temporary link to access About Us (Andrii Dulenchuk)-->
-      <a href="about-us.html">About Us</a>
-      <a href="projects.html">Projects</a>
-      <a href="contacts.html">Contacts</a>
-      <!--8 Mariia Chernyshova-->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.lighting-solutions.partial.html"
-      ></section>
-      <!--9 Lada Bratsykhina-->
-      <section
-        class="main__catalogs"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.section-catalogs.partial.html"
-      ></section>
-      <!--5 Illia Kardash-->
-      <section
-        class="main__catalogs"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.services.partial.html"
-      ></section>
-      <section
-      class="main__contact-us"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.section-contactus.patrial.html"
-      ></section>
-    </main>
-    <footer></footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prizma Lighting Studio</title>
+  <link rel="stylesheet" href="./css/styles.index.section-about-us.css">
+  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <!--13 Maksym Haiduk -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-about-us.partial.html">
+    </section>
+    <!--Added temporary link to access About Us (Andrii Dulenchuk)-->
+    <a href="about-us.html">About Us</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html">Contacts</a>
+    <!--8 Mariia Chernyshova-->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.lighting-solutions.partial.html">
+    </section>
+    <!--9 Lada Bratsykhina-->
+    <section class="main__catalogs" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="index.section-catalogs.partial.html"></section>
+    <!--5 Illia Kardash-->
+    <section class="main__catalogs" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="index.services.partial.html"></section>
+    <section class="main__contact-us" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="index.section-contactus.patrial.html"></section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
