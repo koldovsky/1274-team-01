@@ -1,97 +1,120 @@
 /* 13 Maksym Haiduk */
-
-body {
-  margin: 0;
-}
-
 .about-us {
-  background-image: url(../img/section-about-us/background-about-us.svg);
-  color: #FFFFFF;
-  padding: 120px 159.6px;
-  font-family: "Manrope", sans-serif;
-}
-
-.about-us__intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 90px 24px;
+  background-image: url(../image/about-background.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .about-us__intro-text {
-  width: 570px;
   padding: 0 15px;
 }
 
 .about-us__intro-tagline {
-  color: #D78C43;
+  color: var(--accent-text-color);
   font-size: 10px;
   font-weight: 900;
   letter-spacing: 2px;
-  margin: 0;
 }
 
 .about-us__intro-title {
-  margin: 10px 0 0 0;
-  font-size: 62px;
+  color: var(--text-color);
+  font-size: 40px;
+  margin-top: 20px;
   font-weight: 600;
 }
 
 .about-us__intro-subtitle {
-  margin-bottom: 0;
+  color: var(--medium-text-color);
   font-size: 19px;
-  font-weight: 400;
-  color: #E1E1E1;
+  margin-top: 25px;
+  font-weight: 500;
 }
 
 .about-us__content {
-  display: flex;
-  flex-direction: column;
-  width: 570px;
   padding: 0 15px;
 }
 
 .about-us__content-title {
-  font-size: 36px;
+  color: var(--text-color);
+  font-size: 30px;
+  margin-top: 50px;
   font-weight: 400;
-  margin: 0;
 }
 
 .about-us__content-description {
+  color: var(--paragraph-text-color);
   font-size: 16px;
-  color: #bbb;
-  margin: 0;
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 .about-us__stats {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  display: grid;
+  gap: 50px;
+  padding: 0 15px;
 }
 
 .about-us__stat {
-  border: 2px solid rgba(255, 255, 255, 0.08);
-  padding: 20px 70px 30px 25px;
-  width: 177px;
-  margin-left: 15px;
-}
-
-.about-us__stat:last-of-type {
-  border-radius: 0 100px 0 0;
+  border: 2px solid #363638;
+  padding: 27px;
 }
 
 .about-us__stat-number {
-  font-size: 62px;
-  margin: 0;
-}
-
-.about-us__stat-label {
-  font-size: 16px;
-  margin: 20px 0 0 0;
-  color: #bbb;
+  color: var(--text-color);
+  font-size: 40px;
 }
 
 .about-us__stat-number span {
-  color: #D78C43;
-  font-size: 62px;
+  color: var(--accent-text-color);
+  font-size: 40px;
+}
+
+.about-us__stat-label {
+  color: var(--paragraph-text-color);
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.about-us__stat-last {
+  border-radius: 0 100px 0 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .about-us__intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+
+  .about-us__intro-title,
+  .about-us__stat-number,
+  .about-us__stat-number span {
+    font-size: 51px;
+  }
+
+  .about-us__content-title {
+    font-size: 33px;
+    margin: 0;
+  }
+
+  .about-us__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-us__intro-title,
+  .about-us__stat-number,
+  .about-us__stat-number span {
+    font-size: 62px;
+  }
 }
