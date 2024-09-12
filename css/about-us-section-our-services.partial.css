@@ -72,7 +72,7 @@
   outline: none;
   padding: 0;
   background: none;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .our-services__accordion-list li::after {
