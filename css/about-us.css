@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "about-us-section-our-services.partial.css";
+@import "about-us-section-our-designers.partial.css";
 
 *,
 *::before,
@@ -10,4 +11,6 @@
   font-family: "Manrope", sans-serif;
 }
 
-
+:root {
+  scroll-behavior: smooth;
+}
