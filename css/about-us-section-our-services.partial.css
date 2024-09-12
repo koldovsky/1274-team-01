@@ -1,0 +1,12 @@
+@media only screen and (max-width: 320px) {
+  .our-services__image img {
+    box-sizing: border-box;
+    object-fit: cover;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .our-services__accordion-button button {
+    display: inline-block;
+  }
+}
