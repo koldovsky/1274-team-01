@@ -1,7 +1,7 @@
 /* 13 Maksym Haiduk */
 .about-us {
   padding: 90px 24px;
-  background-image: url(../image/about-background.svg);
+  background-image: url(./image/about-background.svg);
   background-size: cover;
   background-position: center;
 }
