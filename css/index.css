@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "index.header.partial.css";
 @import "index.section-about-us.css";
+@import "index.lighting-solutions.partial.css";
 
 *,
 *::before,
