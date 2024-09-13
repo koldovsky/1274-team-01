@@ -80,7 +80,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  background: url("/img/about-us-our-services-line.svg") no-repeat;
+  background: url("../img/about-us-our-services-line.svg") no-repeat;
   background-size: 100% auto;
 }
 
