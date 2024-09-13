@@ -78,7 +78,7 @@
   padding: 0;
 }
 
-.services__header-explore-icon img {
-  background-color: beige;
-  color: aqua;
+.services__header-explore-icon {
+  color: green !important;
+  background-color: white;
 }
