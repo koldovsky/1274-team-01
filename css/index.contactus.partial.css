@@ -1,0 +1,49 @@
+.contact-us{
+    background-image: url('/img/bg-for-section-contact-us.png')
+}
+
+.contact-us__header-main-title{
+    font-size: 51px;
+    color: var(--text-color);
+    font-weight: 600;
+} 
+
+.contact-us__header-breadcrumb{
+    font-size: 10px;
+    color: var(--accent-text-color);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-us__explore{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.contact-us__contacts{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact-us__phone, .contact-us__mail{
+    text-decoration: underline;
+    color: var(--light-accent-text-color);
+}
+
+.contact-us__button{
+    background-color: var(--accent-text-color); 
+    color: var(--text-color);              
+    padding: 10px 20px;       
+    border: none;             
+    border-radius: 5px;        
+    cursor: pointer;           
+    font-size: 16px;    
+
+}
+
+.contact-us__button:hover{
+    background-color: var(--text-color); 
+    color: black;              
+
+}
