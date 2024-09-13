@@ -15,5 +15,11 @@
   --medium-text-color: #e1e1e1;
   --paragraph-text-color: #bbb;
   --light-accent-text-color: #f1d1af;
+  --dark-gray-bg-color: #252527;
   font-family: "Manrope", sans-serif;
+}
+
+.conteiner {
+  max-width: 1200px;
+  margin: auto;
 }
