@@ -1,0 +1,38 @@
+/* Bekish Khrystyna */
+.projects-title {
+    font-size: 10px;
+    color: rgb(215, 140, 67);
+}
+.projects-subtitle {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.projects-tagline {
+    font-size: 30px;
+    color: rgb(241, 209, 175);
+}
+.projects-description {
+    font-size: 19px;
+    color: rgb(225, 225, 225);
+}
+.projects-link {
+    font-size: 10px;
+    color: rgb(215, 140, 67);
+}
+.project-title {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+.project-date {
+    font-size: 10px;
+    color: rgb(241, 209, 175);
+}
+.project-description {
+    font-size: 16px;
+    color: rgb(187, 187, 187);
+}
+.project-icon {
+    width: 50px;
+    height: 50px;
+}
+/* .project-image */
