@@ -1,4 +1,8 @@
 /* Bekish Khrystyna */
+.projects, .projects-div {
+    font-family: 'Manrope', sans-serif;
+    background-color: #121212;
+}
 .projects-title {
     font-size: 10px;
     color: rgb(215, 140, 67);
