@@ -17,17 +17,3 @@
   --light-accent-text-color: #f1d1af;
   font-family: "Manrope", sans-serif;
 }
-
-img {
-  display: block;
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-li {
-  list-style-type: none;
-}
