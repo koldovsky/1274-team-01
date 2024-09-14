@@ -4,16 +4,6 @@
 @import "about-us-section-our-designers.partial.css";
 @import "about-us-section-our-awards.partial.css";
 
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Manrope", sans-serif;
-}
-
 :root {
   scroll-behavior: smooth;
 }
