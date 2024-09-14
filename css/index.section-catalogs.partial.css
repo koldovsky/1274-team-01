@@ -1,3 +1,22 @@
+/*mobile view (screens smaller than 768px)*/
+@media (max-width: 768px) {
+    .catalogs {
+        display: block;
+    }
+
+    .catalogs_intro_and_collections {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+
+    .catalogs__collections,
+    .catalogs__carousel {
+        display: block;
+    }
+}
+
 /*desktop view*/
 .catalogs {
     background-color: var(--dark-gray-bg-color);
@@ -86,23 +105,36 @@
     padding-right: 30px;
 }
 
-/*Mobile view (screens smaller than 768px)*/
-@media (max-width: 768px) {
-    .catalogs {
-        display: block;
-    }
+.catalogs__carousel,
+.catalogs__carousel-list {
+    display: flex;
+}
 
-    .catalogs_intro_and_collections {
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 90px;
-        padding-bottom: 20px;
-    }
+.catalogs__carousel {
+    margin-left: 31.667px;
+    margin-right: 31.667px;
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
 
-    .catalogs__collections,
-    .catalogs__carousel {
-        display: block;
-    }
+.catalogs__carousel-scroller-image {
+    margin-top: 195.125px;
+}
+
+.catalogs__carousel-list {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.catalogs__carousel-lamp {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.catalogs__carousel-lamp-title,
+.catalogs__carousel-lamp-collection,
+.catalogs__carousel-lamp-year {
+    margin-top: 20px;
 }
 
 .catalogs__intro-and-collections {
@@ -142,6 +174,7 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 46.3958px;
+    text-decoration: none;
     text-align: center;
     cursor: pointer;
 }
@@ -195,8 +228,7 @@
     text-align: left;
 }
 
-.catalogs__separator
- {
+.catalogs__separator {
     height: 31px;
     width: 100%;
     color: var(--text-color);
@@ -204,20 +236,40 @@
 
 .catalogs__carousel-scroller {
     cursor: pointer;
+    opacity: 0.85;
+}
+
+.catalogs__carousel-scroller--left {
+    transform: matrix(1, 0, 0, 1, -15, -15);
+}
+
+.catalogs__carousel-scroller--right {
+    transform: matrix(1, 0, 0, 1, -15, -15);
+}
+
+.catalogs__carousel-scroller:hover,
+.catalogs__carousel-scroller:active {
+    opacity: 1.0;
 }
 
 .catalogs__carousel-scroller-image {
+    height: 30px;
     width: 30px;
+    position: absolute;
 }
-
 .catalogs__carousel-lamp-image {
-    width: 298px;
+    height: 254.469px;
+    width: 263px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .catalogs__carousel-lamp-title {
     color: var(--text-color);
     font-size: 26px;
     font-weight: 600;
+    line-height: 36.4px;
+    text-align: left;
 }
 
 .catalogs__carousel-lamp-collection {
@@ -225,10 +277,14 @@
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 2px;
+    line-height: 15.4px;
+    text-align: left;
 }
 
 .catalogs__carousel-lamp-year {
     color: var(--paragraph-text-color);
     font-size: 15px;
     font-weight: 700;
+    line-height: 24px;
+    text-align: left;
 }
