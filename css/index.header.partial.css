@@ -44,7 +44,7 @@ section {
 
 .index-header {
     max-width: 100%;
-    background-image: url('/img/header-cover.webp');
+    background-image: url('../img/header-cover.webp');
 }
 
 .right-aligned-text {
