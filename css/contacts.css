@@ -1,0 +1,107 @@
+@import "global.css";
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  display: inline;
+  border-radius: 0;
+}
+
+body {
+  background-image: url(../img/contacs/background-contacts.svg);
+  background-attachment: fixed;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__collaborate {
+  display: flex;
+  max-width: 1200px;
+  padding: 120px 0;
+}
+
+.collaborate__container {
+  width: 570px;
+  box-sizing: content-box;
+  padding: 25px 0;
+  margin: 0 15px;
+}
+
+.collaborate__registration {
+  background-color: var(--dark-gray-bg-color);
+  width: 570px;
+  box-sizing: content-box;
+  margin: 0 15px;
+}
+
+.collaborate__registration-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.collaborate__subtitle {
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.collaborate__title {
+  font-size: 62px;
+  font-weight: 600;
+  margin-top: 20px;
+  line-height: 74.4px;
+  color: var(--text-color);
+}
+.collaborate__description {
+  color: var(--medium-text-color);
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 26.03px;
+  margin-top: 25px;
+}
+
+.collaborate__item {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+  font-weight: 400;
+}
+
+.collaborate__text {
+  color: var(--text-color);
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.48px;
+}
+
+.collaborate__list {
+  color: var(--medium-text-color);
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.collaborate__cta {
+  color: var(--text-color);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.main__map {
+  /* display: none; */
+  width: 100%;
+}
