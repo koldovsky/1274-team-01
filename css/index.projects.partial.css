@@ -2,7 +2,9 @@
 
 .projects-partial {
   background-color: #121212;
-  width: 272px;
+}
+.projects, .project-div {
+    width: 272px;
 }
 .projects-title {
   font-size: 10px;
