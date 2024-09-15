@@ -1,6 +1,9 @@
 @import url(global.css);
-@import url(about-us-section-our-services.partial.css);
-@import url(about-us.css);
 @import url(index.header.partial.css);
 @import url(index.section-about-us.css);
 @import url(index.projects.partial.css);
+@import url(index.section-catalogs.partial.css);
+@import url(index.lighting-solutions.partial.css);
+@import url(index.section-image-gallery.partial.css);
+@import url(contacts.css);
+@import url(index.contactus.partial.css);
