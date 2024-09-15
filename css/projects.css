@@ -58,7 +58,6 @@ body {
     color: #fff;
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
     .project-images {
         flex-direction: column;
