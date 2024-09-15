@@ -3,6 +3,9 @@
 .projects-partial {
     background-color: #121212;
 }
+.projects {
+    padding: 0 24px 0 24px;
+}
 .projects-title {
     font-size: 10px;
     color: var(--accent-text-color);
@@ -54,3 +57,9 @@
     height: 50px;
 }
 /* .project-image */
+
+@media screen and (max-width: 320px) {
+    .projects-partial {
+        max-width: 100%;
+    }
+}
