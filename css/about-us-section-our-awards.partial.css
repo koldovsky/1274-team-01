@@ -1,0 +1,117 @@
+.awards {
+    background-color: var(--dark-gray-bg-color);
+    font-family: 'Manrope', sans-serif;
+    padding: 90px 24px;
+}
+
+.awards_header{
+    text-align:center;    
+}
+
+.awards__label{
+    color: var(--accent-text-color);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.awards__title {
+    color: var(--text-color);
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.awards__subtitle {
+    color: var(--paragraph-text-color);
+    margin-top: 25px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.awards__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 27px;
+}
+
+.awards__item {
+    background-size: cover;
+    background-position: center;
+    padding: 39px 27px;
+    text-align: center;
+    margin-top: 19px;
+    filter: grayscale(100%) brightness(0.68);
+    transition: filter 0.3s ease-in-out;
+
+    
+    h3 {
+        color: var(--text-color);
+        font-size: 22px;
+        filter:brightness(1);
+    }
+    
+    p {
+        color: var(--paragraph-text-color);
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+}
+.awards__text_year{
+    color: var(--light-accent-text-color);
+    filter:brightness(1);
+}
+
+@media (min-width: 480px){
+    .awards__list {
+        grid-template-columns:repeat(2, 1fr);
+    }
+    .awards__title{
+        font-size: 62px;
+    }
+    .awards {
+        padding: 105px 32px;
+    }
+}
+
+@media (min-width: 990px){
+    .awards__list {
+        grid-template-columns:repeat(3, 1fr);
+    }
+    .awards {
+        padding: 130px 40px;
+    }
+    .awards__title{
+        font-size: 62px;
+    }
+    .awards__item{
+        padding: 60px 30px;
+    }
+}
+
+.awards__item--2017 {
+    background-image: url('../img/awards/2017-luminary-award.webp');
+}
+
+.awards__item--2018 {
+    background-image: url('../img/awards/2018-radiance-awards.webp');
+}
+
+.awards__item--2020 {
+    background-image: url('../img/awards/2020-lumus-accolade.webp');
+}
+
+.awards__item--2022-glow {
+    background-image: url('../img/awards/2022-glow-achievement.webp');
+}
+
+.awards__item--2022-trophy {
+    background-image: url('../img/awards/2022-luminosity-trophy.webp');
+}
+
+.awards__item--2024 {
+    background-image: url('../img/awards/2024-luminary-award.webp');
+}
