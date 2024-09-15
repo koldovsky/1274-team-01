@@ -2,11 +2,7 @@
 
 .projects-partial {
   background-color: #121212;
-}
-.projects {
-  display: flex;
   width: 272px;
-  height: 532.3px;
   justify-content: center;
 }
 .projects-title {
