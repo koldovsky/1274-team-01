@@ -18,10 +18,14 @@
   --black-bg-color: #0d0d0d;
   --accent-gray-bg-color: #161616;
   --dark-gray-bg-color: #252527;
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope" !important;
 }
 
 .conteiner {
   max-width: 1200px;
   margin: auto;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
 }
