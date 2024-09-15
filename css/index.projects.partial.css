@@ -5,6 +5,7 @@
 }
 .projects, .project-div {
     width: 272px;
+    padding: 0 24px 0 24px;
 }
 .projects-title {
   font-size: 10px;
