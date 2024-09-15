@@ -2,8 +2,9 @@
 
 .projects-partial {
   background-color: #121212;
-  display: flex;
-  justify-content: center;
+  padding: 90px 24px;
+  background-size: cover;
+  background-position: center;
 }
 .projects, .project-div {
     width: 272px;
