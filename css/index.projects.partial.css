@@ -1,12 +1,7 @@
 /* Bekish Khrystyna */
 
-.projects-section {
-    padding: 90px 0 30px 0;
-}
-
-.projects, .projects-div {
+.projects-partial {
     background-color: #121212;
-    padding: 0 24px 0 24px;
 }
 .projects-title {
     font-size: 10px;
