@@ -17,6 +17,7 @@
   --paragraph-text-color: #bbbbbb;
   --black-bg-color: #0d0d0d;
   --accent-gray-bg-color: #161616;
+  --light-gray-bg-color: #333333;
   --dark-gray-bg-color: #252527;
   font-family: "Manrope" !important;
 }
@@ -28,4 +29,26 @@
 
 body {
   font-family: "Manrope", sans-serif;
+  color: var(--paragraph-text-color);
+}
+
+p {
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 36px;
+  min-width: 320px;
+}
+
+h2 {
+  color: var(--accent-text-color);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
