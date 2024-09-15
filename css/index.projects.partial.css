@@ -3,9 +3,7 @@
 .projects-partial {
   background-color: #121212;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0;
+  justify-content: center;
 }
 .projects, .project-div {
     width: 272px;
