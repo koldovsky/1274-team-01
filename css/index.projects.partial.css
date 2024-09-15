@@ -8,7 +8,6 @@
 }
 .projects, .project-div {
     width: 272px;
-    padding: 0 24px 0 24px;
 }
 .projects-title {
   font-size: 10px;
@@ -17,11 +16,9 @@
 .projects-subtitle {
   font-size: 40px;
   color: var(--text-color);
-  margin-top: 20px;
 }
 .projects-info {
-  margin-top: 30px;
-  padding: 0 15px 0 15px;
+  
 }
 .projects-tagline {
   font-size: 30px;
@@ -30,19 +27,16 @@
 .projects-description {
   font-size: 19px;
   color: var(--medium-text-color);
-  margin-top: 25px;
 }
 .projects-link {
   font-size: 10px;
   color: var(--accent-text-color);
-  margin-top: 25px;
 }
 .projects-line {
   margin-top: 45px;
   padding: 0 15px 0 15px;
 }
 .project {
-  padding: 15px 0 15px 0;
 }
 .project-title {
   font-size: 22px;
