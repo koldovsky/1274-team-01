@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About us</title>
-  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!--1 Maria Olivenbaum -->
-  <header class="index-header">
-    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.header-hero.partial.html"></section>
-  </header>
-  <!---------------------------->
-  <main>
-
-    <!--Our Services Section by Andrii Dulenchuk-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us-section-our-services.partial.html"></section>
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.section-our-designers.partial.html"></section>
-    <!--15 Awards – Nazar Dzhus-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us-section-awards.partial.html">
-    </section>
-  </main>
-</body>
-
+  <body>
+    <!--1 Maria Olivenbaum -->
+    <header class="index-header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.header-hero.partial.html"
+      ></section>
+    </header>
+    <!---------------------------->
+    <main>
+      <!--Our Services Section by Andrii Dulenchuk-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us-section-our-services.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.section-our-designers.partial.html"
+      ></section>
+      <!--15 Awards – Nazar Dzhus-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us-section-awards.partial.html"
+      ></section>
+    </main>
+  </body>
 </html>
