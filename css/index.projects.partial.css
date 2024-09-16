@@ -2,13 +2,14 @@
 
 .projects-partial {
   background-color: #0d0d0d;;
-  padding: 90px 15px 24px 15px;
+  padding: 90px 0 30px 0;
   background-size: cover;
   background-position: center;
 }
 .projects,
 .project-div {
   width: 272px;
+  padding: 0 24px 0 24px;
 }
 .projects-title {
   font-size: 10px;
