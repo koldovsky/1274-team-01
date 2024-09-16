@@ -21,6 +21,29 @@
   --light-gray-bg-color: #333333;
   --dark-gray-bg-color: #252527;
   font-family: "Manrope" !important;
+
+  --font-small-size: 10px;
+  --font-button-size: 12px;
+  --font-caption-size: 15px;
+  --font-text-size: 16px;
+  --font-subtitle-size: 19px;
+  --font-heading-size: 26px;
+  --font-block-title-size: 62px;
+
+  --font-small-weight: 800;
+  --font-button-weight: 700;
+  --font-caption-weight: 700;
+  --font-text-weight: 400;
+  --font-subtitle-weight: 500;
+  --font-heading-weight: 600;
+  --font-block-title-weight: 600;
+
+  --font-small-line-height: 1.54;
+  --font-caption-line-height: 1.6;
+  --font-text-line-height: 1.53;
+  --font-subtitle-line-height: 1.37;
+  --font-heading-line-height: 1.4;
+  --font-block-title-line-height: 1.2;
 }
 
 .conteiner {
