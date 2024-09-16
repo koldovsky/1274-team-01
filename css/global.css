@@ -50,11 +50,6 @@
   --font-block-title-line-height: 1.2;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 .conteiner {
   width: 100%;
   margin: auto;
