@@ -2,7 +2,7 @@
 
 .projects-partial {
   background-color: #121212;
-  padding: 90px 24px;
+  padding: 90px 0 24px 0;
   background-size: cover;
   background-position: center;
 }
@@ -41,6 +41,9 @@
 }
 .projects-shorter-line {
   margin-top: 45px;
+}
+.projects-longer-line {
+  max-width: 100%;
 }
 .project-title {
   font-size: 22px;
