@@ -43,7 +43,7 @@
   margin-top: 45px;
 }
 .projects-longer-line {
-  max-width: 100%;
+  width: 320px;
 }
 .project-title {
   font-size: 22px;
