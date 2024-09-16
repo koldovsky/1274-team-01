@@ -1,33 +1,59 @@
 .index-header {
-  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url("../img/index-header.webp");
-  padding: 10px;
   color: var(--paragraph-text-color);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-sizing: border-box;
+  position: relative;
 }
 
-section {
-  padding: 20px;
-  padding-bottom: 60px;
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7vw;
+}
+
+.left-block {
+  flex: 1;
+  max-width: 40vw;
 }
 
 .right-aligned-text {
   text-align: right;
+  align-items: flex-end;
 }
 
 .right-block {
-  max-width: 200px;
+  max-width: 30vw;
+  height: 65vh;
+}
+
+.right-block svg {
+  max-height: 5vw;
+}
+
+.index-header h1 {
+  color: var(--text-color);
+  font-size: 6vw;
+  margin-top: 2vw;
+}
+
+.header__nav {
+  background-color: transparent !important;
+}
+
+section {
+  padding: 40px;
+  padding-bottom: 60px;
 }
 
 .product-title {
   color: var(--text-color);
   font-size: 20px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 .arrow-link {
@@ -47,6 +73,8 @@ section {
   text-decoration: none;
   line-height: 40px;
   transition: background-color 0.3s, color 0.3s;
+  margin-top: 4vw;
+  margin-bottom: 24vw;
 }
 
 .header__button a:hover {
@@ -57,13 +85,13 @@ section {
 .request-link {
   text-decoration: none;
   color: var(--accent-text-color);
+  font-size: 10px;
 }
-
 .highlight-text {
   color: var(--light-accent-text-color);
 }
 
 .read-more-link {
   color: var(--text-color);
-  font-size: 9px;
+  font-size: 10px;
 }
