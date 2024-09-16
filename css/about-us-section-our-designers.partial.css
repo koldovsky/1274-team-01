@@ -12,7 +12,7 @@
 }
 
 .our-designers__label {
-  color: #d78c43;
+  color: var(--accent-text-color);
   font-size: 10px;
   display: inline;
   margin-bottom: 10px;
@@ -20,7 +20,7 @@
 
 .our-designers__title {
   font-size: 40px;
-  color: #ffffff;
+  color: var(--text-color);
   margin-bottom: 15px;
   display: flex;
   display: inline;
@@ -28,7 +28,7 @@
 
 .our-designers__description {
   font-size: 19px;
-  color: #e1e1e1;
+  color: var(--medium-text-color);
 }
 
 .our-designers__content {
@@ -51,24 +51,24 @@
 }
 
 .our-designers__info {
-  background-color: #252527;
+  background-color: var(--dark-gray-bg-color);
   display: flex;
   flex-direction: column;
   padding: 31px 27px;
 }
 
 .our-designers__name {
-  color: #ffffff;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
 .our-designers__experience {
-  color: #f1d1af;
+  color: var(--light-accent-text-color);
   margin-bottom: 10px;
 }
 
 .our-designers__bio {
-  color: #bbbbbb;
+  color: var(--paragraph-text-color);
   margin-bottom: 15px;
 }
 
@@ -79,7 +79,7 @@
 .our-designers__icon {
   width: 30px;
   height: 30px;
-  fill: #d78c43;
+  color: var(--accent-text-color);
   cursor: pointer;
 }
 
