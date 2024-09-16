@@ -1,179 +1,92 @@
-/*mobile view (screens smaller than 768px)*/
-@media (max-width: 768px) {
-    .catalogs {
-        display: block;
-    }
+:root {
+    --font-small-size: 10px;
+    --font-button-size: 12px;
+    --font-caption-size: 15px;
+    --font-text-size: 16px;
+    --font-subtitle-size: 19px;
+    --font-heading-size: 26px;
+    --font-block-title-size: 62px;
 
-    .catalogs_intro_and_collections {
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 90px;
-        padding-bottom: 20px;
-    }
+    --font-small-weight: 800;
+    --font-button-weight: 700;
+    --font-caption-weight: 700;
+    --font-text-weight: 400;
+    --font-subtitle-weight: 500;
+    --font-heading-weight: 600;
+    --font-block-title-weight: 600;
 
-    .catalogs__collections,
-    .catalogs__carousel {
-        display: block;
-    }
+    --font-small-line-height: 1.54;
+    --font-caption-line-height: 1.6;
+    --font-text-line-height: 1.53;
+    --font-subtitle-line-height: 1.37;
+    --font-heading-line-height: 1.4;
+    --font-block-title-line-height: 1.2;
 }
 
 /*desktop view*/
 .catalogs {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
     background-color: var(--dark-gray-bg-color);
-    display: grid;
-    grid-template-rows: auto auto;
 }
 
 .catalogs__intro-and-collections {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-}
-
-.catalogs__intro {
-    grid-column: 1 / 2;
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-}
-
-.catalogs__collections {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-rows: auto auto auto;
-}
-
-.catalogs__separator--long {
-    grid-column: 1 / 3;
-}
-
-.catalogs__collection {
-    display: block;
-}
-
-.catalogs {
-    padding: 0px;
-}
-
-.catalogs__intro-and-collections {
     margin-left: 1.667px;
     margin-right: 1.667px;
     padding-top: 120px;
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    line-height: 24.48px;
 }
 
 .catalogs__intro {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
+.catalogs__breadcrumbs {
+    color: var(--accent-text-color);
+    font-size: var(--font-small-size);
+    font-weight: var(--font-small-weight);
+    letter-spacing: 2px;
+    line-height: var(--font-small-line-height);
+}
+
 .catalogs__title {
     margin-top: 20px;
+    color: var(--text-color);
+    font-size: var(--font-block-title-size);
+    font-weight: var(--font-block-title-weight);
+    line-height: var(--font-block-title-line-height);
 }
 
 .catalogs__description {
     margin-top: 25px;
+    color: var(--medium-text-color);
+    font-size: var(--font-subtitle-size);
+    font-weight: var(--font-subtitle-weight);
+    line-height: var(--font-subtitle-line-height);
 }
 
 .catalogs__button {
     margin-top: 40px;
-}
-
-.catalogs__collections {
-    padding-top: 15.91px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.catalogs__collection-description {
-    margin-top: 20px;
-}
-
-.catalogs__collection-download {
-    margin-top: 20px;
-}
-
-.catalogs__collection-download-link {
-    margin-left: 10px;
-}
-
-.catalogs__separator--long {
-    margin-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.catalogs__carousel,
-.catalogs__carousel-list {
-    display: flex;
-}
-
-.catalogs__carousel {
-    margin-left: 31.667px;
-    margin-right: 31.667px;
-    padding-top: 20px;
-    padding-bottom: 120px;
-}
-
-.catalogs__carousel-scroller-image {
-    margin-top: 195.125px;
-}
-
-.catalogs__carousel-list {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.catalogs__carousel-lamp {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.catalogs__carousel-lamp-title,
-.catalogs__carousel-lamp-collection,
-.catalogs__carousel-lamp-year {
-    margin-top: 20px;
-}
-
-.catalogs__intro-and-collections {
-    line-height: 24.48px;
-}
-
-.catalogs__breadcrumbs {
-    color: var(--accent-text-color);
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    line-height: 15.4px;
-    text-align: left;
-}
-
-.catalogs__title {
-    color: var(--text-color);
-    font-size: 62px;
-    font-weight: 600;
-    line-height: 74.4px;
-    text-align: left;
-}
-
-.catalogs__description {
-    color: var(--medium-text-color);
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 26.03px;
-    text-align: left;
-}
-
-.catalogs__button {
     width: 103.76px;
     height: 46.4px;
+    line-height: 46.4px;
     background-color: var(--accent-text-color);
     color: var(--text-color);
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 46.3958px;
+    font-size: var(--font-button-size);
+    font-weight: var(--font-button-weight);
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -189,23 +102,38 @@
     color: var(--black-bg-color);
 }
 
-.catalogs__collection-title {
-    color: var(--text-color);
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 36.4px;
-    text-align: left;
+.catalogs__collections {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 15.91px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
+.catalogs__collection {
+    display: block;
+}
+
+.catalogs__collection-title {
+    color: var(--text-color);
+    font-size: var(--font-heading-size);
+    font-weight: var(--font-heading-weight);
+    line-height: var(--font-heading-line-height);
+}
+
+
 .catalogs__collection-description {
+    margin-top: 20px;
     color: var(--paragraph-text-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24.48px;
-    text-align: left;
+    font-size: var(--font-text-size);
+    font-weight: var(--font-text-weight);
+    line-height: var(--font-text-line-height);
 }
 
 .catalogs__collection-download {
+    margin-top: 20px;
     height: 25px;
     display: flex;
     align-items: center;
@@ -219,13 +147,12 @@
 }
 
 .catalogs__collection-download-link {
+    margin-left: 10px;
     color: var(--text-color);
-    font-size: 10px;
-    font-weight: 800;
+    font-size: var(--font-small-size);
+    font-weight: var(--font-small-weight);
     letter-spacing: 2px;
-    line-height: 25px;
     cursor: pointer;
-    text-align: left;
 }
 
 .catalogs__separator {
@@ -234,17 +161,26 @@
     color: var(--text-color);
 }
 
+.catalogs__separator--long {
+    grid-column: 1 / 3;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.catalogs__carousel {
+    display: flex;
+    gap: 30px;
+    margin-left: 31.667px;
+    margin-right: 31.667px;
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
 .catalogs__carousel-scroller {
-    cursor: pointer;
     opacity: 0.85;
-}
-
-.catalogs__carousel-scroller--left {
     transform: matrix(1, 0, 0, 1, -15, -15);
-}
-
-.catalogs__carousel-scroller--right {
-    transform: matrix(1, 0, 0, 1, -15, -15);
+    cursor: pointer;
 }
 
 .catalogs__carousel-scroller:hover,
@@ -253,38 +189,49 @@
 }
 
 .catalogs__carousel-scroller-image {
+    margin-top: 195.125px;
     height: 30px;
     width: 30px;
     position: absolute;
 }
+
+.catalogs__carousel-list {
+    display: flex;
+    gap: 30px;
+}
+
+.catalogs__carousel-lamp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
 .catalogs__carousel-lamp-image {
+    margin: 0px;
+    padding: 0px;
     height: 254.469px;
     width: 263px;
-    padding: 0px;
-    margin: 0px;
 }
 
 .catalogs__carousel-lamp-title {
     color: var(--text-color);
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 36.4px;
-    text-align: left;
+    font-size: var(--font-heading-size);
+    font-weight: var(--font-heading-weight);
+    line-height: var(--font-heading-line-height);
 }
 
 .catalogs__carousel-lamp-collection {
     color: var(--light-accent-text-color);
-    font-size: 10px;
-    font-weight: 800;
+    font-size: var(--font-small-size);
+    font-weight: var(--font-small-weight);
     letter-spacing: 2px;
-    line-height: 15.4px;
-    text-align: left;
+    line-height: var(--font-small-line-height);
 }
 
 .catalogs__carousel-lamp-year {
     color: var(--paragraph-text-color);
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: left;
+    font-size: var(--font-caption-size);
+    font-weight: var(--font-caption-weight);
+    line-height: var(--font-caption-line-height);
 }
