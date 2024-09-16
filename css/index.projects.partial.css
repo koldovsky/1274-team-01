@@ -1,8 +1,8 @@
 /* Bekish Khrystyna */
 
 .projects-partial {
-  background-color: #121212;
-  padding: 90px 0 24px 0;
+  background-color: #0d0d0d;;
+  padding: 90px 15px 24px 15px;
   background-size: cover;
   background-position: center;
 }
@@ -42,9 +42,6 @@
 .projects-shorter-line {
   margin-top: 45px;
 }
-.projects-longer-line {
-  width: 320px;
-}
 .project-title {
   font-size: 22px;
   color: var(--text-color);
@@ -53,6 +50,8 @@
   font-size: 10px;
   color: var(--light-accent-text-color);
   margin-top: 20px;
+  font-weight: var(--font-small-weight);
+  letter-spacing: 2px;
 }
 .project-description {
   font-size: 16px;
