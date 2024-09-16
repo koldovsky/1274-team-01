@@ -93,13 +93,13 @@
 }
 
 .catalogs__button:hover {
-    background-color: var(--text-color);
-    color: var(--black-bg-color);
+  background-color: var(--text-color);
+  color: var(--black-bg-color);
 }
 
 .catalogs__button:active {
-    background-color: var(--dark-gray-bg-color);
-    color: var(--black-bg-color);
+  background-color: var(--dark-gray-bg-color);
+  color: var(--black-bg-color);
 }
 
 .catalogs__collections {
@@ -141,9 +141,9 @@
 }
 
 .catalogs__collection-download-icon {
-    height: 24px;
-    width: 20px;
-    background-color: var(--dark-gray-bg-color);
+  height: 24px;
+  width: 20px;
+  background-color: var(--dark-gray-bg-color);
 }
 
 .catalogs__collection-download-link {
@@ -156,9 +156,9 @@
 }
 
 .catalogs__separator {
-    height: 31px;
-    width: 100%;
-    color: var(--text-color);
+  height: 31px;
+  width: 100%;
+  color: var(--text-color);
 }
 
 .catalogs__separator--long {
@@ -185,7 +185,7 @@
 
 .catalogs__carousel-scroller:hover,
 .catalogs__carousel-scroller:active {
-    opacity: 1.0;
+  opacity: 1;
 }
 
 .catalogs__carousel-scroller-image {

@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="css/contacts.css" />
   </head>
   <body>
-    <header></header>
+    <!--1 Maria Olivenbaum -->
+    <header id="contacts__header" class="header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.header-hero.partial.html"
+      ></section>
+    </header>
     <main class="main">
       <section class="main__collaborate">
         <article class="collaborate__container">
-          <div class="collaborate__header">
-            <p class="collaborate__subtitle">\ LET'S COLLABORATE \</p>
-          </div>
+          <span class="collaborate__subtitle">\ LET'S COLLABORATE \</span>
           <h2 class="collaborate__title">
             We're Delighted to Connect with You!
           </h2>
@@ -38,45 +47,66 @@
           </p>
           <ul class="collaborate__list">
             <li class="collaborate__item">
-              ✔ Schedule a consultation to discuss your and explore our
-              services;
+              <img
+                src="img/contacs/checkmark.svg"
+                alt="✔"
+                style="width: 20px; margin-right: 10px"
+              />
+              Schedule a consultation to discuss your and explore our services;
             </li>
             <li class="collaborate__item">
-              ✔ Receive personalized recommendations and expert guidance;
+              <img
+                src="img/contacs/checkmark.svg"
+                alt="✔"
+                style="width: 20px; margin-right: 10px"
+              />
+              Receive personalized recommendations and expert guidance;
             </li>
             <li class="collaborate__item">
-              ✔ Collaborate with us to bring your vision to life with custom
+              <img
+                src="img/contacs/checkmark.svg"
+                alt="✔"
+                style="width: 20px; margin-right: 10px"
+              />
+              Collaborate with us to bring your vision to life with custom
               lighting solutions;
             </li>
             <li class="collaborate__item">
-              ✔ Get answers to your questions and inquiries promptly and
+              <img
+                src="img/contacs/checkmark.svg"
+                alt="✔"
+                style="width: 20px; margin-right: 10px"
+              />
+              Get answers to your questions and inquiries promptly and
               efficiently.
             </li>
           </ul>
-          <p class="collaborate__cta">Let's Work Together!</p>
+          <p class="collaborate__cta">Let's <u>Work</u> Together!</p>
         </article>
         <form class="collaborate__registration" action="" method="POST">
-          <input
-            type="text"
-            name="full-name"
-            placeholder="Enter your name*"
-            required
-          />
-          <input
-            type="tel"
-            name="phone"
-            pattern="\+?[0-9]{1,4}[-\s]?[0-9]{1,15}"
-            placeholder="Enter your phone number*"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your e-mail*"
-            required
-          />
-          <input type="text" name="message" placeholder="Type your message" />
-          <input type="submit" value="Contact Us" disabled />
+          <div class="collaborate__registration-container">
+            <input
+              type="text"
+              name="full-name"
+              placeholder="Enter your name*"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              pattern="\+?[0-9]{1,4}[-\s]?[0-9]{1,15}"
+              placeholder="Enter your phone number*"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your e-mail*"
+              required
+            />
+            <input type="text" name="message" placeholder="Type your message" />
+            <input type="submit" value="Contact Us" />
+          </div>
         </form>
       </section>
       <iframe
