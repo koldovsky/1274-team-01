@@ -20,7 +20,7 @@ section.lighting-solutions {
 .materials-information h2 {
   font-size: 62px;
   margin: 10px 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .materials-information p {
@@ -30,7 +30,7 @@ section.lighting-solutions {
 }
 
 .materials-information h4 {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -56,21 +56,21 @@ ul.list-of-materials li::before {
 }
 
 ul.list-of-materials li.materials-silk::before {
-  background-image: url('../img/solutions/materials-silk.webp');
+  background-image: url("../img/solutions/materials-silk.webp");
 }
 
 ul.list-of-materials li.materials-polymeric::before {
-  background-image: url('../img/solutions/materials-polymeric.webp');
+  background-image: url("../img/solutions/materials-polymeric.webp");
 }
 
 ul.list-of-materials li.materials-metal::before {
-  background-image: url('../img/solutions/materials-forged-metal.webp');
+  background-image: url("../img/solutions/materials-forged-metal.webp");
 }
 
 ul.list-of-materials h3 {
   font-size: 25px;
   margin-bottom: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 ul.list-of-materials p {
