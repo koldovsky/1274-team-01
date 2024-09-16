@@ -1,0 +1,86 @@
+section.lighting-solutions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.materials-information {
+  margin: 100px;
+  width: 600px;
+  height: 100%;
+}
+
+.materials-information h5 {
+  color: #f39c12;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.materials-information h2 {
+  font-size: 62px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.materials-information p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.materials-information h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+ul.list-of-materials {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.list-of-materials li {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 20px;
+}
+
+ul.list-of-materials li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+ul.list-of-materials li.materials-silk::before {
+  background-image: url("../img/solutions/materials-silk.webp");
+}
+
+ul.list-of-materials li.materials-polymeric::before {
+  background-image: url("../img/solutions/materials-polymeric.webp");
+}
+
+ul.list-of-materials li.materials-metal::before {
+  background-image: url("../img/solutions/materials-forged-metal.webp");
+}
+
+ul.list-of-materials h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+ul.list-of-materials p {
+  color: #bbbbbb;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.lighting-solutions__room img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

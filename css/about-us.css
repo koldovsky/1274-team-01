@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-@import "about-us-section-our-services.partial.css";
+@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap);
+@import url(global.css);
+@import url(about-us.header-hero.partial.css);
+@import url(about-us-section-our-services.partial.css);
+@import url(about-us-section-our-designers.partial.css);
+@import url(about-us-section-our-awards.partial.css);
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Manrope", sans-serif;
+:root {
+  scroll-behavior: smooth;
 }
 
-
+#about-us__header {
+  max-width: 100%;
+  background-image: url("../img/section-about-us/about-us-header.webp");
+}
