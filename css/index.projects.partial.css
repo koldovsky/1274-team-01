@@ -11,6 +11,7 @@
   width: 272px;
 }
 .projects-title {
+  font-weight: bold;
   font-size: 10px;
   color: var(--accent-text-color);
 }
@@ -32,6 +33,7 @@
   margin-top: 25px;
 }
 .projects-link {
+  font-weight: bold;
   font-size: 10px;
   color: var(--accent-text-color);
   margin-top: 25px;
