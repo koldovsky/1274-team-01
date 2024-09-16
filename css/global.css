@@ -28,7 +28,11 @@
   --font-text-size: 16px;
   --font-subtitle-size: 19px;
   --font-heading-size: 26px;
+  --font-heading-size-tablet: 24px;
+  --font-heading-size-mobile: 22px;
   --font-block-title-size: 62px;
+  --font-block-title-size-tablet: 51px;
+  --font-block-title-size-mobile: 40px;
 
   --font-small-weight: 800;
   --font-button-weight: 700;
@@ -44,6 +48,11 @@
   --font-subtitle-line-height: 1.37;
   --font-heading-line-height: 1.4;
   --font-block-title-line-height: 1.2;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .conteiner {
