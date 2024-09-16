@@ -1,4 +1,5 @@
-@import "global.css";
+@import url(global.css);
+@import url(contacts.header-hero.partial.css);
 
 ul {
   margin: 0;
