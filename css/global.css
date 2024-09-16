@@ -28,7 +28,7 @@
 }
 
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif !important;
   color: var(--paragraph-text-color);
 }
 
