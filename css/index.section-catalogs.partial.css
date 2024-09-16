@@ -1,8 +1,7 @@
-/*desktop view*/
 .catalogs {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding: 0;
     background-color: var(--dark-gray-bg-color);
 }
 
@@ -10,23 +9,28 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    margin-left: 1.667px;
-    margin-right: 1.667px;
-    padding-top: 120px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    margin: 0 1.667px 0;
+    padding: 120px 15px 20px;
     line-height: 24.48px;
 }
 
 .catalogs__intro {
     grid-column: 1 / 2;
+
+    @media (max-width: 768px) {
+        grid-column: 1 / -1;
+    }
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
 }
 
 .catalogs__breadcrumbs {
@@ -41,6 +45,15 @@
     margin-top: 20px;
     color: var(--text-color);
     font-size: var(--font-block-title-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--font-block-title-size-mobile);
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: var(--font-block-title-size-tablet);
+    }
+
     font-weight: var(--font-block-title-weight);
     line-height: var(--font-block-title-line-height);
 }
@@ -79,25 +92,32 @@
 
 .catalogs__collections {
     grid-column: 2 / 3;
+
+    @media (max-width: 768px) {
+        grid-column: 1 / -1;
+    }
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 15.91px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.catalogs__collection {
-    display: block;
+    padding: 15.91px 30px 0;
 }
 
 .catalogs__collection-title {
     color: var(--text-color);
     font-size: var(--font-heading-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--font-heading-size-mobile);
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: var(--font-heading-size-tablet);
+    }
+
     font-weight: var(--font-heading-weight);
     line-height: var(--font-heading-line-height);
 }
-
 
 .catalogs__collection-description {
     margin-top: 20px;
@@ -110,9 +130,9 @@
 .catalogs__collection-download {
     margin-top: 20px;
     height: 25px;
+    line-height: 25px;
     display: flex;
     align-items: center;
-    line-height: 25px;
 }
 
 .catalogs__collection-download-icon {
@@ -139,17 +159,14 @@
 .catalogs__separator--long {
     grid-column: 1 / 3;
     margin-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
 }
 
 .catalogs__carousel {
     display: flex;
     gap: 30px;
-    margin-left: 31.667px;
-    margin-right: 31.667px;
-    padding-top: 20px;
-    padding-bottom: 120px;
+    margin: 0 31.667px 0;
+    padding: 20px 0 120px;
 }
 
 .catalogs__carousel-scroller {
@@ -177,21 +194,59 @@
 
 .catalogs__carousel-lamp {
     display: flex;
+    flex: 1 1 25%;
+
+    @media (max-width: 768px) {
+        flex: 1 1 100%;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        flex: 1 1 50%;
+    }
+
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
 }
 
+.catalogs__carousel-lamp:nth-child(5) {
+    display: none;
+}
+
+.catalogs__carousel-lamp:nth-child(3),
+.catalogs__carousel-lamp:nth-child(4) {
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.catalogs__carousel-lamp:nth-child(2),
+.catalogs__carousel-lamp:nth-child(3),
+.catalogs__carousel-lamp:nth-child(4) {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
 .catalogs__carousel-lamp-image {
-    margin: 0px;
-    padding: 0px;
-    height: 254.469px;
-    width: 263px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
 }
 
 .catalogs__carousel-lamp-title {
     color: var(--text-color);
     font-size: var(--font-heading-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--font-heading-size-mobile);
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: var(--font-heading-size-tablet);
+    }
+
     font-weight: var(--font-heading-weight);
     line-height: var(--font-heading-line-height);
 }
