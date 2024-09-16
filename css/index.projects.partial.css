@@ -11,7 +11,6 @@
   width: 272px;
 }
 .projects-title {
-  font-weight: bold;
   font-size: 10px;
   color: var(--accent-text-color);
 }
@@ -33,10 +32,11 @@
   margin-top: 25px;
 }
 .projects-link {
-  font-weight: bold;
   font-size: 10px;
   color: var(--accent-text-color);
   margin-top: 25px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 .projects-line {
   margin-top: 45px;
