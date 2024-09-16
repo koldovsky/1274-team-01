@@ -92,42 +92,327 @@
   font-weight: 700;
 }
 
+.services__content-items {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*styles for ceiling fixtures*/
+.services__content-ceiling-fixtures {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-ceiling-fixtures-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services__content-ceiling-fixtures-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
 .services__content-ceiling-fixtures-icon {
-  width: 30px;
+  display: flex;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-ceiling-fixtures-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for floor lamps*/
+.services__content-floor-lamps {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-floor-lamps-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services__content-floor-lamps-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .services__content-floor-lamps-icon {
-  width: 30px;
+  display: flex;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-floor-lamps-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for wall sconces*/
+.services__content-wall-sconces {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-wall-sconces-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services__content-wall-sconces-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .services__content-wall-sconces-icon {
-  width: 30px;
+  display: flex;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-wall-sconces-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for wall mounted*/
+.services__content-wall-mounted {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-wall-mounted-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services__content-wall-mounted-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .services__content-wall-mounted-icon {
-  width: 30px;
+  display: flex;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-wall-mounted-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for kitchen island*/
+.services__content-kitchen-island {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-kitchen-island-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services__content-kitchen-island-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .services__content-kitchen-island-icon {
-  width: 30px;
+  display: flex;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-kitchen-island-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for modular lighting*/
+.services__content-modular-lighting {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-modular-lighting-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services__content-modular-lighting-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .services__content-modular-lighting-icon {
-  width: 30px;
+  display: flex;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-modular-lighting-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for led lighting*/
+.services__content-led-lighting {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-led-lighting-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services__content-led-lighting-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .services__content-led-lighting-icon {
-  width: 30px;
+  display: flex;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-led-lighting-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for smart lighting*/
+.services__content-smart-lighting {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-smart-lighting-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services__content-smart-lighting-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .services__content-smart-lighting-icon {
-  width: 30px;
+  display: flex;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-smart-lighting-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 475px) {
+  .services__content-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .services__content-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/*footer*/
+
+.services__footer {
+  margin-top: 30px;
 }
 
 .services__footer-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services__footer-images img {
   width: 50%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
 }
 
 @media (min-width: 600px) {
@@ -156,6 +441,54 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  .services {
+    background-image: url(/img/services/services-background.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1921px) {
+  .services {
+    background-image: url(/img/services/services-background.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 2560px) {
+  .services {
+    background-image: url(/img/services/services-background.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1200px),
+  only screen and (min-resolution: 144dpi) and (min-width: 1200px) {
+  .services {
+    background-image: url(/img/services/services-background.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1920px),
+  only screen and (min-resolution: 144dpi) and (min-width: 1920px) {
+  .services {
+    background-image: url(/img/services/services-background.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 2560px),
+  only screen and (min-resolution: 144dpi) and (min-width: 2560px) {
   .services {
     background-image: url(/img/services/services-background.svg);
     background-repeat: no-repeat;
