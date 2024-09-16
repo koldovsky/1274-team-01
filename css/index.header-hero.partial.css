@@ -1,6 +1,6 @@
 .index-header {
   max-width: 100%;
-  background-image: url("../img/header-cover.webp");
+  background-image: url("../img/index-header.webp");
   padding: 10px;
   color: var(--paragraph-text-color);
   display: flex;
