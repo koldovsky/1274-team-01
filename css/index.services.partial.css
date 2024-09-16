@@ -1,15 +1,17 @@
 .services {
-  background-color: #0d0d0d;
+  background-image: url(/img/services/services-background.svg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
 .services__header {
   display: flex;
-  flex: 1;
+  flex-wrap: wrap;
   width: 100%;
   flex-direction: column;
-  flex-wrap: wrap;
   padding: 0px;
 
   .services__header-title {
@@ -30,6 +32,7 @@
 
 .services__header-main-title {
   margin-top: 20px;
+  margin-right: 20px;
   font-family: inherit;
   color: var(--text-color);
   display: block;
@@ -43,11 +46,10 @@
 
 .services__header-welcome {
   margin-top: 60px;
-  flex: 1.5;
+  width: 100%;
   text-align: left;
   display: block;
   color: var(--text-color);
-  font-family: inherit;
 
   .services__header-greetings {
     font-size: 19px;
@@ -66,9 +68,9 @@
 
 .services__header-explore {
   display: flex;
-  align-items: center;
-  width: 100%;
+  max-width: 100%;
   margin-top: 20px;
+  justify-content: right;
 }
 
 .services__header-explore-list {
@@ -79,6 +81,58 @@
 }
 
 .services__header-explore-icon {
-  color: green !important;
-  background-color: white;
+  width: 20px;
+  fill: var(--accent-text-color);
+  margin-right: 5px;
+}
+
+.services__header-explore-text {
+  color: #f1d1af;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.services__content-ceiling-fixtures-icon {
+  width: 30px;
+}
+
+.services__content-floor-lamps-icon {
+  width: 30px;
+}
+
+.services__content-wall-sconces-icon {
+  width: 30px;
+}
+
+.services__content-wall-mounted-icon {
+  width: 30px;
+}
+
+.services__content-kitchen-island-icon {
+  width: 30px;
+}
+
+.services__content-modular-lighting-icon {
+  width: 30px;
+}
+
+.services__content-led-lighting-icon {
+  width: 30px;
+}
+
+.services__content-smart-lighting-icon {
+  width: 30px;
+}
+
+.services__footer-images {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (min-width: 600px) {
+  .services__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
