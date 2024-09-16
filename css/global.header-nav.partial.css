@@ -1,0 +1,13 @@
+.logo {
+  max-width: 10%;
+  height: auto;
+}
+
+.header__menu {
+  font-size: 10px;
+  color: var(--paragraph-text-color);
+}
+
+.header__menu a:hover {
+  color: var(--accent-text-color);
+}
