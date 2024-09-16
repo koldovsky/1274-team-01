@@ -30,12 +30,12 @@ section {
   height: auto;
 }
 
-.menu {
-  font-size: 9px;
+.header__menu {
+  font-size: 10px;
   color: var(--paragraph-text-color);
 }
 
-.menu a:hover {
+.header__menu a:hover {
   color: var(--accent-text-color);
 }
 
@@ -50,7 +50,7 @@ section {
   font-size: 19px;
 }
 
-.button {
+.header__button {
   font-size: 11px;
   display: inline-block;
   width: 100px;
@@ -63,7 +63,7 @@ section {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.button a:hover {
+.header__button a:hover {
   background-color: var(--text-color);
   color: var(--light-gray-bg-color);
 }
