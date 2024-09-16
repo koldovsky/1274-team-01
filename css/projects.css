@@ -1,76 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-@import "global.css";
+@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap);
+@import url(global.css);
+@import url(projects.header-hero.partial.css);
 
 :root {
   scroll-behavior: smooth;
 }
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #252527;
-    color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #252527;
+  color: #fff;
 }
 
 .project {
-    margin-bottom: 50px;
-    background-color: #252527;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    margin: 50px auto;
+  margin-bottom: 50px;
+  background-color: #252527;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 50px auto;
 }
 
 .project-title {
-    font-size: 1.5em;
-    color: #fff;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .project-date {
-    font-size: 0.9em;
-    color: #ffa500;
-    margin-bottom: 15px;
+  font-size: 0.9em;
+  color: #ffa500;
+  margin-bottom: 15px;
 }
 
 .project-description {
-    font-size: 1.1em;
-    color: rgb(187,187,187);
-    margin-bottom: 15px;
-    line-height: 1.5;
+  font-size: 1.1em;
+  color: rgb(187, 187, 187);
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 .project-images {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .project-images img {
-    width: 48%;
-    border-radius: 8px;
+  width: 48%;
+  border-radius: 8px;
 }
 
 .arrow {
-    display: inline-block;
-    text-decoration: none;
-    color: #ffa500;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
-    align-self: flex-end;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffa500;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+  align-self: flex-end;
 }
 
 .arrow:hover {
-    color: #fff;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
-    .project-images {
-        flex-direction: column;
-    }
+  .project-images {
+    flex-direction: column;
+  }
 
-    .project-images img {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+  .project-images img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
