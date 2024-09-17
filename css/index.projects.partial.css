@@ -52,6 +52,10 @@
   margin-top: 45px;
 }
 
+.projects-longer-line {
+  width: 320px;
+}
+
 .project-title {
   font-size: 22px;
   color: var(--text-color);
@@ -93,9 +97,6 @@
 
 @media screen and (max-width: 320px) {
   .projects-partial {
-    max-width: 100%;
-  }
-  .projects-longer-line {
     max-width: 100%;
   }
 }
