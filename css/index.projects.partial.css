@@ -22,7 +22,7 @@
   font-size: var(--font-block-title-size-mobile);
   color: var(--text-color);
   margin-top: 20px;
-  font-weight: 900;
+  font-weight: var(--font-project-subtitle);
 }
 
 .projects-info {
@@ -44,7 +44,7 @@
   font-size: var(--font-small-size);
   color: var(--accent-text-color);
   margin-top: 25px;
-  font-weight: 900;
+  font-weight: var(--font-project-link);
   letter-spacing: 2px;
 }
 
