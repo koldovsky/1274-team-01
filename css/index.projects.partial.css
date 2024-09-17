@@ -6,33 +6,40 @@
   background-size: cover;
   background-position: center;
 }
+
 .projects,
 .project {
   width: 272px;
   padding: 0 15px 0 15px;
 }
+
 .projects-title {
   font-size: 10px;
   color: var(--accent-text-color);
 }
+
 .projects-subtitle {
   font-size: 40px;
   color: var(--text-color);
   margin-top: 20px;
   font-weight: 900;
 }
+
 .projects-info {
   margin-top: 30px;
 }
+
 .projects-tagline {
   font-size: 30px;
   color: var(--light-accent-text-color);
 }
+
 .projects-description {
   font-size: 16px;
   color: var(--medium-text-color);
   margin-top: 25px;
 }
+
 .projects-link {
   font-size: 10px;
   color: var(--accent-text-color);
@@ -40,13 +47,16 @@
   font-weight: 900;
   letter-spacing: 2px;
 }
+
 .projects-shorter-line {
   margin-top: 45px;
 }
+
 .project-title {
   font-size: 22px;
   color: var(--text-color);
 }
+
 .project-date {
   font-size: 10px;
   color: var(--light-accent-text-color);
@@ -54,11 +64,13 @@
   font-weight: var(--font-small-weight);
   letter-spacing: 2px;
 }
+
 .project-description {
   font-size: 16px;
   color: var(--paragraph-text-color);
   margin-top: 50px;
 }
+
 .project-icon {
   width: 50px;
   height: 50px;
@@ -66,11 +78,13 @@
   margin-top: 50px;
   margin-bottom: 45px;
 }
+
 .project-image-room {
   margin-top: 50px;
   width: 272px;
   height: 189.23px;
 }
+
 .project-image-lamp {
   margin-top: 50px;
   width: 272px;
