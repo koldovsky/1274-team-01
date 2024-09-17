@@ -19,7 +19,7 @@
 }
 
 .projects-subtitle {
-  font-size: var(-font-block-title-size-mobile);
+  font-size: var(--font-block-title-size-mobile);
   color: var(--text-color);
   margin-top: 20px;
   font-weight: 900;
@@ -30,7 +30,7 @@
 }
 
 .projects-tagline {
-  font-size: var(-font-tagline-size);
+  font-size: var(--font-tagline-size);
   color: var(--light-accent-text-color);
 }
 
