@@ -1,15 +1,16 @@
 /* Bekish Khrystyna */
 
 .projects-partial {
-  background-color: var(--black-bg-color);
-  padding: 90px 0 30px;
+  background-color: #0d0d0d;;
+  padding: 90px 0 30px 0;
   background-size: cover;
   background-position: center;
 }
 
-.projects {
+.projects,
+.project {
   width: 272px;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
 }
 
 .projects-title {
@@ -47,29 +48,12 @@
   letter-spacing: 2px;
 }
 
-.section-separator::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.15);
-  margin: 45px 0;
-}
-
-.projects-shorter-line,
-.projects-longer-line {
-  width: 100%;
-  height: 1px;
-  fill: none;
-  stroke-width: 1px;
-}
-
 .projects-shorter-line {
-  stroke: rgba(255, 255, 255, 0.09);
+  margin-top: 45px;
 }
 
 .projects-longer-line {
-  stroke: rgba(255, 255, 255, 0.15);
+  width: 320px;
 }
 
 .project-title {
@@ -95,20 +79,19 @@
   width: 50px;
   height: 50px;
   color: var(--accent-text-color);
-  margin: 50px 0 45px;
-}
-
-.project-image-room,
-.project-image-lamp {
   margin-top: 50px;
-  width: 272px;
+  margin-bottom: 45px;
 }
 
 .project-image-room {
+  margin-top: 50px;
+  width: 272px;
   height: 189.23px;
 }
 
 .project-image-lamp {
+  margin-top: 50px;
+  width: 272px;
   height: 329.41px;
 }
 
