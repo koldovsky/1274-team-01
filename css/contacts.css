@@ -1,3 +1,4 @@
-@import "global.css";
-@import "contacts-section-lets-collaborate.css";
-@import "contacts-section-map.css";
+@import url(global.css);
+@import url(contacts.header-hero.partial.css);
+@import url("contacts-section-lets-collaborate.css");
+@import url("contacts-section-map.css");

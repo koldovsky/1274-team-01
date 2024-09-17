@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url(global.header-nav.partial.css);
 
 *,
 *::after,
@@ -10,6 +11,8 @@
 
 :root {
   scroll-behavior: smooth;
+  font-family: "Manrope" !important;
+
   --text-color: #fff;
   --accent-text-color: #d78c43;
   --light-accent-text-color: #f1d1af;
@@ -17,11 +20,69 @@
   --paragraph-text-color: #bbbbbb;
   --black-bg-color: #0d0d0d;
   --accent-gray-bg-color: #161616;
+  --light-gray-bg-color: #333333;
   --dark-gray-bg-color: #252527;
-  font-family: "Manrope", sans-serif;
+
+  --font-small-size: 10px;
+  --font-button-size: 12px;
+  --font-caption-size: 15px;
+  --font-text-size: 16px;
+  --font-subtitle-size: 19px;
+  --font-heading-size: 26px;
+  --font-heading-size-tablet: 24px;
+  --font-heading-size-mobile: 22px;
+  --font-block-title-size: 62px;
+  --font-block-title-size-tablet: 51px;
+  --font-block-title-size-mobile: 40px;
+
+  --font-small-weight: 800;
+  --font-button-weight: 700;
+  --font-caption-weight: 700;
+  --font-text-weight: 400;
+  --font-subtitle-weight: 500;
+  --font-heading-weight: 600;
+  --font-block-title-weight: 600;
+
+  --font-small-line-height: 1.54;
+  --font-caption-line-height: 1.6;
+  --font-text-line-height: 1.53;
+  --font-subtitle-line-height: 1.37;
+  --font-heading-line-height: 1.4;
+  --font-block-title-line-height: 1.2;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .conteiner {
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
+}
+
+body {
+  font-family: "Manrope", sans-serif !important;
+  color: var(--paragraph-text-color);
+}
+
+p {
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  color: var(--accent-text-color);
+  font-size: 36px;
+  min-width: 320px;
+}
+
+h2 {
+  color: var(--accent-text-color);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }

@@ -1,0 +1,97 @@
+.index-header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/index-header.webp");
+  color: var(--paragraph-text-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7vw;
+}
+
+.left-block {
+  flex: 1;
+  max-width: 40vw;
+}
+
+.right-aligned-text {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.right-block {
+  max-width: 30vw;
+  height: 65vh;
+}
+
+.right-block svg {
+  max-height: 5vw;
+}
+
+.index-header h1 {
+  color: var(--text-color);
+  font-size: 6vw;
+  margin-top: 2vw;
+}
+
+.header__nav {
+  background-color: transparent !important;
+}
+
+section {
+  padding: 40px;
+  padding-bottom: 60px;
+}
+
+.product-title {
+  color: var(--text-color);
+  font-size: 20px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.arrow-link {
+  text-decoration: none;
+  color: var(--accent-text-color);
+  font-size: 19px;
+}
+
+.header__button {
+  font-size: 11px;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background-color: var(--accent-text-color);
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 4vw;
+  margin-bottom: 24vw;
+}
+
+.header__button a:hover {
+  background-color: var(--text-color);
+  color: var(--light-gray-bg-color);
+}
+
+.request-link {
+  text-decoration: none;
+  color: var(--accent-text-color);
+  font-size: 10px;
+}
+.highlight-text {
+  color: var(--light-accent-text-color);
+}
+
+.read-more-link {
+  color: var(--text-color);
+  font-size: 10px;
+}
