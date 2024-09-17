@@ -50,23 +50,6 @@
 
 .projects-shorter-line {
   margin-top: 45px;
-  position: relative; /* Потрібно для позиціювання псевдоелемента */
-}
-
-.projects-shorter-line::after {
-  content: "";
-  position: absolute;
-  top: 35px; /* Відстань між коротшою та довшою лінією */
-  left: 0;
-  width: 100%; /* Довжина довшої лінії */
-  height: 2px; /* Товщина лінії */
-  background-color: var(--text-color); /* Колір довшої лінії */
-  z-index: -1; /* Щоб вона не перекривала SVG */
-}
-
-.projects-shorter-line svg {
-  display: block;
-  width: 100%; /* Забезпечує, що SVG розтягнуто на всю ширину */
 }
 
 .project-title {
