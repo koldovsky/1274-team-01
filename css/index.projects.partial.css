@@ -42,6 +42,16 @@
 }
 .projects-shorter-line {
   margin-top: 45px;
+  position: relative; /* Потрібно для позиціювання ::after */
+}
+.projects-shorter-line::after {
+  content: "";
+  position: absolute;
+  top: 35px; /* Відстань між коротшою та довшою лінією */
+  left: 0;
+  width: 100%; /* Довша лінія */
+  height: 1px; /* Висота лінії */
+  background: var(--text-color); /* Колір довшої лінії */
 }
 .project-title {
   font-size: 22px;
