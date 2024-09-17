@@ -1,4 +1,3 @@
-/* News & Articles Section */
 .news-articles {
   display: flex;
   justify-content: space-between;
@@ -7,12 +6,11 @@
   background-image: url(../img/news-articles-background.svg);
   background-size: cover;
   background-position: right center;
-  min-height: 100vh; /* Ensure section takes full height */
+  min-height: 100vh;
 }
 
-/* Styling for the content side */
 .news-articles__content {
-  width: 50%; /* Content takes half the space */
+  width: 50%;
 }
 
 .news-articles__section-label {
@@ -23,14 +21,14 @@
 }
 
 .news-articles__title {
-  font-size: var(--font-block-title-size); /* Use global block title size */
+  font-size: var(--font-block-title-size);
   font-weight: var(--font-block-title-weight);
   margin: 10px 0;
   color: var(--text-color);
 }
 
 .news-articles__description {
-  font-size: var(--font-subtitle-size); /* Use global subtitle size */
+  font-size: var(--font-subtitle-size);
   margin-bottom: 30px;
   color: var(--medium-text-color);
 }
@@ -48,7 +46,7 @@
 }
 
 .news-article__title {
-  font-size: var(--font-heading-size); /* Use global heading size */
+  font-size: var(--font-heading-size);
   color: var(--text-color);
 }
 
@@ -60,9 +58,8 @@
   font-size: var(--font-text-size);
 }
 
-/* Styling for the image side */
 .news-articles__image {
-  width: 40%; /* Adjust the image width */
+  width: 40%;
   position: relative;
 }
 
@@ -73,7 +70,6 @@
   border-radius: 0 300px 0 0;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 1024px) {
   .news-articles {
     flex-direction: column;
