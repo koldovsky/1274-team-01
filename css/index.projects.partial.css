@@ -14,12 +14,12 @@
 }
 
 .projects-title {
-  font-size: 10px;
+  font-size: var(--font-small-size);
   color: var(--accent-text-color);
 }
 
 .projects-subtitle {
-  font-size: 40px;
+  font-size: var(-font-block-title-size-mobile);
   color: var(--text-color);
   margin-top: 20px;
   font-weight: 900;
@@ -30,18 +30,18 @@
 }
 
 .projects-tagline {
-  font-size: 30px;
+  font-size: var(-font-tagline-size);
   color: var(--light-accent-text-color);
 }
 
 .projects-description {
-  font-size: 16px;
+  font-size: var(--font-text-size);
   color: var(--medium-text-color);
   margin-top: 25px;
 }
 
 .projects-link {
-  font-size: 10px;
+  font-size: var(--font-small-size);
   color: var(--accent-text-color);
   margin-top: 25px;
   font-weight: 900;
@@ -57,12 +57,12 @@
 }
 
 .project-title {
-  font-size: 22px;
+  font-size: var(--font-heading-size-mobile);
   color: var(--text-color);
 }
 
 .project-date {
-  font-size: 10px;
+  font-size: var(--font-small-size);
   color: var(--light-accent-text-color);
   margin-top: 20px;
   font-weight: var(--font-small-weight);
@@ -70,7 +70,7 @@
 }
 
 .project-description {
-  font-size: 16px;
+  font-size: var(--font-text-size);
   color: var(--paragraph-text-color);
   margin-top: 50px;
 }
