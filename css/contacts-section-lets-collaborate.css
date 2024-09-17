@@ -1,0 +1,149 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+
+  display: block;
+  border-radius: 0;
+}
+
+body {
+  background-image: url(../img/contacs/background-contacts.svg);
+  background-attachment: fixed;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__collaborate {
+  display: flex;
+  max-width: 1200px;
+  padding: 120px 0;
+}
+
+.collaborate__container {
+  width: 570px;
+  box-sizing: content-box;
+  padding: 25px 0;
+  margin: 0 15px;
+}
+
+.collaborate__registration {
+  background-color: var(--dark-gray-bg-color);
+  width: 570px;
+  box-sizing: content-box;
+  margin: 0 15px;
+}
+
+.collaborate__registration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--dark-gray-bg-color);
+  padding: 70px;
+}
+.collaborate__registration-container input {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: rgba(13, 13, 13, 0.28);
+  color: var(--text-color);
+  margin-bottom: 24px;
+  padding: 16px 24px;
+  width: 430px;
+}
+
+.collaborate__registration-container textarea {
+  font-family: Manrope;
+  text-align: start;
+  width: 430px;
+  border: 0;
+  resize: none;
+  min-height: 150px;
+  margin-bottom: 24px;
+  padding: 16px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-color);
+  background-color: rgba(13, 13, 13, 0.28);
+}
+
+.collaborate__registration-container button {
+  font-family: Manrope;
+  margin-top: 26px;
+  cursor: pointer;
+  border: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-color);
+  padding: 16px 24px;
+  width: 430px;
+
+  background-color: var(--accent-text-color);
+  transition-duration: 0.3s;
+}
+
+.collaborate__contact-us:hover {
+  background-color: var(--text-color);
+  color: black;
+}
+
+.collaborate__subtitle {
+  color: var(--accent-text-color);
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.collaborate__title {
+  font-size: 62px;
+  font-weight: 600;
+  margin-top: 20px;
+  line-height: 74.4px;
+  color: var(--text-color);
+}
+
+.collaborate__description {
+  color: var(--medium-text-color);
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 26.03px;
+  margin-top: 25px;
+}
+
+.collaborate__item {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+  font-weight: 400;
+}
+
+.collaborate__text {
+  color: var(--text-color);
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.48px;
+}
+
+.collaborate__list {
+  color: var(--medium-text-color);
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.collaborate__cta {
+  color: var(--text-color);
+  font-size: 26px;
+  font-weight: 600;
+}

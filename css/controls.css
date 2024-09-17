@@ -1,0 +1,23 @@
+.button {
+    margin-top: 40px;
+    width: 110px;
+    height: 46.4px;
+    line-height: 46.4px;
+    background-color: var(--accent-text-color);
+    color: var(--text-color);
+    font-size: var(--font-button-size);
+    font-weight: var(--font-button-weight);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--text-color);
+    color: var(--black-bg-color);
+}
+
+.button:active {
+    background-color: var(--dark-gray-bg-color);
+    color: var(--black-bg-color);
+}
