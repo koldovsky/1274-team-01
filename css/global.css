@@ -78,15 +78,42 @@ a {
   color: inherit;
 }
 
-h1 {
+.title-main {
   color: var(--accent-text-color);
   font-size: 36px;
   min-width: 320px;
 }
 
-h2 {
+.title-of-section {
   color: var(--accent-text-color);
   font-size: 10px;
   font-weight: 900;
   letter-spacing: 2px;
+}
+
+.general-text {
+  color: var(--paragraph-text-color);
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.title-intro {
+  color: var(--text-color);
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.intro-subtitle {
+  color: var(--medium-text-color);
+  font-size: 19px;
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.title-content {
+  color: var(--text-color);
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: 400;
 }
