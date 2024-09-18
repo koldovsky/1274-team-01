@@ -1,5 +1,5 @@
 .services {
-  background-image: url(/img/services/services-background.svg);
+  background-image: url(../img/services/services-background.svg);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -424,7 +424,7 @@
 
 @media (min-width: 1200px) and (max-width: 1920px) {
   .services {
-    background-image: url(/img/services/services-background.svg);
+    background-image: url(../img/services/services-background.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -433,7 +433,7 @@
 
 @media (max-width: 767px) {
   .services {
-    background-image: url(/img/services/services-background.svg);
+    background-image: url(../img/services/services-background.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -442,7 +442,7 @@
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .services {
-    background-image: url(/img/services/services-background.svg);
+    background-image: url(../img/services/services-background.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -451,7 +451,7 @@
 
 @media (min-width: 1921px) {
   .services {
-    background-image: url(/img/services/services-background.svg);
+    background-image: url(../img/services/services-background.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -460,7 +460,7 @@
 
 @media (min-width: 2560px) {
   .services {
-    background-image: url(/img/services/services-background.svg);
+    background-image: url(../img/services/services-background.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -470,7 +470,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1200px),
   only screen and (min-resolution: 144dpi) and (min-width: 1200px) {
   .services {
-    background-image: url(/img/services/services-background.svg);
+    background-image: url(../img/services/services-background.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -480,7 +480,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1920px),
   only screen and (min-resolution: 144dpi) and (min-width: 1920px) {
   .services {
-    background-image: url(/img/services/services-background.svg);
+    background-image: url(../img/services/services-background.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -490,7 +490,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 2560px),
   only screen and (min-resolution: 144dpi) and (min-width: 2560px) {
   .services {
-    background-image: url(/img/services/services-background.svg);
+    background-image: url(../img/services/services-background.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
