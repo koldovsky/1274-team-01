@@ -406,9 +406,7 @@
 }
 
 .services__footer-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block;
 }
 .services__footer-images img {
   max-width: 100%;
