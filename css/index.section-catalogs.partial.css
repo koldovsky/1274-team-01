@@ -33,7 +33,7 @@
     margin-bottom: 50px;
     padding: 0 30px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: 0 24px;
         margin-bottom: 30px;
     }
@@ -56,7 +56,7 @@
     color: var(--text-color);
     font-size: var(--font-block-title-size);
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         font-size: var(--font-block-title-size-mobile);
     }
 
@@ -86,7 +86,7 @@
     margin-bottom: 50px;
     padding: 15px 30px 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         margin-bottom: 40px;
         padding: 15px 24px 0;
     }
@@ -100,7 +100,7 @@
     color: var(--text-color);
     font-size: var(--font-heading-size);
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         font-size: var(--font-heading-size-mobile);
     }
 
@@ -153,7 +153,7 @@
     margin-top: -15px;
     padding: 0 30px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: 0 24px;
     }
 }
@@ -230,7 +230,7 @@
     flex: 1 1 25%;
     min-width: 25%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: 0 23px;
         flex: 1 1 100%;
         min-width: 100%;
@@ -255,7 +255,7 @@
     color: var(--text-color);
     font-size: var(--font-heading-size);
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         font-size: var(--font-heading-size-mobile);
     }
 
@@ -282,7 +282,6 @@
     line-height: var(--font-caption-line-height);
 
     @media (max-width: 991px) {
-        font-size: 14px;
-        /*to do: add to global.css:  --font-caption-size-tablet: 14px; */
+        font-size: var(--font-caption-size-tablet);
     }
 }
