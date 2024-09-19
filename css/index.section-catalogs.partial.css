@@ -1,12 +1,9 @@
+/* 9 Lada Bratsykhina */
 .catalogs {
     display: flex;
     flex-direction: column;
     background-color: var(--dark-gray-bg-color);
     padding: 0;
-
-    @media (min-width: 992px) {
-        padding: 0 15px;
-    }
 }
 
 .catalogs__intro-and-collections {
@@ -14,17 +11,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     padding: 90px 0 20px;
-
-    @media (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        padding-top: 105px;
-    }
-
-    @media (min-width: 992px) {
-        padding-top: 120px;
-        margin: 0 2px;
-    }
 }
 
 .catalogs__intro {
@@ -33,11 +19,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-    @media (min-width: 768px) {
-        margin-bottom: 50px;
-        padding: 0 30px;
-    }
 }
 
 .catalogs__breadcrumbs {
@@ -55,14 +36,6 @@
     font-weight: var(--font-block-title-weight);
     line-height: var(--font-block-title-line-height);
     letter-spacing: normal;
-
-    @media (min-width: 768px) {
-        font-size: var(--font-block-title-size-tablet);
-    }
-
-    @media (min-width: 992px) {
-        font-size: var(--font-block-title-size);
-    }
 }
 
 .catalogs__description {
@@ -84,11 +57,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-    @media (min-width: 768px) {
-        margin-bottom: 50px;
-        padding: 15px 30px 0;
-    }
 }
 
 .catalogs__collection-title {
@@ -96,14 +64,6 @@
     font-size: var(--font-heading-size-mobile);
     font-weight: var(--font-heading-weight);
     line-height: var(--font-heading-line-height);
-
-    @media (min-width: 768px) {
-        font-size: var(--font-heading-size-tablet);
-    }
-
-    @media (min-width: 992px) {
-        font-size: var(--font-heading-size);
-    }
 }
 
 .catalogs__collection-description {
@@ -146,10 +106,6 @@
 .catalogs__separator--long {
     margin-top: -15px;
     padding: 0 24px;
-
-    @media (min-width: 768px) {
-        padding: 0 30px;
-    }
 }
 
 .catalogs__carousel {
@@ -158,14 +114,6 @@
     display: flex;
     gap: 30px;
     position: relative;
-
-    @media (min-width: 768px) {
-        padding-bottom: 105px;
-    }
-
-    @media (min-width: 992px) {
-        padding: 20px 15px 120px;
-    }
 }
 
 .catalogs__carousel-scroller {
@@ -180,36 +128,15 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
-    @media (min-width: 992px) {
-        width: 40px;
-        height: 40px;
-    }
 }
 
 .catalogs__carousel-scroller--left {
     left: -15px;
-
-    @media (min-width: 768px) {
-        left: -10px;
-    }
-
-    @media (min-width: 992px) {
-        left: -30px;
-    }
 }
 
 .catalogs__carousel-scroller--right {
     transform: scaleX(-1);
     right: -15px;
-
-    @media (min-width: 768px) {
-        right: -10px;
-    }
-
-    @media (min-width: 992px) {
-        right: -30px;
-    }
 }
 
 .catalogs__carousel-scroller:hover,
@@ -220,12 +147,6 @@
 .catalogs__carousel-scroller-image {
     height: 20px;
     width: 20px;
-
-    @media (min-width: 992px) {
-        height: 30px;
-        width: 30px;
-    }
-
 }
 
 .catalogs__carousel-list {
@@ -242,17 +163,6 @@
     flex: 1 1 100%;
     min-width: 100%;
     padding: 0 23px;
-
-    @media (min-width: 768px) {
-        flex: 1 1 50%;
-        min-width: 50%;
-    }
-
-    @media (min-width: 992px) {
-        flex: 1 1 25%;
-        min-width: 25%;
-        padding: 0 15px;
-    }
 }
 
 .catalogs__carousel-lamp-image {
@@ -265,14 +175,6 @@
     font-size: var(--font-heading-size-mobile);
     font-weight: var(--font-heading-weight);
     line-height: var(--font-heading-line-height);
-
-    @media (min-width: 768px) {
-        font-size: var(--font-heading-size-tablet);
-    }
-
-    @media (min-width: 992px) {
-        font-size: var(--font-heading-size);
-    }
 }
 
 .catalogs__carousel-lamp-collection {
@@ -288,8 +190,110 @@
     font-size: var(--font-caption-size-tablet);
     font-weight: var(--font-caption-weight);
     line-height: var(--font-caption-line-height);
+}
 
-    @media (min-width: 992px) {
+@media (min-width: 768px) {
+    .catalogs__intro-and-collections {
+        padding-top: 105px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .catalogs__intro {
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .catalogs__title {
+        font-size: var(--font-block-title-size-tablet);
+    }
+
+    .catalogs__collections {
+        margin-bottom: 50px;
+        padding: 15px 30px 0;
+    }
+
+    .catalogs__collection-title {
+        font-size: var(--font-heading-size-tablet);
+    }
+
+    .catalogs__separator--long {
+        padding: 0 30px;
+    }
+
+    .catalogs__carousel {
+        padding-bottom: 105px;
+    }
+
+    .catalogs__carousel-scroller--left {
+        left: -10px;
+    }
+
+    .catalogs__carousel-scroller--right {
+        right: -10px;
+    }
+
+    .catalogs__carousel-lamp {
+        flex: 1 1 50%;
+        min-width: 50%;
+    }
+
+    .catalogs__carousel-lamp-title {
+        font-size: var(--font-heading-size-tablet);
+    }
+}
+
+@media (min-width: 992px) {
+    .catalogs {
+        padding: 0 15px;
+    }
+
+    .catalogs__intro-and-collections {
+        padding-top: 120px;
+        margin: 0 2px;
+    }
+
+    .catalogs__title {
+        font-size: var(--font-block-title-size);
+    }
+
+    .catalogs__collection-title {
+        font-size: var(--font-heading-size);
+    }
+
+    .catalogs__carousel {
+        padding: 20px 15px 120px;
+    }
+
+    .catalogs__carousel-scroller {
+        width: 40px;
+        height: 40px;
+    }
+
+    .catalogs__carousel-scroller--left {
+        left: -30px;
+    }
+
+    .catalogs__carousel-scroller--right {
+        right: -30px;
+    }
+
+    .catalogs__carousel-scroller-image {
+        height: 30px;
+        width: 30px;
+    }
+
+    .catalogs__carousel-lamp {
+        flex: 1 1 25%;
+        min-width: 25%;
+        padding: 0 15px;
+    }
+
+    .catalogs__carousel-lamp-title {
+        font-size: var(--font-heading-size);
+    }
+
+    .catalogs__carousel-lamp-year {
         font-size: var(--font-caption-size);
     }
 }
