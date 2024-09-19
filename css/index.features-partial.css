@@ -1,0 +1,14 @@
+.features-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-container__image {
+  width: 50%;
+  flex: 1;
+}
+
+.features-container__content {
+  width: 50%;
+  align-items: flex-end;
+}
