@@ -106,7 +106,7 @@
 .catalogs__carousel {
     display: flex;
     position: relative;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .catalogs__carousel-scroller {
@@ -181,11 +181,6 @@
     line-height: var(--font-caption-line-height);
 }
 
-#carousel-scroller-id {
-    fill:blue;
-    color: red;
-}
-
 @media (min-width: 768px) {
     .catalogs {
         padding: 105px 32px;
@@ -216,7 +211,7 @@
     }
 
     .catalogs__carousel {
-        padding-top: 5px;
+        padding-top: 20px;
         gap: 30px;
     }
 
@@ -267,8 +262,7 @@
     }
 
     .catalogs__carousel {
-        margin: 0;
-        padding: 20px 0 0;
+        padding-top: 20px;
     }
 
     .catalogs__carousel-scroller {
