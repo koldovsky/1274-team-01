@@ -19,14 +19,11 @@
     @media (max-width: 767px) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
-        padding-top: 90px;
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
         padding-top: 105px;
     }
-
-    line-height: 24.48px;
 }
 
 .catalogs__intro {
@@ -175,12 +172,22 @@
 }
 
 .catalogs__carousel-scroller {
-    width: 32px;
-    height: 32px;
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+
+    @media (max-width: 991px) {
+        height: 32px;
+        width: 32px;
+    }
+
     border-radius: 50%;
     position: absolute;
     top: 40%;
     opacity: 0.85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -198,6 +205,7 @@
 
 .catalogs__carousel-scroller--right {
     right: -30px;
+    transform: scaleX(-1);
 
     @media (max-width: 767px) {
         right: -15px;
@@ -216,6 +224,12 @@
 .catalogs__carousel-scroller-image {
     height: 30px;
     width: 30px;
+
+    @media (max-width: 991px) {
+        height: 20px;
+        width: 20px;
+    }
+
 }
 
 .catalogs__carousel-list {
