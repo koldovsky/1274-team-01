@@ -1,3 +1,4 @@
+// 9 Lada Bratsykhina, catalogs on index.html: js code for Ebla Carousel
 const addTogglePrevNextBtnsActive = (emblaApi, prevBtn, nextBtn) => {
     const togglePrevNextBtnsState = () => {
         if (emblaApi.canScrollPrev()) prevBtn.removeAttribute('disabled')
