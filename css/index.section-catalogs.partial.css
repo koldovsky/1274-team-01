@@ -115,7 +115,7 @@
     width: 24px;
     border-width: 0;
     border-radius: 50%;
-    opacity: 0.85;
+    opacity: 0.8;
     position: absolute;
     top: 45%;
     display: flex;
@@ -126,12 +126,12 @@
 
 .embla__button--prev,
 .catalogs__carousel-scroller--left {
+    transform: scaleX(-1);
     left: 0;
 }
 
 .embla__button--next,
 .catalogs__carousel-scroller--right {
-    transform: scaleX(-1);
     right: 0;
 }
 
@@ -142,9 +142,13 @@
     opacity: 1;
 }
 
-.catalogs__carousel-scroller-image {
+.catalogs__carousel-scroller-svg {
     height: 12px;
     width: 12px;
+}
+
+.catalogs__carousel-scroller-svg-use {
+    fill: var(--black-bg-color);
 }
 
 .embla__viewport {
@@ -172,8 +176,6 @@
     max-width: 100%;
     aspect-ratio: 100 / 96.76;
     object-fit: cover;
-    margin: 0;
-    padding: 0;
 }
 
 .catalogs__carousel-lamp-title {
@@ -239,7 +241,7 @@
         width: 32px;
     }
 
-    .catalogs__carousel-scroller-image {
+    .catalogs__carousel-scroller-svg {
         height: 20px;
         width: 20px;
     }
@@ -289,8 +291,9 @@
     .embla__button,
     .catalogs__carousel-scroller {
         background-color: var(--dark-gray-bg-color);
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
     }
 
     .embla__button--prev,
@@ -303,9 +306,13 @@
         right: -30px;
     }
 
-    .catalogs__carousel-scroller-image {
+    .catalogs__carousel-scroller-svg {
         height: 30px;
         width: 30px;
+    }
+
+    .catalogs__carousel-scroller-svg-use {
+        fill: var(--text-color);
     }
 
     .embla__slide,
