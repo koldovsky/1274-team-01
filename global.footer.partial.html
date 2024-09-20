@@ -106,61 +106,74 @@
 
     <div class="footer__contact">
       <div class="footer__section footer__section--contact">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          x="0px"
-          y="0px"
-          viewBox="-370 248.3 100 100"
-          enable-background="new -370 248.3 100 100"
-          xml:space="preserve"
-          style="max-width: 100%"
-          height="100%"
-        >
-          <path
-            fill="currentColor"
-            d="M-320,253.3c-19.9,0-36,16.1-36,36c0,36,36,54,36,54s36-17,36-54C-284,269.4-300.1,253.3-320,253.3z M-320,307.3c-9.9,0-18-8.1-18-18c0-9.9,8.1-18,18-18s18,8.1,18,18C-302,299.2-310.1,307.3-320,307.3z"
-            style=""
-          ></path>
-        </svg>
-        <p class="footer__contact-info">
-          2 Brooklyn St, NY<br />
-          711-2880 Nulla St, NY<br />
-          935-9940 Tortor. Street, NY<br />
-          666-1350 Lacina Avenue, NY
-        </p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          x="0px"
-          y="0px"
-          viewBox="0 0 100 100"
-          enable-background="new 0 0 100 100"
-          xml:space="preserve"
-          style="max-width: 100%"
-          height="100%"
-        >
-          <g style="" fill="currentColor">
+        <div class="footer__section footer__section-adress">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="-370 248.3 100 100"
+            enable-background="new -370 248.3 100 100"
+            xml:space="preserve"
+            style="max-width: 100%"
+            height="100%"
+          >
             <path
               fill="currentColor"
-              d="M87.2,21.2c0-2.8-2.3-5.2-5.1-5.2H16.4c-2.8,0-5.1,2.4-5.1,5.2l38.2,27.4L87.2,21.2z"
+              d="M-320,253.3c-19.9,0-36,16.1-36,36c0,36,36,54,36,54s36-17,36-54C-284,269.4-300.1,253.3-320,253.3z M-320,307.3c-9.9,0-18-8.1-18-18c0-9.9,8.1-18,18-18s18,8.1,18,18C-302,299.2-310.1,307.3-320,307.3z"
+              style=""
             ></path>
-            <polygon
-              fill="currentColor"
-              points="11,30.9 11,58 26.8,42.2"
-            ></polygon>
-            <polygon
-              fill="currentColor"
-              points="87,58 87,30.9 71.3,42.3"
-            ></polygon>
-            <path
-              fill="currentColor"
-              d="M49.6,58.2L33.4,46.7L11.6,68.4c0.6,2.2,2.5,3.6,4.9,3.6H19v16.7l0.2-0.1L41.9,72h40.3c2.3,0,4.3-1.4,4.9-3.6L65.3,46.7L49.6,58.2z"
-            ></path>
-          </g>
-        </svg>
-        <p class="footer__contact-details">
-          Email: prizma-studio@example.com<br />
+          </svg>
+          <p class="footer__contact-info">
+            2 Brooklyn St, NY<br />
+            711-2880 Nulla St, NY<br />
+            935-9940 Tortor. Street, NY<br />
+            666-1350 Lacina Avenue, NY
+          </p>
+        </div>
+        <div class="footer__section footer__section-email">
+          <a href="https://youtube.com"></a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 100"
+            enable-background="new 0 0 100 100"
+            xml:space="preserve"
+            style="max-width: 100%"
+            height="100%"
+          >
+            <g style="" fill="currentColor">
+              <path
+                fill="currentColor"
+                d="M87.2,21.2c0-2.8-2.3-5.2-5.1-5.2H16.4c-2.8,0-5.1,2.4-5.1,5.2l38.2,27.4L87.2,21.2z"
+              ></path>
+              <polygon
+                fill="currentColor"
+                points="11,30.9 11,58 26.8,42.2"
+              ></polygon>
+              <polygon
+                fill="currentColor"
+                points="87,58 87,30.9 71.3,42.3"
+              ></polygon>
+              <path
+                fill="currentColor"
+                d="M49.6,58.2L33.4,46.7L11.6,68.4c0.6,2.2,2.5,3.6,4.9,3.6H19v16.7l0.2-0.1L41.9,72h40.3c2.3,0,4.3-1.4,4.9-3.6L65.3,46.7L49.6,58.2z"
+              ></path>
+            </g>
+          </svg>
+          <a
+            href="mailto:prizma-studio@email.com"
+            data-action="email"
+            class="ui-link"
+            ><span style="color: rgb(187, 187, 187)"
+              >prizma-studio@email.com</span
+            ></a
+          >
+          <span style="color: rgb(187, 187, 187)"></span>
+        </div>
+        <div class="footer__section footer__section-phone">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
@@ -178,8 +191,13 @@
               fill="currentColor"
             ></path>
           </svg>
-          Phone: +1 (234) 567 89 00
-        </p>
+          <a href="tel:+12345678900" data-action="phone" class="ui-link"
+            ><span style="color: rgb(187, 187, 187)"
+              >+1 (234) 567 89 00</span
+            ></a
+          >
+          <span style="color: rgb(187, 187, 187)"></span>
+        </div>
       </div>
     </div>
     <div class="footer__bottom">
