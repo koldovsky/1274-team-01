@@ -1,5 +1,4 @@
 /* 9 Lada Bratsykhina */
-
 .catalogs {
     background-color: var(--dark-gray-bg-color);
     display: flex;
@@ -103,18 +102,20 @@
     margin: 20px 0;
 }
 
+.embla,
 .catalogs__carousel {
-    display: flex;
     position: relative;
     padding-top: 15px;
 }
 
+.embla__button,
 .catalogs__carousel-scroller {
     background-color: var(--text-color);
     height: 24px;
     width: 24px;
+    border-width: 0;
     border-radius: 50%;
-    opacity: 0.85;
+    opacity: 0.8;
     position: absolute;
     top: 45%;
     display: flex;
@@ -123,26 +124,43 @@
     cursor: pointer;
 }
 
-.catalogs__carousel-scroller--right {
+.embla__button--prev,
+.catalogs__carousel-scroller--left {
     transform: scaleX(-1);
+    left: 0;
+}
+
+.embla__button--next,
+.catalogs__carousel-scroller--right {
     right: 0;
 }
 
+.embla__button:hover,
+.embla__button:active,
 .catalogs__carousel-scroller:hover,
 .catalogs__carousel-scroller:active {
     opacity: 1;
 }
 
-.catalogs__carousel-scroller-image {
+.catalogs__carousel-scroller-svg {
     height: 12px;
     width: 12px;
 }
 
-.catalogs__carousel-list {
-    display: flex;
+.catalogs__carousel-scroller-svg-use {
+    fill: var(--black-bg-color);
+}
+
+.embla__viewport {
     overflow: hidden;
 }
 
+.embla__container,
+.catalogs__carousel-list {
+    display: flex;
+}
+
+.embla__slide,
 .catalogs__carousel-lamp {
     padding: 0 15px;
     display: flex;
@@ -153,8 +171,9 @@
     min-width: 100%;
 }
 
+.embla__slide__img,
 .catalogs__carousel-lamp-image {
-    width: 100%;
+    max-width: 100%;
     aspect-ratio: 100 / 96.76;
     object-fit: cover;
 }
@@ -210,21 +229,24 @@
         padding-left: 30px;
     }
 
+    .embla,
     .catalogs__carousel {
         padding-top: 20px;
         gap: 30px;
     }
 
+    .embla__button,
     .catalogs__carousel-scroller {
         height: 32px;
         width: 32px;
     }
 
-    .catalogs__carousel-scroller-image {
+    .catalogs__carousel-scroller-svg {
         height: 20px;
         width: 20px;
     }
 
+    .embla__slide,
     .catalogs__carousel-lamp {
         flex: 1 1 50%;
         min-width: 50%;
@@ -261,29 +283,39 @@
         margin-top: 15px;
     }
 
+    .embla,
     .catalogs__carousel {
         padding-top: 20px;
     }
 
+    .embla__button,
     .catalogs__carousel-scroller {
         background-color: var(--dark-gray-bg-color);
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
     }
 
+    .embla__button--prev,
     .catalogs__carousel-scroller--left {
         left: -30px;
     }
 
+    .embla__button--next,
     .catalogs__carousel-scroller--right {
         right: -30px;
     }
 
-    .catalogs__carousel-scroller-image {
+    .catalogs__carousel-scroller-svg {
         height: 30px;
         width: 30px;
     }
 
+    .catalogs__carousel-scroller-svg-use {
+        fill: var(--text-color);
+    }
+
+    .embla__slide,
     .catalogs__carousel-lamp {
         flex: 1 1 25%;
         min-width: 25%;
