@@ -11,7 +11,6 @@
   <script src="https://unpkg.com/htmx.org@1.9.10"
     integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/embla-carousel@6.0.4/embla.min.css">
   <script src="https://cdn.jsdelivr.net/npm/embla-carousel@6.0.4/embla.min.js"></script>
 </head>
@@ -44,7 +43,7 @@
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.lighting-solutions.partial.html">
     </section>
     <!--9 Lada Bratsykhina-->
-    <section class="main__catalogs" data-hx-trigger="load" data-hx-swap="outerHTML"
+    <section id="products" class="main__catalogs" data-hx-trigger="load" data-hx-swap="outerHTML"
       data-hx-get="index.section-catalogs.partial.html"></section>
     <!--10 Olena Bal-->
     <section class="main__news-articles" data-hx-trigger="load" data-hx-swap="outerHTML"
@@ -58,11 +57,7 @@
     <section class="footer__about" data-hx-trigger="load" data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"></section>
   </footer>
-
   <!--9 Lada Bratsykhina, js for embla carousel, should be just before </body> tag -->
-  <!--
-  <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js"></script>
--->
   <script type="module" src="js/index.js"></script>
 </body>
 
