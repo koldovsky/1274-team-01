@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     link.href = './css/index.section-catalogs.partial.css';
     document.head.appendChild(link);
 
-    const OPTIONS = { loop: true, align: 'start'}
+    const OPTIONS = { loop: true, align: 'start' }
 
     const emblaNode = document.querySelector('.embla');
     const viewportNode = emblaNode.querySelector('.embla__viewport');

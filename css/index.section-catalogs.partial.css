@@ -104,7 +104,6 @@
 
 .embla,
 .catalogs__carousel {
-    display: flex;
     position: relative;
     padding-top: 15px;
 }
@@ -148,15 +147,13 @@
     width: 12px;
 }
 
-.embla__viewport,
-.catalogs__carousel-list {
-    display: flex;
+.embla__viewport {
     overflow: hidden;
 }
 
-.embla__container {
+.embla__container,
+.catalogs__carousel-list {
     display: flex;
-    touch-action: pan-y pinch-zoom;
 }
 
 .embla__slide,
@@ -170,10 +167,13 @@
     min-width: 100%;
 }
 
+.embla__slide__img,
 .catalogs__carousel-lamp-image {
-    width: 100%;
+    max-width: 100%;
     aspect-ratio: 100 / 96.76;
     object-fit: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .catalogs__carousel-lamp-title {
@@ -244,6 +244,7 @@
         width: 20px;
     }
 
+    .embla__slide,
     .catalogs__carousel-lamp {
         flex: 1 1 50%;
         min-width: 50%;
@@ -307,6 +308,7 @@
         width: 30px;
     }
 
+    .embla__slide,
     .catalogs__carousel-lamp {
         flex: 1 1 25%;
         min-width: 25%;
