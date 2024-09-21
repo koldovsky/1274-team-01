@@ -1,0 +1,92 @@
+.features-container {
+  display: block;
+  background-color: var(--black-bg-color);
+  padding: 0px;
+}
+
+.features-container__block {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.features-container__image {
+  width: 100%;
+}
+
+.features-container__image img {
+  width: 100%;
+  height: auto;
+}
+
+.features-container__content {
+  padding: 90px 30px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.features-container__title {
+  margin-top: 20px;
+  color: var(--text-color);
+  font-size: var(--font-block-title-size-tablet);
+  font-weight: var(--font-block-title-weight);
+}
+
+.features-container__subtitle {
+  margin-top: 20px;
+  color: var(--medium-text-color);
+  font-size: var(--font-subtitle-size);
+}
+
+.features-container__description {
+  margin-top: 25px;
+  color: var(--paragraph-text-color);
+  font-size: var(--font-text-size);
+}
+
+.features-container__list {
+  margin-top: 20px;
+}
+
+.features-container__checkmark {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+
+  img {
+    width: 20px;
+    height: 24px;
+  }
+
+  p {
+    color: var(--text-color);
+    font-size: var(--font-caption-size-tablet);
+    font-weight: var(--font-text-weight);
+    margin-left: 10px;
+  }
+}
+
+.features-container__trust-message {
+  margin-top: 20px;
+  color: var(--light-accent-text-color);
+  font-size: var(--font-text-size);
+}
+
+@media (min-width: 768px) {
+  .features-container__block {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .features-container__image {
+    width: 50%;
+  }
+
+  .features-container__content {
+    width: 50%;
+    text-align: left;
+  }
+}

@@ -1,3 +1,7 @@
-<svg width="3000px" height="31" style="width:100%" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 15.5 L3000 15.5" style="fill:none;stroke:rgba(255, 255, 255, 0.09);stroke-width:1px"></path>
+<svg width="3000px"
+     height="31"
+     style="width:100%"
+     xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 15.5 L3000 15.5"
+          style="fill:none;stroke:rgba(255, 255, 255, 0.09);stroke-width:1px" />
 </svg>
