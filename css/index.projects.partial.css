@@ -14,15 +14,17 @@
 }
 
 .projects-title {
-  font-size: var(--font-small-size);
   color: var(--accent-text-color);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .projects-subtitle {
-  font-size: var(--font-block-title-size-mobile);
   color: var(--text-color);
+  font-size: 40px;
   margin-top: 20px;
-  font-weight: var(--font-project-subtitle);
+  font-weight: 600;
 }
 
 .projects-info {
@@ -35,9 +37,10 @@
 }
 
 .projects-description {
-  font-size: var(--font-text-size);
   color: var(--medium-text-color);
+  font-size: 19px;
   margin-top: 25px;
+  font-weight: 500;
 }
 
 .projects-link {
