@@ -1,0 +1,8 @@
+.footer__about {
+    background-color: var(--black-bg-color);
+    text-align: left;
+    display: flex;
+}
+.footer__social {
+    color: var(--accent-text-color)
+}
