@@ -29,19 +29,22 @@ body {
 .main__collaborate {
   display: flex;
   max-width: 1200px;
+  width: 100%;
   padding: 120px 0;
 }
 
 .collaborate__container {
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
   box-sizing: content-box;
   padding: 25px 0;
   margin: 0 15px;
 }
 
 .collaborate__registration {
+  max-width: 570px;
+  width: 100%;
   background-color: var(--dark-gray-bg-color);
-  width: 570px;
   box-sizing: content-box;
   margin: 0 15px;
 }
@@ -49,7 +52,6 @@ body {
 .collaborate__registration-container {
   display: grid;
   grid-row-gap: 24px;
-
   background-color: var(--dark-gray-bg-color);
   padding: 70px;
 }
@@ -59,15 +61,16 @@ body {
   font-weight: 700;
   background-color: rgba(13, 13, 13, 0.28);
   color: var(--text-color);
-  /* margin-bottom: 24px; */
   padding: 16px 24px;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
 }
 
 .collaborate__registration-container textarea {
   font-family: Manrope;
   text-align: start;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   border: 0;
   resize: none;
   min-height: 150px;
@@ -88,8 +91,8 @@ body {
   font-weight: 700;
   color: var(--text-color);
   padding: 16px 24px;
-  width: 430px;
-
+  max-width: 430px;
+  width: 100%;
   background-color: var(--accent-text-color);
   transition-duration: 0.3s;
 }
@@ -147,4 +150,12 @@ body {
   color: var(--text-color);
   font-size: 26px;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .main__collaborate {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 90px;
+  }
 }
