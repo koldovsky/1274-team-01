@@ -1,3 +1,51 @@
 .footer__about {
     background-color: var(--black-bg-color);
+    font-family: 'Manrope', sans-serif;
+}
+
+.footer__logo {
+    max-width: 272px;
+    height: auto;
+}
+
+.footer__description {
+   
+    align-items: center;
+    padding: 10px;
+}
+
+.footer__social {
+    .footer__social-icon
+        .logo-2gS
+    .insta-logo
+        .logo-2gS
+    
+}
+
+.footer__navigation {
+    .footer__title
+    .footer__list
+        .footer__item
+            .footer__link
+
+}
+
+.footer.collections {
+    .footer__title
+    .footer__list
+        .footer__item
+            .footer__link
+}
+
+.footer__contact {
+    .footer__section footer__section-address
+    .footer__contact-info
+    .footer__section .footer__section-email
+    .footer__section .footer__section-phone
+        .ui-link
+
+}
+
+.footer.bottom {
+   .footer__copyright 
 }
