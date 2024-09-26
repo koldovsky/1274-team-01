@@ -4,7 +4,8 @@ ul {
   list-style: none;
 }
 
-input {
+input,
+select {
   background: none;
   border: none;
   padding: 0;
@@ -46,19 +47,19 @@ body {
 }
 
 .collaborate__registration-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-row-gap: 24px;
 
   background-color: var(--dark-gray-bg-color);
   padding: 70px;
 }
+
 .collaborate__registration-container input {
   font-size: 12px;
   font-weight: 700;
   background-color: rgba(13, 13, 13, 0.28);
   color: var(--text-color);
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   padding: 16px 24px;
   width: 430px;
 }
