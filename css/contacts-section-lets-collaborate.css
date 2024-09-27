@@ -15,6 +15,16 @@ select {
   border-radius: 0;
 }
 
+.collaborate__registration-container input.valid {
+  border: 1px solid var(--valid-border-color);
+  border-radius: 4px;
+}
+
+.collaborate__registration-container input.invalid {
+  border: 1px solid var(--invalid-border-color);
+  border-radius: 4px;
+}
+
 body {
   background-image: url(../img/contacs/background-contacts.svg);
   background-attachment: fixed;
