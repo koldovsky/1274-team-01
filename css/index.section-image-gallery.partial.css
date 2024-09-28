@@ -40,7 +40,7 @@
 }
 
 /* to rename */
-.header {
+.hover-image-text-header {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@
 }
 
 /* to rename */
-.caption {
+.hover-image-text-caption {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -78,8 +78,8 @@
   opacity: 1;
 }
 
-.image-gallery__item:hover .header,
-.image-gallery__item:hover .caption {
+.image-gallery__item:hover .hover-image-text-header,
+.image-gallery__item:hover .hover-image-text-caption {
   transform: translateX(-50%) translateY(0);
   opacity: 1;
 }
