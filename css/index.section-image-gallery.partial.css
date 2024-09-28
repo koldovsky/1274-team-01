@@ -39,7 +39,6 @@
   transition: opacity 0.3s ease, transform 0.5s ease;
 }
 
-/* to rename */
 .hover-image-text-header {
   text-align: center;
   display: flex;
@@ -56,7 +55,6 @@
   transition: opacity 0.3s ease, transform 0.5s ease;
 }
 
-/* to rename */
 .hover-image-text-caption {
   text-align: center;
   display: flex;
