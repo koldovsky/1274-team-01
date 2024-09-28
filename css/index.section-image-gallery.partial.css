@@ -1,6 +1,7 @@
 /* Oleh Hanhal */
 
 .image-gallery {
+  overflow: hidden;
   background-color: #2e2e2e;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
