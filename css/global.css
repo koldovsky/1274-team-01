@@ -62,9 +62,9 @@ img {
   width: 100%;
 }
 
-.conteiner {
+.container {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 body {

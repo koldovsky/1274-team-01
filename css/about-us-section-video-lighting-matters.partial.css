@@ -1,6 +1,4 @@
 .about-us-video-container {
-    position: relative;
-
     background-image: url("../img/section-about-us/about-us-video-image.png");
     background-size: cover;
     background-position: center;
@@ -15,32 +13,43 @@
 
 .about-us-video-container__text-block {
     padding: 150px 24px 60px;
+    height: auto;
 }
 
-.about-us-video-container_push-button {
+.container{
+    max-width: 1170px;
+}
+
+.about-us-video-container__push-button {
     color: var(--light-accent-text-color);
     width: 50px;
     height: 50px;
     margin-bottom: 20px;
 }
 
-.about-us-video-container__title {
+.title-content {
+    margin-top: 20px;
     margin-bottom: 8px;
 }
 
-.about-us-video-container__accent-text {
-    margin-bottom: 60px;
+.title-of-section {
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-    .about-us-video-container {
-        min-height: 758px;
-    }
-    .about-us-video-container__title {
-        margin-bottom: 25px;
-    }
-
     .about-us-video-container__text-block {
         padding: 275px 32px 60px;
+    }
+
+    .about-us-video-container__push-button {
+        margin-top: 120px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-us-video-container__text-block {
+        padding: 400px 40px 60px;
     }
 }
