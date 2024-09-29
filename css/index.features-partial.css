@@ -1,6 +1,7 @@
 .features-container {
   background-color: var(--black-bg-color);
   padding: 0;
+
 }
 
 .features-container__image {
@@ -8,6 +9,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
+  min-height: 50vh;
   animation: pulse 3s infinite;
 }
 
