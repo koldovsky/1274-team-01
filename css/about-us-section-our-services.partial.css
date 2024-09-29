@@ -39,6 +39,17 @@
 }
 
 /*Accordion*/
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url(../img/about-us-our-services-button-icon.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/about-us-our-services-button-icon.svg);
+}
 
 .our-services__accordion {
   margin-top: 25px;
