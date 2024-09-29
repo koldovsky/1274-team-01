@@ -1,7 +1,9 @@
 const form = document.querySelector('.collaborate__registration');
 
 const inputPhone = document.querySelector('input[name="phone"]');
-const maxLength = 10;
+const selectIndex = document.querySelector('select[name="prefix"]');
+const phoneError = document.querySelector('.phone-error');
+const maxLength = 9;
 
 const inputEmail = document.querySelector('input[name="email"]');
 
@@ -23,7 +25,9 @@ inputPhone.addEventListener('keydown', (event) => {
 });
 
 inputPhone.addEventListener('input', () => {
-    if (/^\d{1,10}$/.test(inputPhone.value) && inputPhone.value.length === maxLength) {
+    const isEmpty = inputPhone.value.length === 0;
+    
+    if (/^\d{1,9}$/.test(inputPhone.value) && inputPhone.value.length === maxLength) {
         inputPhone.classList.add('valid');
         inputPhone.classList.remove('invalid');
     } else {
@@ -32,10 +36,33 @@ inputPhone.addEventListener('input', () => {
     }
 });
 
+inputPhone.addEventListener('blur', () => {
+    const isEmpty = inputPhone.value.length === 0;
+    const isValidLength = inputPhone.value.length === maxLength;
+    const isNumeric = /^\d+$/.test(inputPhone.value);
+
+    if (isEmpty) {
+        phoneError.style.display = 'none';
+        inputPhone.classList.remove('valid');
+        inputPhone.classList.remove('invalid');
+    } else if (!isValidLength || !isNumeric) {
+        phoneError.style.display = 'block';
+    } else {
+        phoneError.style.display = 'none';
+    }
+});
+
 form.addEventListener('submit', (event) => {
-    const isValid = /^\d{1,10}$/.test(inputPhone.value);
+    const isValid = /^\d{1,9}$/.test(inputPhone.value);
     
     if (!isValid || inputPhone.value.length !== maxLength) {
+        phoneError.style.display = 'block';
         event.preventDefault();
+    } else {
+        phoneError.style.display = 'none';
     }
+
+    const data = {
+        phone: selectIndex.value + inputPhone.value,
+    };
 });
