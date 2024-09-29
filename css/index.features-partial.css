@@ -17,23 +17,8 @@
   padding: 90px 30px;
 }
 
-.features-container__title {
-  margin-top: 20px;
-  color: var(--text-color);
-  font-size: var(--font-block-title-size-mobile);
-  font-weight: var(--font-block-title-weight);
-}
-
-.features-container__subtitle {
-  margin-top: 25px;
-  color: var(--medium-text-color);
-  font-size: var(--font-subtitle-size);
-}
-
-.features-container__description {
-  margin-top: 25px;
-  color: var(--paragraph-text-color);
-  font-size: var(--font-text-size);
+.title-intro {
+  font-size: var(--font-block-title-size-tablet);
 }
 
 .features-container__list {
@@ -69,8 +54,6 @@
 
 .button-features {
   padding: 16px 24px;
-  font-size: var(--font-button-size);
-  font-weight: var(--font-button-weight);
 }
 
 @media (min-width: 768px) {
