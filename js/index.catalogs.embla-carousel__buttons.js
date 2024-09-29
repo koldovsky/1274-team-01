@@ -1,4 +1,4 @@
-// 9 Lada Bratsykhina, catalogs on index.html: js code for Ebla Carousel
+// 9 Lada Bratsykhina, carousel for catalogs section on index.html: Ebla Carousel
 const addTogglePrevNextBtnsActive = (emblaApi, prevBtn, nextBtn) => {
     const togglePrevNextBtnsState = () => {
         if (emblaApi.canScrollPrev()) prevBtn.removeAttribute('disabled')

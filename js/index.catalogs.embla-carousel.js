@@ -1,5 +1,5 @@
-// 9 Lada Bratsykhina, catalogs on index.html: js code for Ebla Carousel
-import { addPrevNextBtnsClickHandlers } from './index.catalogs-embla-carousel.js';
+// 9 Lada Bratsykhina, carousel for catalogs section on index.html: Ebla Carousel
+import { addPrevNextBtnsClickHandlers } from './index.catalogs.embla-carousel__buttons.js';
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
