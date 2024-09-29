@@ -18,7 +18,7 @@
 .features-container__title {
   margin-top: 20px;
   color: var(--text-color);
-  font-size: var(--font-block-title-size-tablet);
+  font-size: var(--font-block-title-size-mobile);
   font-weight: var(--font-block-title-weight);
 }
 
@@ -59,9 +59,18 @@
 
 .features-container__trust-message {
   margin-top: 20px;
+  margin-bottom: 35px;
   color: var(--light-accent-text-color);
   font-size: var(--font-text-size);
+  font-weight: var(--font-caption-weight);
 }
+
+.button-features {
+  padding: 16px 24px;
+  font-size: var(--font-button-size);
+  font-weight: var(--font-button-weight);
+}
+
 
 @media (min-width: 768px) {
   .features-container {
