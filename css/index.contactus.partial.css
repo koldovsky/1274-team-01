@@ -1,24 +1,19 @@
 .contact-us {
-  height: 650px;
+  height: auto;
   background-image: url("../img/bg-for-section-contact-us.png");
   background-size: cover;
   background-position: 50% 50%;
-  display: flex;
-  padding: 0 50px;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row; 
-  text-align: left;
 }
 
-.contact-us__header-title {
-  width: 50%;
+.contact-us__header{
+  max-width: 1200px;
 }
 
 .contact-us__contacts {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .contact-us__phone,
@@ -36,6 +31,8 @@
   cursor: pointer;
   font-size: 16px;
   align-self: flex-start;
+  text-decoration: none;
+  font-size: 12px;
 }
 
 .contact-us__button:hover {
@@ -43,33 +40,27 @@
   color: black;
 }
 
-
-@media (max-width: 768px) {
-  .contact-us {
-    flex-direction: column; 
-    height: auto; 
-    padding: 20px; 
-    text-align: left; 
-    background-position: center; 
+@media (min-width: 600px){
+  .contact-us__header{
+    width: 50%;
+    margin: 115px 0;
+  }
+  .title-intro{
+    font-size: 51px;
   }
 
-  .contact-us__header-title {
-    padding-left: 0; 
-    margin-bottom: 10px;
-  }
+}
 
-  .contact-us__header-main-title {
-    font-size: 40px;
-    margin-bottom: 15px;
+@media (min-width: 1024px){
+  .title-intro{
+    font-size: 62px;
   }
-
-  .contact-us__explore, 
-  .contact-us__contacts {
-    font-size: 19px; 
+  .contact-us__header{
+    max-width: 1200px;
+    justify-self: center;
   }
-
-  .contact-us__button {
-    align-self: left; 
-    font-size: 12px; 
+  .contact-us{
+    display: grid;
+    grid-template-columns: 80% 20%;
   }
 }
