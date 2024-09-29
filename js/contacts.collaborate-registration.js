@@ -57,6 +57,7 @@ form.addEventListener('submit', (event) => {
     
     if (!isValid || inputPhone.value.length !== maxLength) {
         phoneError.style.display = 'block';
+        inputPhone.classList.add('invalid');
         event.preventDefault();
     } else {
         phoneError.style.display = 'none';
