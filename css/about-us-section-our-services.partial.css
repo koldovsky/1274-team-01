@@ -16,26 +16,8 @@
   padding: 90px 30px;
 }
 
-.our-services__content-description {
-  color: var(--accent-text-color);
-  box-sizing: border-box;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.our-services__header {
-  font-size: 40px;
-  margin-top: 20px;
-  color: var(--text-color);
-}
-
 .our-services__header-text {
-  margin-top: 25px;
-  font-size: 19px;
   color: var(--paragraph-text-color);
-  font-weight: 500;
 }
 
 /*Accordion*/
