@@ -1,5 +1,5 @@
 function init() {
-    import('./index.catalogs.embla-carousel.js');
+    import('./index.catalogs-carousel.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
