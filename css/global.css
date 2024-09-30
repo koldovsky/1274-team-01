@@ -22,6 +22,9 @@
   --accent-gray-bg-color: #161616;
   --light-gray-bg-color: #333333;
   --dark-gray-bg-color: #252527;
+  --valid-border-color: #28a745;
+  --invalid-border-color: #dc3545;
+  --input-background-color: rgba(13, 13, 13, 0.28);
 
   --font-small-size: 10px;
   --font-button-size: 12px;
@@ -60,9 +63,9 @@ img {
   width: 100%;
 }
 
-.conteiner {
+.container {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 body {
@@ -99,7 +102,7 @@ a {
 
 .title-intro {
   color: var(--text-color);
-  font-size: 40px;
+  font-size: 51px;
   margin-top: 20px;
   font-weight: 600;
 }

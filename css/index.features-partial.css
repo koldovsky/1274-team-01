@@ -1,6 +1,7 @@
 .features-container {
   background-color: var(--black-bg-color);
   padding: 0;
+
 }
 
 .features-container__image {
@@ -8,30 +9,16 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 300px;
+  min-height: 50vh;
+  animation: pulse 3s infinite;
 }
 
 .features-container__content {
   padding: 90px 30px;
 }
 
-.features-container__title {
-  margin-top: 20px;
-  color: var(--text-color);
+.title-intro {
   font-size: var(--font-block-title-size-tablet);
-  font-weight: var(--font-block-title-weight);
-}
-
-.features-container__subtitle {
-  margin-top: 25px;
-  color: var(--medium-text-color);
-  font-size: var(--font-subtitle-size);
-}
-
-.features-container__description {
-  margin-top: 25px;
-  color: var(--paragraph-text-color);
-  font-size: var(--font-text-size);
 }
 
 .features-container__list {
@@ -59,8 +46,14 @@
 
 .features-container__trust-message {
   margin-top: 20px;
+  margin-bottom: 35px;
   color: var(--light-accent-text-color);
   font-size: var(--font-text-size);
+  font-weight: var(--font-caption-weight);
+}
+
+.button-features {
+  padding: 16px 24px;
 }
 
 @media (min-width: 768px) {
@@ -78,3 +71,17 @@
     height: 100%;
   }
 }
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+

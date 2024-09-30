@@ -1,6 +1,7 @@
 /* Oleh Hanhal */
 
 .image-gallery {
+  overflow: hidden;
   background-color: #2e2e2e;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -25,25 +26,8 @@
   transition: opacity 0.5s ease;
 }
 
-.image-gallery__item-text {
-  display: flex;
-  flex-direction: column;
-  font-size: 25px;
-  color: aliceblue;
-  position: absolute;
-  bottom: 40%;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  opacity: 0;
-  padding: 10px;
-  transition: opacity 0.3s ease, transform 0.5s ease;
-}
-
-/* to rename */
-.header {
+.hover-image-text-header {
   text-align: center;
-  display: flex;
-  flex-direction: column;
   font-size: 25px;
   width: 90%;
   color: aliceblue;
@@ -56,8 +40,7 @@
   transition: opacity 0.3s ease, transform 0.5s ease;
 }
 
-/* to rename */
-.caption {
+.hover-image-text-caption {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -73,13 +56,8 @@
   transition: opacity 0.3s ease, transform 0.5s ease;
 }
 
-.image-gallery__item:hover .image-gallery__item-text {
-  transform: translateX(-50%) translateY(0);
-  opacity: 1;
-}
-
-.image-gallery__item:hover .header,
-.image-gallery__item:hover .caption {
+.image-gallery__item:hover .hover-image-text-header,
+.image-gallery__item:hover .hover-image-text-caption {
   transform: translateX(-50%) translateY(0);
   opacity: 1;
 }
