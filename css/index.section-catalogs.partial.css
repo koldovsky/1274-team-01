@@ -92,6 +92,11 @@
     cursor: pointer;
 }
 
+.catalogs__collection-download-link:hover,
+.catalogs__collection-download-link:active {
+    color: var(--accent-text-color);
+}
+
 .catalogs__separator {
     height: 31px;
     width: 100%;
