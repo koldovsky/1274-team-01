@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
     <link rel="stylesheet" href="css/contacts.css" />
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -89,27 +89,29 @@
               type="text"
               name="full-name"
               placeholder="Enter your full name*"
-              required
             />
-            <input
-              type="tel"
-              name="phone"
-              pattern="\+?[0-9]{1,4}[-\s]?[0-9]{1,15}"
-              placeholder="Enter your phone number*"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your e-mail*"
-              required
-            />
-
+            <div class="collaborate__phone-container">
+              <div class = "collaborate__prefix-phone-container">
+                <select class="collaborate__prefix-phone" name="prefix">
+                  <option value="+380">+380</option>
+                  <option value="+380">+48</option>
+                  <option value="+380">+49</option>
+                </select>
+              </div>
+              <div class="collaborate__error-container">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone number*"
+                />
+                <p class="phone-error">The number must consist of 9 digits!</p>
+              </div>
+            </div>
+            <input type="email" name="email" placeholder="Enter your e-mail*" />
             <textarea
               class="collaborate__message"
               placeholder="Type your message"
             ></textarea>
-
             <button class="collaborate__contact-us" type="submit">
               Contact Us
             </button>
@@ -137,5 +139,6 @@
         data-hx-get="global.footer.partial.html"
       ></section>
     </footer>
+    <script src="js/contacts.js"></script>
   </body>
 </html>

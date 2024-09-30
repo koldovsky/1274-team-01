@@ -1,42 +1,11 @@
-// 9 Lada Bratsykhina, catalogs on index.html: js code for Ebla Carousel
-import { addPrevNextBtnsClickHandlers } from './index.catalogs-embla-carousel.js';
-
-function loadScript(src) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = src;
-    script.onload = resolve;
-    script.onerror = reject;
-    document.head.appendChild(script);
-  });
+function init() {
+    import('./index.catalogs-carousel.js');
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
-  try {
-    await loadScript('https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js');
+const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
+let loadedPartialsCount = 0;
 
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = './css/index.section-catalogs.partial.css';
-    document.head.appendChild(link);
-
-    const OPTIONS = { loop: true, align: 'start' }
-
-    const emblaNode = document.querySelector('.embla');
-    const viewportNode = emblaNode.querySelector('.embla__viewport');
-    const prevBtnNode = emblaNode.querySelector('.embla__button--prev')
-    const nextBtnNode = emblaNode.querySelector('.embla__button--next')
-
-    const emblaApi = EmblaCarousel(viewportNode, OPTIONS)
-
-    const removePrevNextBtnsClickHandlers = addPrevNextBtnsClickHandlers(
-      emblaApi,
-      prevBtnNode,
-      nextBtnNode
-    )
-
-    emblaApi.on('destroy', removePrevNextBtnsClickHandlers)
-  } catch (error) {
-    console.error('Failed to load script:', error);
-  }
+document.body.addEventListener('htmx:afterOnLoad', () => {
+    loadedPartialsCount++;
+    if (loadedPartialsCount === totalPartials) init();
 });
