@@ -11,7 +11,9 @@
 
 :root {
   scroll-behavior: smooth;
-  --text-color: #fff;
+  font-family: "Manrope" !important;
+
+  --text-color: #ffffff;
   --accent-text-color: #d78c43;
   --light-accent-text-color: #f1d1af;
   --medium-text-color: #e1e1e1;
@@ -20,11 +22,14 @@
   --accent-gray-bg-color: #161616;
   --light-gray-bg-color: #333333;
   --dark-gray-bg-color: #252527;
-  font-family: "Manrope" !important;
+  --valid-border-color: #28a745;
+  --invalid-border-color: #dc3545;
+  --input-background-color: rgba(13, 13, 13, 0.28);
 
   --font-small-size: 10px;
   --font-button-size: 12px;
   --font-caption-size: 15px;
+  --font-caption-size-tablet: 14px;
   --font-text-size: 16px;
   --font-subtitle-size: 19px;
   --font-heading-size: 26px;
@@ -33,6 +38,7 @@
   --font-block-title-size: 62px;
   --font-block-title-size-tablet: 51px;
   --font-block-title-size-mobile: 40px;
+  --font-tagline-size: 30px;
 
   --font-small-weight: 800;
   --font-button-weight: 700;
@@ -41,6 +47,8 @@
   --font-subtitle-weight: 500;
   --font-heading-weight: 600;
   --font-block-title-weight: 600;
+  --font-project-subtitle: 900;
+  --font-project-link: 900;
 
   --font-small-line-height: 1.54;
   --font-caption-line-height: 1.6;
@@ -50,9 +58,14 @@
   --font-block-title-line-height: 1.2;
 }
 
-.conteiner {
+img {
+  display: block;
   width: 100%;
-  margin: auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
 body {
@@ -68,15 +81,42 @@ a {
   color: inherit;
 }
 
-h1 {
+.title-main {
   color: var(--accent-text-color);
   font-size: 36px;
   min-width: 320px;
 }
 
-h2 {
+.title-of-section {
   color: var(--accent-text-color);
   font-size: 10px;
   font-weight: 900;
   letter-spacing: 2px;
+}
+
+.general-text {
+  color: var(--paragraph-text-color);
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.title-intro {
+  color: var(--text-color);
+  font-size: 51px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.intro-subtitle {
+  color: var(--medium-text-color);
+  font-size: 19px;
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.title-content {
+  color: var(--text-color);
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: 400;
 }

@@ -1,49 +1,19 @@
 .contact-us {
-  height: 60vh;
-  background-image: url("/img/bg-for-section-contact-us.png");
+  height: auto;
+  background-image: url("../img/bg-for-section-contact-us.png");
   background-size: cover;
-  background-position: right;
-  display: flex;
-  padding: 0 50px;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
+  background-position: 50% 50%;
 }
 
-.contact-us__header-title {
-  text-align: left;
-  padding-left: 50px;
-  margin-bottom: 10px;
-  max-width: 600px;
-}
-
-.contact-us__header-main-title {
-  font-size: 51px;
-  color: var(--text-color);
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.contact-us__header-breadcrumb {
-  font-size: 10px;
-  color: var(--accent-text-color);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
-
-.contact-us__explore {
-  font-size: 19px;
-  font-weight: 500;
-  margin-bottom: 20px;
+.contact-us__header{
+  max-width: 1200px;
 }
 
 .contact-us__contacts {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .contact-us__phone,
@@ -61,9 +31,36 @@
   cursor: pointer;
   font-size: 16px;
   align-self: flex-start;
+  text-decoration: none;
+  font-size: 12px;
 }
 
 .contact-us__button:hover {
   background-color: var(--text-color);
   color: black;
+}
+
+@media (min-width: 600px){
+  .contact-us__header{
+    width: 50%;
+    margin: 115px 0;
+  }
+  .title-intro{
+    font-size: 51px;
+  }
+
+}
+
+@media (min-width: 1024px){
+  .title-intro{
+    font-size: 62px;
+  }
+  .contact-us__header{
+    max-width: 1200px;
+    justify-self: center;
+  }
+  .contact-us{
+    display: grid;
+    grid-template-columns: 80% 20%;
+  }
 }
