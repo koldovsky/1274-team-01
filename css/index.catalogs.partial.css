@@ -158,6 +158,7 @@
 
 .catalogs__carousel-container {
     display: flex;
+    transition: transform 500ms ease-in-out;
     width: 100%;
 }
 
