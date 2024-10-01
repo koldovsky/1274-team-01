@@ -1,49 +1,14 @@
-// 9 Lada Bratsykhina, carousel without animation for catalogs section on index.html
-const lamps = [
-  {
-    id: "1",
-    image: "img/catalogs/aurora-lamp.webp",
-    imageAltText: "Aurora Lamp from the Classic Collection",
-    name: "Aurora Lamp",
-    collection: "CLASSIC COLLECTION",
-    collectionYear: "2023",
-  },
-  {
-    id: "2",
-    image: "img/catalogs/luminous-haven.webp",
-    imageAltText: "Luminous Haven Lamp from the Wooden Life Collection",
-    name: "Luminous Haven",
-    collection: "WOODEN LIFE COLLECTION",
-    collectionYear: "2024",
-  },
-  {
-    id: "3",
-    image: "img/catalogs/wooden-blocks.webp",
-    imageAltText: "Wooden Blocks Lamp from the Wooden Life Collection",
-    name: "Wooden Blocks",
-    collection: "WOODEN LIFE COLLECTION",
-    collectionYear: "2024",
-  },
-  {
-    id: "4",
-    image: "img/catalogs/cake-in-the-ocean.webp",
-    imageAltText: "Cake in the Ocean Lamp from the Ceiling Fixtures Collection",
-    name: "Cake in the Ocean",
-    collection: "CEILING FIXTURES",
-    collectionYear: "2022",
-  },
-  {
-    id: "5",
-    image: "img/catalogs/arretia-lamp.webp",
-    imageAltText: "Arretia Bedside Lamp from the Bedside Lamps Collection",
-    name: "Arretia Lamp",
-    collection: "BEDSIDE LAMPS",
-    collectionYear: "2022",
-  },
-];
+// 9 Lada Bratsykhina, animated carousel for catalogs section on index.html
+const response = await fetch('api/index.catalogs-lamps.json');
+const lamps = await response.json();
 
-function productHTML(product) {
-  return `
+renderProducts(lamps);
+
+// Function to render the products to the DOM by creating HTML structure dynamically
+function renderProducts(products) {
+  let productsHtml = '';
+  for (const product of products) {
+    productsHtml += `
                 <article class="catalogs__carousel-lamp">
                     <img src="${product.image}" alt="${product.imageAltText}"
                         class="catalogs__carousel-lamp-image" />
@@ -52,52 +17,99 @@ function productHTML(product) {
                     <p class="catalogs__carousel-lamp-year">${product.collectionYear}</p>
                 </article>
 `;
-}
-
-const slides = [
-  productHTML(lamps[0]),
-  productHTML(lamps[1]),
-  productHTML(lamps[2]),
-  productHTML(lamps[3]),
-  productHTML(lamps[4]),
-];
-
-let currentIndex = 0;
-
-function renderSlides() {
-  const slidesContainer = document.querySelector(".catalogs__carousel-container");
-  slidesContainer.innerHTML = slides[currentIndex];
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    const secondSlideIndex =
-      currentIndex + 1 >= slides.length ? 0 : currentIndex + 1;
-    slidesContainer.innerHTML += slides[secondSlideIndex];
-    if (window.matchMedia("(min-width: 992px)").matches) {
-      const thirdSlideIndex =
-        secondSlideIndex + 1 >= slides.length ? 0 : secondSlideIndex + 1;
-      slidesContainer.innerHTML += slides[thirdSlideIndex];
-      const forthSlideIndex =
-        thirdSlideIndex + 1 >= slides.length ? 0 : thirdSlideIndex + 1;
-      slidesContainer.innerHTML += slides[forthSlideIndex];
-    }
   }
+  const productsContainer = document.querySelector('.catalogs__carousel-container');
+  productsContainer.innerHTML = productsHtml;
 }
 
-function nextSlide() {
-  currentIndex = currentIndex + 1 >= slides.length ? 0 : currentIndex + 1;
-  renderSlides();
+// Carousel Initialization
+const carousel = document.querySelector('.catalogs__carousel');
+const carouselInner = carousel.querySelector('.catalogs__carousel-container');
+const prevButton = document.querySelector('.catalogs__carousel-button--prev');
+const nextButton = document.querySelector('.catalogs__carousel-button--next');
+
+let slidesPerView = getSlidesPerView();
+let slides = Array.from(carouselInner.children);
+let currentIndex = slidesPerView;
+
+// Setup the carousel with cloned slides
+setupCarousel();
+
+// Function to determine the number of slides per view based on window width
+function getSlidesPerView() {
+  const width = window.innerWidth;
+  if (width >= 992) return 4;
+  if (width >= 768) return 2;
+  return 1;
 }
 
-function prevSlide() {
-  currentIndex = currentIndex - 1 < 0 ? slides.length - 1 : currentIndex - 1;
-  renderSlides();
+// Function to setup carousel by cloning slides for infinite loop
+function setupCarousel() {
+  // Remove clones if they exist
+  slides = slides.filter(slide => !slide.classList.contains('clone'));
+
+  // Clone slides for infinite loop
+  const clonesStart = slides.slice(-slidesPerView).map(cloneSlide);
+  const clonesEnd = slides.slice(0, slidesPerView).map(cloneSlide);
+
+  // Add clones to the carousel
+  carouselInner.append(...clonesStart, ...slides, ...clonesEnd);
+
+  // Update slide list
+  slides = Array.from(carouselInner.children);
+
+  updateCarousel();
 }
 
-renderSlides();
+// Function to clone a slide and add 'clone' class
+function cloneSlide(slide) {
+  const clone = slide.cloneNode(true);
+  clone.classList.add('clone');
+  return clone;
+}
 
-const buttonPrev = document.querySelector(".catalogs__carousel-button--prev");
-const buttonNext = document.querySelector(".catalogs__carousel-button--next");
+// Function to transform the carousel inner container to show the correct set of slides 
+// based on the current slide index
+function updateCarousel() {
+  const slideWidth = carouselInner.children[0].getBoundingClientRect().width;
+  carouselInner.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
 
-buttonPrev.addEventListener("click", prevSlide);
-buttonNext.addEventListener("click", nextSlide);
+// Event listener for Prev Button
+prevButton.addEventListener('click', () => {
+  if (--currentIndex < 0) {
+    // Loop back to the end clone
+    currentIndex = slides.length - slidesPerView * 2 - 1;
+    carouselInner.style.transition = 'none';
+    updateCarousel();
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        carouselInner.style.transition = '';
+      });
+    });
+  }
+  updateCarousel();
+});
 
-window.addEventListener('resize', renderSlides);
+// Event listener for Next Button
+nextButton.addEventListener('click', () => {
+  carouselInner.style.transition = '';
+  if (++currentIndex >= slides.length - slidesPerView) {
+    // Loop back to the first clone
+    currentIndex = slidesPerView;
+    carouselInner.style.transition = 'none';
+    updateCarousel();
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        carouselInner.style.transition = '';
+      });
+    });
+  }
+  updateCarousel();
+});
+
+// Event listener for window resize to support responsiveness
+window.addEventListener('resize', () => {
+  slidesPerView = getSlidesPerView();
+  setupCarousel();
+});
