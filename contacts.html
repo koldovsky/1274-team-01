@@ -85,13 +85,17 @@
         </article>
         <form class="collaborate__registration" action="" method="POST">
           <div class="collaborate__registration-container">
-            <input
-              type="text"
-              name="full-name"
-              placeholder="Enter your full name*"
-            />
+            <div class="collaborate__error-container">
+              <input
+                type="text"
+                name="full-name"
+                placeholder="Enter your full name*"
+              />
+              <p class="full-name-error">The name field cannot be empty!</p>
+            </div>
+
             <div class="collaborate__phone-container">
-              <div class = "collaborate__prefix-phone-container">
+              <div class="collaborate__prefix-phone-container">
                 <select class="collaborate__prefix-phone" name="prefix">
                   <option value="+380">+380</option>
                   <option value="+380">+48</option>
@@ -107,7 +111,13 @@
                 <p class="phone-error">The number must consist of 9 digits!</p>
               </div>
             </div>
-            <input type="email" name="email" placeholder="Enter your e-mail*" />
+            
+            <div class="collaborate__error-container">
+              <input type="email" name="email" placeholder="Enter your e-mail*" />
+              <p class="email-error-empty">The email field cannot be empty!</p>
+              <p class="email-error-format">The email must be in the correct format (e.g., user@example.com)!</p>
+            </div>
+            
             <textarea
               class="collaborate__message"
               placeholder="Type your message"

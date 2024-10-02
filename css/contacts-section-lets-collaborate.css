@@ -71,6 +71,7 @@ body {
   font-weight: 700;
   background-color: var(--input-background-color);
   color: var(--text-color);
+  border: 1px solid transparent;
   padding: 16px 24px;
   max-width: 430px;
   width: 100%;
@@ -105,7 +106,10 @@ option {
   width: 100%;
 } 
 
-.phone-error {
+.phone-error,
+.full-name-error,
+.email-error-empty,
+.email-error-format {
   display: none; 
   position: absolute; 
   padding-left: 12px;
