@@ -11,6 +11,7 @@
 
 
 .footer__about {
+    display:grid;
     background-color: var(--black-bg-color);
     font-family: 'Manrope', sans-serif;
     padding-bottom: 80px;
@@ -160,4 +161,10 @@
     display: flex;
     justify-content: space-between;
     font-size: var(--font-text-size);
+}
+
+@media (min-width: 768px) {
+    .footer__about {
+        grid-template-columns: 3.15fr 1.85fr 1.85fr 3.15fr;
+    }
 }
