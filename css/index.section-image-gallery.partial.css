@@ -48,7 +48,7 @@
   width: 90%;
   color: rgb(180, 180, 180);
   position: absolute;
-  bottom: 60%;
+  bottom: 40%;
   left: 50%;
   transform: translateX(-50%) translateY(100%);
   opacity: 0;
