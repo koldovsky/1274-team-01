@@ -1,3 +1,6 @@
+const root = document.documentElement;
+const accentColor = getComputedStyle(root).getPropertyValue('--accent-text-color');
+
 const accordionButtons = document.querySelectorAll('.our-services__accordion-item-button');
 
 accordionButtons.forEach(button => {
@@ -5,7 +8,7 @@ accordionButtons.forEach(button => {
         accordionButtons.forEach(button => button.style.color = '');
         const isExpanded = this.getAttribute('aria-expanded') === 'true';
         if (isExpanded) {
-            button.style.color = '#d78c43';
+            button.style.color = accentColor;
         }
     })
 });
