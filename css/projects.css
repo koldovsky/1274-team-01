@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap);
 @import url(global.css);
 @import url(projects.header-hero.partial.css);
+@import url(global.cursor-animation.css);
 
 :root {
   scroll-behavior: smooth;
