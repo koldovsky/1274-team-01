@@ -1,21 +1,22 @@
 .footer {
     background-color: var(--black-bg-color);
     font-family: 'Manrope', sans-serif;
-
+    margin: auto;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 24px;
     padding-right: 24px;
-    max-width: 1200px;
     display: block;
-    height: 1276.38px
-    unicode-bidi: isolate;
 }
 
 
 .footer__about {
     background-color: var(--black-bg-color);
     font-family: 'Manrope', sans-serif;
+    padding-bottom: 80px;
+    border-bottom: 0.05rem solid;
+    border-bottom-color: var( --paragraph-text-color);
+    
 }
 .footer__about-block-logo {
     color: var(--text-color);
@@ -66,7 +67,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: 30px;
-    justify-content: center;
     width: 272px;
     text-align: center;
     vertical-align: baseline;
@@ -74,11 +74,15 @@
 }
 
 .footer__about-social-list-item {
-    
+    color:var(--accent-text-color) ;
 }
 
 .color-icon {
     color:brown
+}
+
+.footer__title {
+    justify-content: center;
 }
 
 .footer__about-navigation {
@@ -87,25 +91,60 @@
     padding-right: 20px;
     align-items: stretch;
     display: flex;
+    flex-direction: column;
     flex-basis: 100%;
-    width: 312px;
+    min-width: 312px;
+    justify-content: center;
     font-size: var(--font-text-size);
-    color: var(--text-color);
-    
+    color: var(--paragraph-text-colortext-color);
         .footer__title {
-            
+            color:var(--text-color)
     }
 }
 
+.footer__about-collections {
+    margin-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-width: 312px;
+    font-size: var(--font-text-size);
+    color: var(--paragraph-text-color);
+        .footer__title {
+        color:var(--text-color)
+    }
+}
+
+.footer__about-contact {
+    font-size: var(--font-text-size);
+    background-color:var(--dark-gray-bg-color);
+    border-top-right-radius: 80px 80px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    min-width: 312px;
+
+    
+}
+
+.footer__contact-info {
+    font-size: var(--font-text-size);
+    color: var(--paragraph-text-color);
+    
+}
+
+.footer__contact-logo {
+    background-color:var(--dark-gray-bg-color);
+    color: var(--accent-text-color);
+
+}
 
 .footer__bottom {
     display: flex;
     justify-content: space-between;
-}
-
-@media(min-width: 770px) {
-    .footer__about {
-        display: flex; 
-    }
-
+    font-size: var(--font-text-size);
 }
