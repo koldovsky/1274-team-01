@@ -1,5 +1,5 @@
 .cursor-shadow {
-    position: absolute;
+    position: fixed;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -8,6 +8,7 @@
     transform: translate(-50%, -50%);
     animation: fadeOut 0.5s linear forwards;
     z-index: 999;
+    overflow-x: hidden;
 }
 
 @keyframes fadeOut {
