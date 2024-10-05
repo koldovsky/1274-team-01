@@ -25,7 +25,7 @@
 .accordion {
   --bs-accordion-btn-icon-width: 1.7rem;
   --bs-accordion-btn-icon-transform: none;
-  }
+}
   
 .accordion-button:focus {
   box-shadow: none;
