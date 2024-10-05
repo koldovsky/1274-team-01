@@ -1,5 +1,6 @@
 function init() {
     import('./index.catalogs-carousel.js');
+    import('./index.section-image-gallery.partial.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
