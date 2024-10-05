@@ -16,6 +16,7 @@
     padding-bottom: 80px;
     border-bottom: 0.05rem solid;
     border-bottom-color: var( --paragraph-text-color);
+
     
 }
 .footer__about-block-logo {
@@ -77,10 +78,6 @@
     color:var(--accent-text-color) ;
 }
 
-.color-icon {
-    color:brown
-}
-
 .footer__title {
     justify-content: center;
 }
@@ -127,7 +124,8 @@
     padding-top: 27px;
     padding-bottom: 27px;
     min-width: 312px;
-
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -140,8 +138,23 @@
 .footer__contact-logo {
     background-color:var(--dark-gray-bg-color);
     color: var(--accent-text-color);
-
+    height:25px;
 }
+.footer__contact-email {
+    text-decoration: none;
+}
+
+.footer__contact-phone {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
 
 .footer__bottom {
     display: flex;
