@@ -84,13 +84,15 @@
 }
 
 .footer__about-navigation {
-    margin-top: 45px;
+    
     padding-left: 20px;
     padding-right: 20px;
+    border-bottom: 50px;
     align-items: stretch;
-    display: flex;
+    text-align: center;
+    flex: 1;
     flex-direction: column;
-    flex-basis: 100%;
+    
     min-width: 312px;
     justify-content: center;
     font-size: var(--font-text-size);
@@ -99,15 +101,15 @@
             color:var(--text-color)
     }
 }
-
 .footer__about-collections {
-    margin-top: 45px;
+    
     padding-left: 20px;
     padding-right: 20px;
     align-items: stretch;
-    display: flex;
+    text-align: center;
+    flex:1;
     flex-direction: column;
-    flex-basis: 100%;
+    
     min-width: 312px;
     font-size: var(--font-text-size);
     color: var(--paragraph-text-color);
@@ -167,4 +169,11 @@
     .footer__about {
         grid-template-columns: 3.15fr 1.85fr 1.85fr 3.15fr;
     }
+}
+
+@media (min-width: 768px) {
+    .footer__about-navigation {
+        text-align: center;
+    }
+
 }
