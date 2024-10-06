@@ -1,64 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prizma Lighting Studio</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prizma Lighting Studio</title>
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/embla-carousel@6.0.4/embla.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/embla-carousel@6.0.4/embla.min.js"></script>
-</head>
-
-<body>
-  <!--1 Maria Olivenbaum -->
-  <header class="index-header">
-    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></section>
-  </header>
-  <main>
-    <!--2 Maksym Haiduk -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-about-us.partial.html">
-    </section>
-    <!--3 Yuliia Dolhopolova-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-features.partial.html">
-    </section>
-    <!--4 Oleh Hanhal -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-image-gallery.partial.html">
-    </section>
-    <!--5 Illia Kardash-->
-    <section class="main__catalogs" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="index.services.partial.html"></section>
-    <!--6 Oleh Ranchuk-->
-    <section class="main__contact-us" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="index.section-contactus.partial.html"></section>
-    <!--7 Bekish Khrystyna -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.projects.partial.html"></section>
-    <!--8 Mariia Chernyshova-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.lighting-solutions.partial.html">
-    </section>
-    <!--9 Lada Bratsykhina-->
-    <section id="products" class="main__catalogs" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="index.section-catalogs.partial.html"></section>
-    <!--10 Olena Bal-->
-    <section class="main__news-articles" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="index.section-news-articles.partial.html"></section>
-    <!--/ Subscribe section - Olena Bal-->
-    <section class="main__subscribe" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="index.section-subscribe.partial.html"></section>
-  </main>
-  <!--11 Stepanenko Roman -->
-  <footer class="footer">
-    <section class="footer__about" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="global.footer.partial.html"></section>
-  </footer>
-  <!--9 Lada Bratsykhina, js for embla carousel, should be just before </body> tag -->
-  <script type="module" src="js/index.js"></script>
-</body>
-
+  <body>
+    <!--1 Maria Olivenbaum -->
+    <header class="index-header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"
+      ></section>
+    </header>
+    <main>
+      <!--2 Maksym Haiduk -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-about-us.partial.html"
+      ></section>
+      <!--3 Yuliia Dolhopolova-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-features.partial.html"
+      ></section>
+      <!--4 Oleh Hanhal -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-image-gallery.partial.html"
+      ></section>
+      <!--5 Illia Kardash-->
+      <section
+        class="main__catalogs"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.services.partial.html"
+      ></section>
+      <!--6 Oleh Ranchuk-->
+      <section
+        class="main__contact-us"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-contactus.partial.html"
+      ></section>
+      <!--7 Bekish Khrystyna -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.projects.partial.html"
+      ></section>
+      <!--8 Mariia Chernyshova-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.lighting-solutions.partial.html"
+      ></section>
+      <!--9 Lada Bratsykhina-->
+      <section
+        id="products"
+        class="main__catalogs"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-catalogs.partial.html"
+      ></section>
+      <!--10 Olena Bal-->
+      <section
+        class="main__news-articles"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-news-articles.partial.html"
+      ></section>
+      <!--/ Subscribe section - Olena Bal-->
+      <section
+        class="main__subscribe"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-subscribe.partial.html"
+      ></section>
+    </main>
+    <!--11 Stepanenko Roman -->
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
+    <script type="module" src="js/index.js"></script>
+  </body>
 </html>

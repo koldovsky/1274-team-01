@@ -16,29 +16,28 @@
   padding: 90px 30px;
 }
 
-.our-services__content-description {
-  color: var(--accent-text-color);
-  box-sizing: border-box;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.our-services__header {
-  font-size: 40px;
-  margin-top: 20px;
-  color: var(--text-color);
-}
-
 .our-services__header-text {
-  margin-top: 25px;
-  font-size: 19px;
   color: var(--paragraph-text-color);
-  font-weight: 500;
 }
 
 /*Accordion*/
+
+.accordion {
+  --bs-accordion-btn-icon-width: 1.7rem;
+  --bs-accordion-btn-icon-transform: none;
+}
+  
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url(../img/about-us-our-services-button-icon-before.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/about-us-our-services-button-icon-after.svg);
+}
 
 .our-services__accordion {
   margin-top: 25px;

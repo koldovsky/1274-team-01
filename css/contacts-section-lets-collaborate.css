@@ -4,7 +4,8 @@ ul {
   list-style: none;
 }
 
-input {
+input,
+select {
   background: none;
   border: none;
   padding: 0;
@@ -12,6 +13,16 @@ input {
 
   display: block;
   border-radius: 0;
+}
+
+.collaborate__registration-container input.valid {
+  border: 1px solid var(--valid-border-color);
+  border-radius: 4px;
+}
+
+.collaborate__registration-container input.invalid {
+  border: 1px solid var(--invalid-border-color);
+  border-radius: 4px;
 }
 
 body {
@@ -28,45 +39,89 @@ body {
 .main__collaborate {
   display: flex;
   max-width: 1200px;
+  width: 100%;
   padding: 120px 0;
 }
 
 .collaborate__container {
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
   box-sizing: content-box;
   padding: 25px 0;
   margin: 0 15px;
 }
 
 .collaborate__registration {
+  max-width: 570px;
+  width: 100%;
   background-color: var(--dark-gray-bg-color);
-  width: 570px;
   box-sizing: content-box;
   margin: 0 15px;
 }
 
 .collaborate__registration-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  display: grid;
+  grid-row-gap: 24px;
   background-color: var(--dark-gray-bg-color);
   padding: 70px;
 }
+
 .collaborate__registration-container input {
   font-size: 12px;
   font-weight: 700;
-  background-color: rgba(13, 13, 13, 0.28);
+  background-color: var(--input-background-color);
   color: var(--text-color);
-  margin-bottom: 24px;
+  border: 1px solid transparent;
   padding: 16px 24px;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
+}
+
+.collaborate__phone-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.collaborate__prefix-phone-container {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  padding: 0 24px;
+  height: 100%;
+  background-color: var(--input-background-color);
+}
+
+.collaborate__prefix-phone {
+  cursor: pointer;
+  outline: none;
+  color: var(--medium-text-color);
+}
+
+option {
+  background-color: var(--dark-gray-bg-color);
+}
+
+.collaborate__error-container {
+  width: 100%;
+} 
+
+.phone-error,
+.full-name-error,
+.email-error-empty,
+.email-error-format {
+  display: none; 
+  position: absolute; 
+  padding-left: 12px;
+  font-size: 12px;
+  color: var(--invalid-border-color);
 }
 
 .collaborate__registration-container textarea {
   font-family: Manrope;
   text-align: start;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   border: 0;
   resize: none;
   min-height: 150px;
@@ -75,7 +130,7 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: var(--text-color);
-  background-color: rgba(13, 13, 13, 0.28);
+  background-color: var(--input-background-color);
 }
 
 .collaborate__registration-container button {
@@ -87,15 +142,15 @@ body {
   font-weight: 700;
   color: var(--text-color);
   padding: 16px 24px;
-  width: 430px;
-
+  max-width: 430px;
+  width: 100%;
   background-color: var(--accent-text-color);
   transition-duration: 0.3s;
 }
 
 .collaborate__contact-us:hover {
   background-color: var(--text-color);
-  color: black;
+  color: var(--black-bg-color);
 }
 
 .collaborate__subtitle {
@@ -146,4 +201,12 @@ body {
   color: var(--text-color);
   font-size: 26px;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .main__collaborate {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 90px;
+  }
 }

@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/about-us.css" />
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -36,11 +36,17 @@
     </header>
     <!---------------------------->
     <main>
-      <!--Our Services Section by Andrii Dulenchuk-->
+      <!--12 Our Services - Andrii Dulenchuk-->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="about-us-section-our-services.partial.html"
+      ></section>
+      <!--Video Section by Yuliia Dolhopolova-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us-section-video-lighting-matters.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
@@ -55,11 +61,6 @@
       ></section>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
     <!--11 Stepanenko Roman -->
     <footer class="footer">
       <section
@@ -69,5 +70,11 @@
         data-hx-get="global.footer.partial.html"
       ></section>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/about-us.js"></script>
   </body>
 </html>
