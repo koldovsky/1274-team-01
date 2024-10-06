@@ -1,5 +1,6 @@
 function init() {
     import('./global.cursor-animation.js');
+    import('./about-us-our-designers-gradient.js');
     import('./about-us-section-our-services.js');
 }
 
