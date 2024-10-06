@@ -3,13 +3,19 @@
 .projects-partial {
   /*background-color: var(--black-bg-color);*/
   background-color: #252527;
-  padding: 90px 0 30px 0;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 50px auto;
+  
+  /*padding: 90px 0 30px 0;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column;*/
 }
 
 /*.projects {
@@ -19,13 +25,13 @@
   padding: 0 5%;
 }*/
 
-.projects, .project {
+/*.projects, .project {
   margin-bottom: 50px;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
   margin: 50px auto;
-}
+}*/
 
 /*.project:last-child {
   border-bottom: none; 
