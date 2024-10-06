@@ -1,6 +1,6 @@
 /* Bekish Khrystyna */
 
-/* Основний стиль для десктопу */
+/* Основний контейнер секції проектів */
 .projects-partial {
   background-color: var(--black-bg-color);
   padding: 90px 0 30px 0;
@@ -12,100 +12,74 @@
   flex-direction: column;
 }
 
-.projects,
-.project {
-  width: 60%; /* Обмежуємо ширину для десктопу */
+.projects {
+  width: 60%;
   max-width: 1200px; /* Максимальна ширина для великих екранів */
-  margin: 0 auto; /* Центруємо блоки */
+  margin: 0 auto;
   padding: 0 5%;
 }
 
-.projects-title {
-  color: var(--accent-text-color);
-  font-size: 14px; /* Збільшуємо заголовок для десктопу */
-  font-weight: 900;
-  letter-spacing: 2px;
+/* Стиль для кожного блоку проекту */
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px; /* Відступи між блоками проектів */
+  padding-bottom: 50px;
+  border-bottom: 1px solid #555; /* Роздільна лінія між блоками */
 }
 
-.projects-subtitle {
-  color: var(--text-color);
-  font-size: 36px; /* Збільшуємо для десктопу */
-  margin-top: 20px;
-  font-weight: 600;
-}
-
-.projects-info {
-  margin-top: 20px;
-}
-
-.projects-tagline {
-  font-size: 16px; /* Збільшуємо для десктопу */
-  color: var(--light-accent-text-color);
-}
-
-.projects-description {
-  color: var(--medium-text-color);
-  font-size: 18px; /* Збільшуємо розмір тексту */
-  margin-top: 20px;
-  font-weight: 500;
-}
-
-.projects-link {
-  font-size: 16px; /* Збільшуємо розмір */
-  color: var(--accent-text-color);
-  margin-top: 20px;
-  font-weight: var(--font-project-link);
-  letter-spacing: 2px;
+.project:last-child {
+  border-bottom: none; /* Прибираємо лінію після останнього проекту */
 }
 
 .project-title {
-  font-size: 28px; /* Збільшуємо заголовок для десктопу */
+  font-size: 28px;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 
 .project-date {
-  font-size: 14px; /* Збільшуємо розмір дати */
+  font-size: 14px;
   color: var(--light-accent-text-color);
-  margin-top: 15px;
-  font-weight: var(--font-small-weight);
+  margin-bottom: 20px;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .project-description {
-  font-size: 16px; /* Збільшуємо розмір тексту */
   color: var(--paragraph-text-color);
-  margin-top: 30px;
+  font-size: 16px;
+  max-width: 500px; /* Обмежуємо ширину опису */
+  margin-right: 20px; /* Відступ між текстом і зображенням */
 }
 
-.project-icon {
-  width: 50px; /* Збільшуємо іконку */
-  height: 50px;
+/* Іконка стрілки справа від опису */
+.project-link {
+  font-size: 16px;
   color: var(--accent-text-color);
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.project-image-room,
-.project-image-lamp {
-  width: 80%; /* Змінюємо ширину для десктопу */
-  height: auto; /* Пропорційна висота */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto; /* Центруємо зображення */
 }
 
+/* Зображення для проекту */
+.project-image {
+  width: 40%; /* Ширина зображення */
+  height: auto;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Адаптація для мобільних */
 @media screen and (max-width: 480px) {
-  .projects,
-  .project {
-    width: 100%; /* Ширина для мобільних */
-  }
-
-  .projects-subtitle {
-    font-size: 24px; /* Зменшений заголовок */
-  }
-
-  .projects-description,
-  .project-description {
-    font-size: 14px; /* Зменшений текст */
+  .projects {
+    width: 100%; /* Повна ширина для мобільних */
   }
 }
