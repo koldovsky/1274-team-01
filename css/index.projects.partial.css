@@ -1,6 +1,5 @@
 /* Bekish Khrystyna */
 
-/* Основний контейнер секції проектів */
 .projects-partial {
   background-color: var(--black-bg-color);
   padding: 90px 0 30px 0;
@@ -14,23 +13,22 @@
 
 .projects {
   width: 60%;
-  max-width: 1200px; /* Максимальна ширина для великих екранів */
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 0 5%;
 }
 
-/* Стиль для кожного блоку проекту */
 .project {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px; /* Відступи між блоками проектів */
+  margin-bottom: 50px; 
   padding-bottom: 50px;
-  border-bottom: 1px solid #555; /* Роздільна лінія між блоками */
+  border-bottom: 1px solid #555; 
 }
 
 .project:last-child {
-  border-bottom: none; /* Прибираємо лінію після останнього проекту */
+  border-bottom: none; 
 }
 
 .project-title {
@@ -50,11 +48,10 @@
 .project-description {
   color: var(--paragraph-text-color);
   font-size: 16px;
-  max-width: 500px; /* Обмежуємо ширину опису */
-  margin-right: 20px; /* Відступ між текстом і зображенням */
+  max-width: 500px; 
+  margin-right: 20px; 
 }
 
-/* Іконка стрілки справа від опису */
 .project-link {
   font-size: 16px;
   color: var(--accent-text-color);
@@ -65,9 +62,8 @@
   margin-top: 20px;
 }
 
-/* Зображення для проекту */
 .project-image {
-  width: 40%; /* Ширина зображення */
+  width: 40%; 
   height: auto;
 }
 
@@ -77,9 +73,8 @@
   display: block;
 }
 
-/* Адаптація для мобільних */
 @media screen and (max-width: 480px) {
   .projects {
-    width: 100%; /* Повна ширина для мобільних */
+    width: 100%; 
   }
 }
