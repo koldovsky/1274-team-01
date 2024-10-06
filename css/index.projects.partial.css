@@ -9,8 +9,9 @@
 
 .projects,
 .project {
-  width: 272px;
-  padding: 0 15px 0 15px;
+  width: 100%; /* Використовуємо відсотки для адаптивності */
+  max-width: 100%; /* Зазначаємо максимальну ширину */
+  padding: 0 5%; /* Відступи робимо відносними */
 }
 
 .projects-title {
@@ -22,84 +23,88 @@
 
 .projects-subtitle {
   color: var(--text-color);
-  font-size: 40px;
+  font-size: 32px; /* Зменшений розмір для мобільних */
   margin-top: 20px;
   font-weight: 600;
 }
 
 .projects-info {
-  margin-top: 30px;
+  margin-top: 20px; /* Зменшений відступ для мобільних */
 }
 
 .projects-tagline {
-  font-size: var(--font-tagline-size);
+  font-size: 14px; /* Зменшено для мобільних */
   color: var(--light-accent-text-color);
 }
 
 .projects-description {
   color: var(--medium-text-color);
-  font-size: 19px;
-  margin-top: 25px;
+  font-size: 16px; /* Зменшений розмір */
+  margin-top: 20px;
   font-weight: 500;
 }
 
 .projects-link {
-  font-size: var(--font-small-size);
+  font-size: 14px; /* Зменшений розмір */
   color: var(--accent-text-color);
-  margin-top: 25px;
+  margin-top: 20px;
   font-weight: var(--font-project-link);
   letter-spacing: 2px;
 }
 
 .projects-shorter-line {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 .projects-longer-line {
-  width: 320px;
+  width: 100%; /* Використовуємо 100% для адаптивної ширини */
 }
 
 .project-title {
-  font-size: var(--font-heading-size-mobile);
+  font-size: 24px; /* Зменшений заголовок для мобільних */
   color: var(--text-color);
 }
 
 .project-date {
-  font-size: var(--font-small-size);
+  font-size: 12px; /* Менший розмір дати */
   color: var(--light-accent-text-color);
-  margin-top: 20px;
+  margin-top: 15px;
   font-weight: var(--font-small-weight);
   letter-spacing: 2px;
 }
 
 .project-description {
-  font-size: var(--font-text-size);
+  font-size: 14px; /* Зменшений розмір тексту */
   color: var(--paragraph-text-color);
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .project-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Зменшена іконка */
+  height: 40px;
   color: var(--accent-text-color);
-  margin-top: 50px;
-  margin-bottom: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.project-image-room {
-  margin-top: 50px;
-  width: 272px;
-  height: 189.23px;
-}
-
+.project-image-room,
 .project-image-lamp {
-  margin-top: 50px;
-  width: 272px;
-  height: 329.41px;
+  width: 100%; /* Ширина адаптивна */
+  height: auto; /* Пропорційна висота */
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 320px) {
   .projects-partial {
-    max-width: 100%;
+    padding: 60px 0 20px 0; /* Зменшуємо відступи для мобільних */
+  }
+
+  .projects-subtitle {
+    font-size: 24px; /* Ще зменшений заголовок */
+  }
+
+  .projects-description,
+  .project-description {
+    font-size: 12px; /* Зменшений текст */
   }
 }
