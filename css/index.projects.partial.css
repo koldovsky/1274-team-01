@@ -73,8 +73,48 @@
   display: block;
 }
 
+/* Медіа-запити для мобільних пристроїв */
+@media screen and (max-width: 768px) {
+  .projects {
+    width: 90%;
+    padding: 0 2%;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-description {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .project-image {
+    width: 100%; 
+    margin-top: 15px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .projects {
     width: 100%; 
+  }
+
+  .project-title {
+    font-size: 24px;
+  }
+
+  .project-date {
+    font-size: 12px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+
+  .project-link {
+    font-size: 14px;
   }
 }
