@@ -1,7 +1,8 @@
 /* Bekish Khrystyna */
 
 .projects-partial {
-  background-color: var(--black-bg-color);
+  /*background-color: var(--black-bg-color);*/
+  background-color: #252527;
   padding: 90px 0 30px 0;
   background-size: cover;
   background-position: center;
@@ -11,25 +12,24 @@
   flex-direction: column;
 }
 
-.projects {
+/*.projects {
   width: 60%;
   max-width: 1200px; 
   margin: 0 auto;
   padding: 0 5%;
-}
+}*/
 
-.project {
+.projects, .project {
   margin-bottom: 50px;
-  background-color: #252527;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
   margin: 50px auto;
 }
 
-.project:last-child {
+/*.project:last-child {
   border-bottom: none; 
-}
+}*/
 
 .project-title {
   font-size: 28px;
