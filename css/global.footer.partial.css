@@ -58,7 +58,9 @@
 
 }
 .footer__about-social {
-   
+   width: 30px;
+   height: 30px;
+   color: var(--accent-text-color);
 }
 
 .footer__about-social-list {
