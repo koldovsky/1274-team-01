@@ -20,11 +20,20 @@
     max-width: 1170px;
 }
 
+
 .about-us-video-container__push-button {
     color: var(--light-accent-text-color);
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us-video-container__push-button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px var(--accent-text-color);
 }
 
 .title-content {
@@ -53,5 +62,9 @@
         padding: 400px 40px 60px;
     }
 }
+
+
+
+
 
 

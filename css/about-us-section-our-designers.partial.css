@@ -171,3 +171,21 @@
   display: grid;
   gap: 20px;
 }
+
+.animated-gradient {
+  background: linear-gradient(90deg, #d41822, #9a7253, #a33f25);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 2s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}

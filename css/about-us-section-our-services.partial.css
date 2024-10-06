@@ -21,6 +21,12 @@
 }
 
 /*Accordion*/
+
+.accordion {
+  --bs-accordion-btn-icon-width: 1.7rem;
+  --bs-accordion-btn-icon-transform: none;
+}
+  
 .accordion-button:focus {
   box-shadow: none;
 }
@@ -50,16 +56,6 @@
     font-size: 16px;
     color: var(--paragraph-text-color);
   }
-}
-/*Rotate Animation for Accordion Buttons*/
-
-#vertical-line {
-  transition: transform 0.3s ease; 
-  transform-origin: center;
-}
-
-.rotate-90 {
-  transform: rotate(90deg);
 }
 
 /*Our History*/

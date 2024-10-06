@@ -5,101 +5,76 @@
   padding: 90px 0 30px 0;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.projects,
+.projects {
+  width: 60%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
 .project {
-  width: 272px;
-  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px; 
+  padding-bottom: 50px;
+  border-bottom: 1px solid #555; 
 }
 
-.projects-title {
-  color: var(--accent-text-color);
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 2px;
-}
-
-.projects-subtitle {
-  color: var(--text-color);
-  font-size: 40px;
-  margin-top: 20px;
-  font-weight: 600;
-}
-
-.projects-info {
-  margin-top: 30px;
-}
-
-.projects-tagline {
-  font-size: var(--font-tagline-size);
-  color: var(--light-accent-text-color);
-}
-
-.projects-description {
-  color: var(--medium-text-color);
-  font-size: 19px;
-  margin-top: 25px;
-  font-weight: 500;
-}
-
-.projects-link {
-  font-size: var(--font-small-size);
-  color: var(--accent-text-color);
-  margin-top: 25px;
-  font-weight: var(--font-project-link);
-  letter-spacing: 2px;
-}
-
-.projects-shorter-line {
-  margin-top: 45px;
-}
-
-.projects-longer-line {
-  width: 320px;
+.project:last-child {
+  border-bottom: none; 
 }
 
 .project-title {
-  font-size: var(--font-heading-size-mobile);
+  font-size: 28px;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 
 .project-date {
-  font-size: var(--font-small-size);
+  font-size: 14px;
   color: var(--light-accent-text-color);
-  margin-top: 20px;
-  font-weight: var(--font-small-weight);
+  margin-bottom: 20px;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .project-description {
-  font-size: var(--font-text-size);
   color: var(--paragraph-text-color);
-  margin-top: 50px;
+  font-size: 16px;
+  max-width: 500px; 
+  margin-right: 20px; 
 }
 
-.project-icon {
-  width: 50px;
-  height: 50px;
+.project-link {
+  font-size: 16px;
   color: var(--accent-text-color);
-  margin-top: 50px;
-  margin-bottom: 45px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
 }
 
-.project-image-room {
-  margin-top: 50px;
-  width: 272px;
-  height: 189.23px;
+.project-image {
+  width: 40%; 
+  height: auto;
 }
 
-.project-image-lamp {
-  margin-top: 50px;
-  width: 272px;
-  height: 329.41px;
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-@media screen and (max-width: 320px) {
-  .projects-partial {
-    max-width: 100%;
+@media screen and (max-width: 480px) {
+  .projects {
+    width: 100%; 
   }
 }
