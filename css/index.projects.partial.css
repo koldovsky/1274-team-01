@@ -19,12 +19,12 @@
 }
 
 .project {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px; 
-  padding-bottom: 50px;
-  border-bottom: 1px solid #555; 
+  margin-bottom: 50px;
+  background-color: #252527;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 50px auto;
 }
 
 .project:last-child {
@@ -40,16 +40,27 @@
 .project-date {
   font-size: 14px;
   color: var(--light-accent-text-color);
-  margin-bottom: 20px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  margin-bottom: 15px;
+  font-weight: 600; /*????*/
+  letter-spacing: 2px; /*????*/
 }
 
 .project-description {
   color: var(--paragraph-text-color);
   font-size: 16px;
-  max-width: 500px; 
-  margin-right: 20px; 
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.project-image {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.project-image img {
+  width: 48%;
+  border-radius: 8px;
 }
 
 .project-link {
@@ -73,9 +84,20 @@
   display: block;
 }
 
-/* Медіа-запити для мобільних пристроїв */
+@media (max-width: 320px) {
+  .project-images {
+    flex-direction: column;
+  }
+
+  .project-images img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Медіа-запити для мобільних пристроїв 
 @media screen and (max-width: 768px) {
-  .projects {
+  .projects, .project {
     width: 90%;
     padding: 0 2%;
   }
@@ -118,3 +140,4 @@
     font-size: 14px;
   }
 }
+*/
