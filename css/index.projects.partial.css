@@ -1,14 +1,14 @@
+/* -- Bekish Khrystyna -- */
+
 .projects-partial {
-  background-color: var(--black-bg-color);
-  padding: 90px 0 30px 0;
-  background-size: cover;
-  background-position: center;
+  background-color: var(--dark-gray-bg-color);
 }
 
 .projects,
 .project {
-  width: 272px;
-  padding: 0 15px 0 15px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
 }
 
 .projects-title {
@@ -16,6 +16,8 @@
   font-size: 10px;
   font-weight: 900;
   letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .projects-subtitle {
@@ -23,6 +25,7 @@
   font-size: 40px;
   margin-top: 20px;
   font-weight: 600;
+  text-align: left;
 }
 
 .projects-info {
@@ -39,6 +42,9 @@
   font-size: 19px;
   margin-top: 25px;
   font-weight: 500;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .projects-link {
@@ -60,12 +66,14 @@
 .project-title {
   font-size: var(--font-heading-size-mobile);
   color: var(--text-color);
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .project-date {
   font-size: var(--font-small-size);
   color: var(--light-accent-text-color);
-  margin-top: 20px;
+  margin-bottom: 15px;
   font-weight: var(--font-small-weight);
   letter-spacing: 2px;
 }
@@ -73,7 +81,9 @@
 .project-description {
   font-size: var(--font-text-size);
   color: var(--paragraph-text-color);
-  margin-top: 50px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .project-icon {
@@ -84,16 +94,15 @@
   margin-bottom: 45px;
 }
 
-.project-image-room {
-  margin-top: 50px;
-  width: 272px;
-  height: 189.23px;
+.project-image-room img, .project-image-lamp img {
+  width: 48%;
+  border-radius: 8px;
 }
 
-.project-image-lamp {
-  margin-top: 50px;
-  width: 272px;
-  height: 329.41px;
+.project-image-room, .project-image-lamp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 320px) {
