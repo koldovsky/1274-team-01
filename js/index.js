@@ -3,6 +3,7 @@ function init() {
   import("./index.section-image-gallery.partial.js");
   import("./global.cursor-animation.js");
   import("./index.services.js");
+  import("./index.subscribe-form.js");
 }
 
 const totalPartials = document.querySelectorAll(
