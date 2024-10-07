@@ -10,14 +10,16 @@
 }
 
 .header__content {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 7vw;
 }
 
 .left-block {
   flex: 1;
-  max-width: 40vw;
+  max-width: 40%;
 }
 
 .right-aligned-text {
@@ -26,34 +28,33 @@
 }
 
 .right-block {
-  max-width: 30vw;
-  height: 65vh;
+  max-width: 500px;
+  
+}
+
+.header-small-lamp-img {
+  text-align: right;
+  align-items: flex-end;
+  width: 5vw !important;
 }
 
 .right-block svg {
-  max-height: 5vw;
+  max-height: 20px;
 }
 
 .index-header h1 {
   color: var(--text-color);
-  font-size: 6vw;
-  margin-top: 2vw;
+  font-size: 5vw;
 }
 
 .header__nav {
   background-color: transparent !important;
 }
 
-section {
-  padding: 40px;
-  padding-bottom: 60px;
-}
-
 .product-title {
   color: var(--text-color);
   font-size: 20px;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+  padding-top: 2vw;
 }
 
 .arrow-link {
@@ -67,19 +68,10 @@ section {
   display: inline-block;
   width: 100px;
   height: 40px;
-  background-color: var(--accent-text-color);
-  color: var(--text-color);
-  text-align: center;
-  text-decoration: none;
   line-height: 40px;
   transition: background-color 0.3s, color 0.3s;
-  margin-top: 4vw;
-  margin-bottom: 24vw;
-}
-
-.header__button a:hover {
-  background-color: var(--text-color);
-  color: var(--light-gray-bg-color);
+  padding-top: 4vw;
+  padding-bottom: 24vw;
 }
 
 .request-link {
@@ -95,3 +87,4 @@ section {
   color: var(--text-color);
   font-size: 10px;
 }
+

@@ -26,11 +26,14 @@
 }
 
 .logo {
-  max-width: 7%;
+  max-width: 12%;
   height: auto;
 }
 
 .header__nav {
+  max-width: 1200px;
+  padding: 30px 15px;
+  margin: auto;
   background-color: var(--black-bg-color);
   display: flex;
   align-items: center;
@@ -38,7 +41,8 @@
 }
 
 .header__menu {
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--paragraph-text-color);
   align-items: flex-end;
   padding-top: 0;
