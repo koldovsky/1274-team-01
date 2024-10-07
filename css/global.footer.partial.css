@@ -1,5 +1,4 @@
 .footer {
-  font-family: "Manrope", sans-serif;
   background-color: var(--black-bg-color);
   display: block;
   padding-top: 80px;
@@ -9,27 +8,24 @@
   min-height: 100vh;
   width: 100%;
 }
+.container {
+  padding: 0px 0px;
+}
 
 .footer__about {
-  font-family: "Manrope", sans-serif;
   background-color: var(--black-bg-color);
   border-bottom-color: var(--paragraph-text-color);
   display: grid;
   padding-bottom: 80px;
   border-bottom: 0.05rem solid;
+  box-sizing: border-box;
 }
 
 .footer__about-block-logo {
-  color: var(--text-color);
-  text-decoration: none;
-
   width: 157px;
-  align-items: stretch;
+  height: 35px;
   display: block;
-  height: 34.3906px;
-  justify-content: center;
-  margin-left: 57.5px;
-  margin-right: 57.5px;
+  margin: auto;
 }
 
 .footer__logo {
@@ -44,14 +40,11 @@
 .footer__about-description {
   font-size: var(--font-text-size);
   color: var(--paragraph-text-color);
-  position: relative;
-  align-items: stretch;
-  justify-content: center;
-  display: block;
   max-width: 100%;
-  height: 97.9062px;
   margin-top: 30px;
-  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 .footer__about-social {
   width: 30px;
