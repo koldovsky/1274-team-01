@@ -22,12 +22,6 @@ inputFullName.addEventListener('keydown', (event) => {
     const allowedChars = /^[a-zA-Zа-яА-ЯёЁіІїЇєЄґҐ'-\s]$/;
     const allowedKeys = ['Backspace', 'Tab', 'ArrowLeft', 'ArrowRight', 'Delete'];
 
-    const lastChar = inputFullName.value.slice(-1);
-
-    if (event.key === ' ' && lastChar === ' ') {
-        event.preventDefault();
-    }
-
     if (!allowedChars.test(event.key) && !allowedKeys.includes(event.key)) {
         event.preventDefault();
     }
@@ -100,6 +94,9 @@ inputEmail.addEventListener('keydown', (event) => {
 });
 
 inputEmail.addEventListener('blur', () => {
+    emailErrorEmpty.style.display = 'none';
+    emailErrorFormat.style.display = 'none'; 
+
     const isEmpty = inputEmail.value.length === 0;
 
     if (emailFormatRegex.test(inputEmail.value)) {
@@ -119,6 +116,11 @@ inputEmail.addEventListener('blur', () => {
 });
 
 form.addEventListener('submit', (event) => {
+    fullNameError.style.display = 'none';
+    phoneError.style.display = 'none';
+    emailErrorEmpty.style.display = 'none';
+    emailErrorFormat.style.display = 'none';
+
     const isValidPhone = /^\d{1,9}$/.test(inputPhone.value);
     const fullNameValue = inputFullName.value.trim();
     const isEmptyEmail = inputEmail.value.trim() === '';
@@ -163,8 +165,8 @@ form.addEventListener('submit', (event) => {
             text: textarea.value
         };
 
-        console.log(data);
+        console.log(data); // for presentation
     }
 
-    event.preventDefault();
+    event.preventDefault(); // for presentation
 });
