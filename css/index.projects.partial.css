@@ -9,6 +9,7 @@
   padding: 20px;
   border-radius: 10px;
   width: 80%;
+  padding: 90px 0 30px;
 }
 
 .projects-title {
@@ -57,10 +58,6 @@
 
 .projects-shorter-line {
   margin-top: 45px;
-}
-
-.projects-longer-line {
-  width: 320px;
 }
 
 .project-title {
