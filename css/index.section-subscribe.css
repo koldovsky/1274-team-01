@@ -1,0 +1,121 @@
+.subscribe-section {
+  background-color: var(--black-bg-color);
+  padding: 50px 15px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/subscribe-background.png);
+  background-size: cover;
+  background-position: right center;
+}
+
+.subscribe-section__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px; 
+  width: 100%;
+  margin: 0 auto; 
+  padding: 0 15px; 
+  text-align: left;
+}
+
+.subscribe-section__content {
+  flex: 1;
+}
+
+.subscribe-section__title {
+  font-size: var(--font-block-title-size);
+  color: var(--accent-text-color);
+  margin-bottom: 10px;
+}
+
+.subscribe-section__description {
+  font-size: var(--font-text-size);
+  color: var(--paragraph-text-color);
+  margin-bottom: 30px;
+}
+
+.subscribe-section__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 400px;
+}
+
+.subscribe-section__input,
+.subscribe-section__button {
+  width: 100%;
+  padding: 15px;
+  font-size: var(--font-text-size);
+  color: var(--text-color);
+  background-color: var(--input-background-color);
+  border: 1px solid var(--accent-gray-bg-color);
+  border-radius: 5px;
+}
+
+.subscribe-section__button {
+  background-color: var(--accent-text-color);
+  color: var(--text-color);
+  border: none;
+  font-size: var(--font-button-size);
+  font-weight: var(--font-button-weight);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.subscribe-section__button:hover {
+  background-color: var(--light-accent-text-color);
+}
+
+@media (max-width: 992px) {
+    .subscribe-section__container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .subscribe-section__title {
+      font-size: var(--font-block-title-size-tablet); 
+    }
+  
+    .subscribe-section__description {
+      font-size: var(--font-caption-size-tablet);
+      text-align: center;
+    }
+  
+    .subscribe-section__form {
+      width: 100%;
+      max-width: 100%; 
+    }
+  
+    .subscribe-section__input,
+    .subscribe-section__button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .subscribe-section__container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .subscribe-section__title {
+      font-size: var(--font-block-title-size-mobile);
+    }
+  
+    .subscribe-section__description {
+      font-size: var(--font-caption-size-tablet);
+      text-align: center;
+    }
+  
+    .subscribe-section__form {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .subscribe-section__input,
+    .subscribe-section__button {
+      width: 100%;
+    }
+  }
