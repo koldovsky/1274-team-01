@@ -9,11 +9,12 @@
   position: relative;
 }
 
-.header__nav {
+.header__nav,
+.header__nav-container {
   background-color: transparent !important;
 }
 
-.header__content {
+.header__index-content {
   max-width: 1200px;
   padding: 80px 15px;
   margin: auto;

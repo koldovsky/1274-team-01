@@ -75,7 +75,7 @@ body {
 
 p {
   font-size: var(--font-text-size);
-  font-weight: 400;
+  font-weight: var(--font-text-weight);
   line-height: var(--font-text-line-height);
 }
 
