@@ -125,12 +125,23 @@ ul.footer__list {
   font-size: var(--font-text-size);
   background-color: var(--dark-gray-bg-color);
   border-top-right-radius: 80px 80px;
-  padding: 27px 31px 27px 31px;
   display: flex;
   flex-direction: column;
+  
+}
+
+.footer__contact-adress {
+  display: flex;
 
 }
 
+.footer__contact-email {
+  display: flex;
+}
+
+.footer__contact-phone {
+  display: flex;
+}
 
 .footer__contact-logo {
   background-color: var(--dark-gray-bg-color);
@@ -154,6 +165,12 @@ ul.footer__list {
 
 .footer__contact-phone {
   text-decoration: none;
+}
+
+.footer__contact-info {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .footer__bottom {
