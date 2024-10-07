@@ -16,6 +16,8 @@
   background-color: var(--black-bg-color);
   border-bottom-color: var(--paragraph-text-color);
   display: grid;
+  grid-template-rows: repeat(4) 1fr;
+  grid-template-columns: 1fr;
   padding-bottom: 80px;
   border-bottom: 0.05rem solid;
   box-sizing: border-box;
@@ -29,12 +31,8 @@
 }
 
 .footer__logo {
-  max-width: 100%;
   height: auto;
-  width: 157px;
-  display: block;
   cursor: pointer;
-  justify-content: center;
 }
 
 .footer__about-description {
@@ -52,6 +50,10 @@
   color: var(--accent-text-color);
 }
 
+.footer__link {
+text-decoration: none;
+}
+
 .footer__about-social-list {
   margin-top: 30px;
   position: relative;
@@ -63,6 +65,9 @@
   width: 272px;
   text-align: center;
   vertical-align: baseline;
+}
+ul.footer__list {
+  list-style-type: none;
 }
 
 .footer__about-social-list-item {
