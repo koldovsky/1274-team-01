@@ -6,12 +6,3 @@
 @import url(about-us-section-our-awards.partial.css);
 @import url(about-us-section-video-lighting-matters.partial.css);
 @import url(global.cursor-animation.css);
-
-:root {
-  scroll-behavior: smooth;
-}
-
-#about-us__header {
-  max-width: 100%;
-  background-image: url("../img/section-about-us/about-us-header.webp");
-}
