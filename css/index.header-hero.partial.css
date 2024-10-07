@@ -9,9 +9,13 @@
   position: relative;
 }
 
+.header__nav {
+  background-color: transparent !important;
+}
+
 .header__content {
   max-width: 1200px;
-  padding: 0 15px;
+  padding: 80px 15px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -19,7 +23,48 @@
 
 .left-block {
   flex: 1;
-  max-width: 40%;
+  max-width: 50%;
+}
+
+.title-main {
+  color: var(--text-color);
+  font-size: 56px;
+  font-weight: 600;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.product-title {
+  color: var(--text-color);
+  font-size: 26px;
+  padding-top: 2vw;
+}
+
+.header__button {
+  font-size: 13px;
+  display: inline-block;
+  width: 135px;
+  height: 55px;
+  line-height: 55px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 47%;
+}
+
+.header__left {
+  max-width: 65%;
+}
+
+.request-link {
+  margin-top: 20px;
+}
+
+.request-link a {
+  text-decoration: none;
+  color: var(--accent-text-color);
+}
+
+.highlight-text {
+  color: var(--light-accent-text-color);
 }
 
 .right-aligned-text {
@@ -27,34 +72,18 @@
   align-items: flex-end;
 }
 
-.right-block {
-  max-width: 500px;
-  
+.right-block-top,
+.right-block-bottom {
+  max-width: 300px;
 }
 
-.header-small-lamp-img {
-  text-align: right;
-  align-items: flex-end;
-  width: 5vw !important;
+.right-block-top svg {
+  max-height: 50px;
+  margin-top: 40px;
 }
 
-.right-block svg {
-  max-height: 20px;
-}
-
-.index-header h1 {
-  color: var(--text-color);
-  font-size: 5vw;
-}
-
-.header__nav {
-  background-color: transparent !important;
-}
-
-.product-title {
-  color: var(--text-color);
-  font-size: 20px;
-  padding-top: 2vw;
+.right-block-bottom {
+  margin-top: 100%;
 }
 
 .arrow-link {
@@ -63,28 +92,31 @@
   font-size: 19px;
 }
 
-.header__button {
-  font-size: 11px;
-  display: inline-block;
-  width: 100px;
-  height: 40px;
-  line-height: 40px;
-  transition: background-color 0.3s, color 0.3s;
-  padding-top: 4vw;
-  padding-bottom: 24vw;
-}
-
-.request-link {
-  text-decoration: none;
-  color: var(--accent-text-color);
-  font-size: 10px;
-}
-.highlight-text {
-  color: var(--light-accent-text-color);
+.header-small-lamp-img {
+  text-align: right;
+  align-items: flex-end;
+  width: 34%;
+  margin-bottom: 15px;
 }
 
 .read-more-link {
   color: var(--text-color);
   font-size: 10px;
+  letter-spacing: 2px;
 }
 
+@media (min-width: 768px) {
+  .title-main {
+    font-size: 66px;
+  }
+}
+
+@media (min-width: 992px) {
+  .title-main {
+    font-size: 76px;
+    max-width: 570px;
+  }
+  .header__left {
+    max-width: 350px;
+  }
+}
