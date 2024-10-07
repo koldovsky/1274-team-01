@@ -1,12 +1,12 @@
 .footer {
-    background-color: var(--black-bg-color);
     font-family: 'Manrope', sans-serif;
+    background-color: var(--black-bg-color);
+    display: block;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 24px;
     padding-right: 24px;
-    display: block;
 
 }
 
