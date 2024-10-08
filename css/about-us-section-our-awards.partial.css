@@ -1,26 +1,10 @@
 .awards {
     background-color: var(--dark-gray-bg-color);
-    font-family: 'Manrope', sans-serif;
-    padding: 90px 24px;
+    padding: 160px 24px;
 }
 
-.awards_header{
-    text-align:center;    
-}
-
-.awards__label{
-    color: var(--accent-text-color);
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.awards__title {
-    color: var(--text-color);
-    margin-top: 20px;
-    font-size: 40px;
-    font-weight: 600;
+.awards__header {
+    text-align: center;
 }
 
 .awards__subtitle {
@@ -38,19 +22,12 @@
 }
 
 .awards__item {
-    background-size: cover;
-    background-position: center;
-    padding: 39px 27px;
     text-align: center;
-    margin-top: 19px;
-    filter: grayscale(100%) brightness(0.68);
-    transition: filter 0.3s ease-in-out;
+    position: relative;
 
-    
     h3 {
         color: var(--text-color);
-        font-size: 22px;
-        filter:brightness(1);
+        font-size: 26px;
     }
     
     p {
@@ -58,60 +35,74 @@
         font-size: 16px;
         margin-top: 20px;
     }
+}
+
+.awards__image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
+.awards__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(0.98);
+    transition: filter 0.3s ease-in-out;
+}
+
+.awards__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease-in-out;
+}
+
 .awards__text_year{
     color: var(--light-accent-text-color);
-    filter:brightness(1);
 }
 
-@media (min-width: 480px){
+
+@media (min-width: 480px) {
     .awards__list {
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .awards__title{
+
+    .awards__title {
+        font-size: 52px;
+    }
+}
+
+@media (min-width: 720px) {
+    .awards__image-wrapper {
+        height: 200px;
+    }
+}
+
+@media (min-width: 990px) {
+    .awards__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .awards__title {
         font-size: 62px;
     }
-    .awards {
-        padding: 105px 32px;
+    .awards__image-wrapper {
+        height: 225px;
     }
 }
 
-@media (min-width: 990px){
-    .awards__list {
-        grid-template-columns:repeat(3, 1fr);
-    }
-    .awards {
-        padding: 130px 40px;
-    }
-    .awards__title{
-        font-size: 62px;
-    }
-    .awards__item{
-        padding: 60px 30px;
-    }
-}
 
-.awards__item--2017 {
-    background-image: url('../img/awards/2017-luminary-award.webp');
-}
-
-.awards__item--2018 {
-    background-image: url('../img/awards/2018-radiance-awards.webp');
-}
-
-.awards__item--2020 {
-    background-image: url('../img/awards/2020-lumus-accolade.webp');
-}
-
-.awards__item--2022-glow {
-    background-image: url('../img/awards/2022-glow-achievement.webp');
-}
-
-.awards__item--2022-trophy {
-    background-image: url('../img/awards/2022-luminosity-trophy.webp');
-}
-
-.awards__item--2024 {
-    background-image: url('../img/awards/2024-luminary-award.webp');
-}
