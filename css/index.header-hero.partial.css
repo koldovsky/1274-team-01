@@ -1,12 +1,14 @@
 .index-header {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background-image: url("../img/index-header.webp");
   color: var(--paragraph-text-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  min-height: 736px;
+  max-height: 900px;
 }
 
 .header__nav,
@@ -16,15 +18,18 @@
 
 .header__index-content {
   max-width: 1200px;
-  padding: 80px 15px;
+  padding: 40px 10px;
   margin: auto;
   display: flex;
   justify-content: space-between;
+min-height: 400px;
 }
 
 .left-block {
   flex: 1;
   max-width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-main {
@@ -48,11 +53,11 @@
   height: 55px;
   line-height: 55px;
   transition: background-color 0.3s, color 0.3s;
-  margin-bottom: 47%;
 }
 
 .header__left {
-  max-width: 65%;
+  max-width: 55%;
+  margin-top: 10vw;
 }
 
 .request-link {
@@ -69,8 +74,13 @@
 }
 
 .right-aligned-text {
+  max-width: 50%;
+  min-height: auto;
   text-align: right;
   align-items: flex-end;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .right-block-top,
@@ -84,7 +94,8 @@
 }
 
 .right-block-bottom {
-  margin-top: 100%;
+  margin-top: 10vw;
+  justify-content: flex-end;
 }
 
 .arrow-link {
@@ -110,14 +121,56 @@
   .title-main {
     font-size: 66px;
   }
+  .header__index-content {
+    max-width: 1200px;
+    padding: 50px 13px;
+    max-height: 500px;
+  }
+  .right-block-bottom {
+    margin-top: 17vh;
+  }
 }
 
 @media (min-width: 992px) {
+  .header__index-content {
+    max-width: 1200px;
+    padding: 80px 15px;
+    max-height: 900px;
+  }
+  .product-title {
+    padding-top: 25px;
+  }
   .title-main {
     font-size: 76px;
     max-width: 570px;
   }
   .header__left {
     max-width: 350px;
+  }
+  .right-block-bottom {
+    margin-top: 15vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__index-content {
+    max-width: 1200px;
+    padding: 80px 15px;
+    max-height: 900px;
+  }
+  .right-block-bottom {
+    margin-top: 15vh;
+  }
+}
+
+@media (min-width: 2400px) {
+  .index-header {
+    background-position: bottom;
+  }
+  .header__left {
+    margin-top: 210px;
+  }
+  .right-block-bottom {
+    margin-top: 180px;
   }
 }
