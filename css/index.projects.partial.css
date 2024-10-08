@@ -82,19 +82,19 @@
 }
 
 /* Стиль для кожного проекту */
-.projects-div {
+.projects-list {
   width: 75%;
   margin: 0 auto;
 }
 
 .project {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Дві колонки */
-  gap: 20px; /* Відстань між колонками */
-  padding: 50px 40px;
+  grid-template-columns: 1fr 1fr; /* Дві колонки для проекту */
+  gap: 20px;
+  background-color: var(--lighter-gray-bg-color);
+  padding: 20px;
   border-radius: 10px;
-  width: 75%;
-  margin: 0 auto; /* Центрування секції */
+  margin-top: 40px;
 }
 
 /* Заголовки проектів */
