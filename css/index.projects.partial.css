@@ -82,19 +82,19 @@
 }
 
 /* Стиль для кожного проекту */
-.projects-list {
+.projects-div {
   width: 75%;
   margin: 0 auto;
 }
 
 .project {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Дві колонки для проекту */
-  gap: 20px;
-  background-color: var(--lighter-gray-bg-color);
-  padding: 20px;
+  grid-template-columns: 1fr 1fr; /* Дві колонки */
+  gap: 20px; /* Відстань між колонками */
+  padding: 50px 40px;
   border-radius: 10px;
-  margin-top: 40px;
+  width: 75%;
+  margin: 0 auto; /* Центрування секції */
 }
 
 /* Заголовки проектів */
@@ -151,7 +151,7 @@
 }
 
 /* Адаптивність для мобільних пристроїв */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr; /* Одна колонка на мобільних пристроях */
     width: 90%;
