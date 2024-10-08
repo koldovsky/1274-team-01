@@ -18,7 +18,7 @@
 
 .header__index-content {
   max-width: 1200px;
-  padding: 40px 10px;
+  padding: 20px 10px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -94,7 +94,7 @@ min-height: 400px;
 }
 
 .right-block-bottom {
-  margin-top: 10vw;
+  margin-top: 19vh;
   justify-content: flex-end;
 }
 
