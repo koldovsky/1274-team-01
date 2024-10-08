@@ -1,5 +1,6 @@
 function init() {
     import('./global.cursor-animation.js');
+    import("./global.burger-menu.js")
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
