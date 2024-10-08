@@ -11,7 +11,7 @@
   gap: 20px;
   padding: 50px 40px;
   border-radius: 10px;
-  width: 75%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -82,26 +82,29 @@
 }
 
 .projects-list {
-  width: 75%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .project {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2.5fr; 
   gap: 20px;
   background-color: var(--lighter-gray-bg-color);
-  padding: 20px;
+  padding: 50px 40px;
   border-radius: 10px;
-  margin-top: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: start;
+}
+
+.project-info {
+  grid-column: 1 / 2; 
 }
 
 .project-title,
 .project-date {
-  grid-column: 1 / 2;
   text-align: left;
 }
 
@@ -119,16 +122,28 @@
   letter-spacing: 1px;
 }
 
-.project-description,
-.project-icon,
-.project-image-room,
-.project-image-lamp {
-  grid-column: 2 / 3;
+.project-description-wrapper {
+  grid-column: 2 / 3; 
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  margin-top: 10px; 
+}
+
+.project-description {
   font-size: 16px;
   color: var(--paragraph-text-color);
-  margin-bottom: 15px;
+  margin-right: 10px; 
   line-height: 1.5;
   text-align: justify;
+  flex: 1; 
+}
+
+.project-arrow {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end; 
+  flex-shrink: 0; 
 }
 
 .project-icon {
@@ -136,17 +151,17 @@
   color: #d78c43;
 }
 
+
 .project-images {
-  grid-column: 2 / 3;
   display: flex;
   gap: 10px;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
-.project-image-room img,
-.project-image-lamp img {
-  width: 48%;
-  border-radius: 8px;
+.project-image-room,
+.project-image-lamp {
+  width: 48%; 
 }
 
 @media screen and (max-width: 768px) {
@@ -164,17 +179,18 @@
     grid-template-columns: 1fr;
   }
 
+  .project-description-wrapper,
   .project-images {
-    flex-direction: column;
+    width: 100%; 
   }
 
-  .project-image-room img,
-  .project-image-lamp img {
+  .project-images {
+    flex-direction: column; 
+  }
+
+  .project-image-room,
+  .project-image-lamp {
     width: 100%;
     margin-bottom: 15px;
-  }
-
-  .projects-shorter-line {
-    grid-column: 1 / span 1;
   }
 }
