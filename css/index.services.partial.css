@@ -1,0 +1,466 @@
+.services {
+  background-image: url(../img/services/services-background.svg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.services__header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  padding: 0px;
+
+  .services__header-title {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.services__header-breadcrumb title-of-section {
+  letter-spacing: 2px;
+  display: block;
+}
+
+.services__header-main-title title-intro {
+  margin-right: 20px;
+  display: block;
+  text-wrap: wrap;
+  line-height: 48px;
+  letter-spacing: normal;
+  overflow-wrap: break-word;
+}
+
+.services__header-welcome {
+  margin-top: 60px;
+  width: 100%;
+  text-align: left;
+  display: block;
+  color: var(--text-color);
+
+  .services__header-greetings {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: normal;
+    margin-bottom: 25px;
+  }
+}
+
+.services__header-explore {
+  display: flex;
+  max-width: 100%;
+  margin-top: 20px;
+  justify-content: right;
+}
+
+.services__header-explore-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.services__header-explore-icon {
+  width: 20px;
+  fill: var(--accent-text-color);
+  margin-right: 5px;
+}
+
+.services__header-explore-text {
+  color: #f1d1af;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.services__content-items {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hover-animate {
+  transform: scale(1.4) rotate(-5deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.glow {
+  box-shadow: 0 0 25px var(--accent-text-color);
+  transition: box-shadow 0.3s ease-in-out;
+  width: auto;
+  height: auto;
+}
+/*styles for ceiling fixtures*/
+.services__content-ceiling-fixtures {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-ceiling-fixtures-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__content-ceiling-fixtures-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.services__content-ceiling-fixtures-icon {
+  display: block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-ceiling-fixtures-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for floor lamps*/
+.services__content-floor-lamps {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-floor-lamps-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__content-floor-lamps-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.services__content-floor-lamps-icon {
+  display: block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-floor-lamps-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for wall sconces*/
+.services__content-wall-sconces {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-wall-sconces-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__content-wall-sconces-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.services__content-wall-sconces-icon {
+  display: block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-wall-sconces-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for wall mounted*/
+.services__content-wall-mounted {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-wall-mounted-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__content-wall-mounted-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.services__content-wall-mounted-icon {
+  display: block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-wall-mounted-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for kitchen island*/
+.services__content-kitchen-island {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-kitchen-island-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__content-kitchen-island-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.services__content-kitchen-island-icon {
+  display: block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-kitchen-island-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for modular lighting*/
+.services__content-modular-lighting {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-modular-lighting-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__content-modular-lighting-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.services__content-modular-lighting-icon {
+  display: block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-modular-lighting-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for led lighting*/
+.services__content-led-lighting {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-led-lighting-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__content-led-lighting-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.services__content-led-lighting-icon {
+  display: block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-led-lighting-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/*styles for smart lighting*/
+.services__content-smart-lighting {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__content-smart-lighting-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__content-smart-lighting-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.services__content-smart-lighting-icon {
+  display: block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.services__content-smart-lighting-items-title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 475px) {
+  .services__content-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .services__content-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/*footer*/
+
+.services__footer {
+  margin-top: 30px;
+}
+
+.services__footer-images {
+  display: block;
+}
+.services__footer-images img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+.track-lights {
+  border-radius: 0 0 0 150px;
+}
+.services__footer-images-pendant-lights {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  padding-top: 210%;
+}
+.pendant-lights {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.services__footer-images-torchiere {
+  margin-top: 20px;
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  padding-top: 150%;
+}
+
+.torchiere {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 0 150px 0 0;
+}
+
+@media (min-width: 765px) {
+  .services__footer-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .services__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,42 @@
+[
+    {
+       "id":"1",
+       "image":"img/catalogs/aurora-lamp.webp",
+       "imageAltText":"Aurora Lamp from the Classic Collection",
+       "name":"Aurora Lamp",
+       "collection":"CLASSIC COLLECTION",
+       "collectionYear":"2023"
+    },
+    {
+       "id":"2",
+       "image":"img/catalogs/luminous-haven.webp",
+       "imageAltText":"Luminous Haven Lamp from the Wooden Life Collection",
+       "name":"Luminous Haven",
+       "collection":"WOODEN LIFE COLLECTION",
+       "collectionYear":"2024"
+    },
+    {
+       "id":"3",
+       "image":"img/catalogs/wooden-blocks.webp",
+       "imageAltText":"Wooden Blocks Lamp from the Wooden Life Collection",
+       "name":"Wooden Blocks",
+       "collection":"WOODEN LIFE COLLECTION",
+       "collectionYear":"2024"
+    },
+    {
+       "id":"4",
+       "image":"img/catalogs/cake-in-the-ocean.webp",
+       "imageAltText":"Cake in the Ocean Lamp from the Ceiling Fixtures Collection",
+       "name":"Cake in the Ocean",
+       "collection":"CEILING FIXTURES",
+       "collectionYear":"2022"
+    },
+    {
+       "id":"5",
+       "image":"img/catalogs/arretia-lamp.webp",
+       "imageAltText":"Arretia Bedside Lamp from the Bedside Lamps Collection",
+       "name":"Arretia Lamp",
+       "collection":"BEDSIDE LAMPS",
+       "collectionYear":"2022"
+    }
+ ]

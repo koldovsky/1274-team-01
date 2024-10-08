@@ -1,92 +1,105 @@
-body {
-  font-family: 'Manrope', sans-serif;
-  background-color: #121212;
-  color: #FFFFFF;
-}
-
-section.lighting-solutions {
+.lighting-solutions {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 0;
+  padding-top: 120px;
+  padding-bottom: 110px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: var(--black-bg-color);
 }
-
 .materials-information {
-  margin: 100px;
-  width: 600px;
-  height: 100%;
+  padding: 0px 0px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
-
-.materials-information h5 {
-  color: #f39c12;
+.materials-information-text {
+  width: 570px;
+}
+.materials-information-text h2 {
+  color: var(--accent-text-color);
   font-size: 10px;
+  font-weight: 900;
   letter-spacing: 2px;
 }
-
-.materials-information h2 {
-  font-size: 62px;
-  margin: 10px 0;
-  color: #FFFFFF;
+.materials-information-text h3 {
+  font-size: 60px;
+  margin-top: 20px;
+  color: var(--text-color);
+  font-weight: 600;
 }
-
-.materials-information p {
+.materials-information-text p {
   margin-bottom: 40px;
+  color: var(--paragraph-text-color);
   line-height: 1.6;
-  font-size: 17px;
+  font-size: 16px;
+  margin-top: 10px;
 }
-
-.materials-information h4 {
-  color: #FFFFFF;
-  margin-bottom: 20px;
+.materials-information-text h4 {
+  color: var(--medium-text-color);
+  margin-top: 25px;
+  font-size: 19px;
 }
-
-ul.list-of-materials {
+.list-of-materials {
   list-style: none;
   padding-left: 0;
 }
-
-ul.list-of-materials li {
+.list-of-materials li {
   position: relative;
-  padding-left: 60px;
+  padding-left: 140px;
   margin-bottom: 20px;
 }
-
-ul.list-of-materials li::before {
+.list-of-materials li::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 120px;
   background-size: cover;
 }
-
-ul.list-of-materials li.materials-silk::before {
-  background-image: url('../img/solutions/materials-silk.webp');
+.list-of-materials li.materials-silk::before {
+  background-image: url("../img/solutions/materials-silk.webp");
 }
-
-ul.list-of-materials li.materials-polymeric::before {
-  background-image: url('../img/solutions/materials-polymeric.webp');
+.list-of-materials li.materials-polymeric::before {
+  background-image: url("../img/solutions/materials-polymeric.webp");
 }
-
-ul.list-of-materials li.materials-metal::before {
-  background-image: url('../img/solutions/materials-forged-metal.webp');
+.list-of-materials li.materials-metal::before {
+  background-image: url("../img/solutions/materials-forged-metal.webp");
 }
-
-ul.list-of-materials h3 {
+.list-of-materials h3 {
   font-size: 25px;
   margin-bottom: 10px;
-  color: #FFFFFF;
+  color: var(--text-color);
 }
-
-ul.list-of-materials p {
-  color: #bbbbbb;
+.list-of-materials p {
+  color: var(--paragraph-text-color);
   line-height: 1.5;
   font-size: 17px;
 }
-
-.lighting-solutions__room img {
-  width: 100%;
-  height: 100%;
+.lighting-solutions__room {
+  width: 50%;
+  height: auto;
   object-fit: cover;
+  margin-bottom: -110px;
+  margin-top: -120px;
+}
+@media screen and (max-width: 768px) {
+  .lighting-solutions {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .materials-information {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .lighting-solutions__room {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .materials-information-text {
+    width: 100%;
+    padding: 0 20px;
+  }
 }

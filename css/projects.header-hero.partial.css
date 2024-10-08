@@ -1,0 +1,9 @@
+#projects__header {
+  width: 100%;
+  background-image: url("../img/projects/projects-header.webp");
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}

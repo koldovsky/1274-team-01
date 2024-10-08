@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url(global.header-nav.partial.css);
 
 *,
 *::after,
@@ -10,18 +11,108 @@
 
 :root {
   scroll-behavior: smooth;
-  --text-color: #fff;
+  font-family: "Manrope" !important;
+
+  --text-color: #ffffff;
   --accent-text-color: #d78c43;
   --light-accent-text-color: #f1d1af;
   --medium-text-color: #e1e1e1;
   --paragraph-text-color: #bbbbbb;
   --black-bg-color: #0d0d0d;
   --accent-gray-bg-color: #161616;
+  --light-gray-bg-color: #333333;
   --dark-gray-bg-color: #252527;
-  font-family: "Manrope", sans-serif;
+  --valid-border-color: #28a745;
+  --invalid-border-color: #dc3545;
+  --input-background-color: rgba(13, 13, 13, 0.28);
+
+  --font-small-size: 10px;
+  --font-button-size: 12px;
+  --font-caption-size: 15px;
+  --font-caption-size-tablet: 14px;
+  --font-text-size: 16px;
+  --font-subtitle-size: 19px;
+  --font-heading-size: 26px;
+  --font-heading-size-tablet: 24px;
+  --font-heading-size-mobile: 22px;
+  --font-block-title-size: 62px;
+  --font-block-title-size-tablet: 51px;
+  --font-block-title-size-mobile: 40px;
+  --font-tagline-size: 30px;
+
+  --font-small-weight: 800;
+  --font-button-weight: 700;
+  --font-caption-weight: 700;
+  --font-text-weight: 400;
+  --font-subtitle-weight: 500;
+  --font-heading-weight: 600;
+  --font-block-title-weight: 600;
+  --font-project-subtitle: 900;
+  --font-project-link: 900;
+
+  --font-small-line-height: 1.54;
+  --font-caption-line-height: 1.6;
+  --font-text-line-height: 1.53;
+  --font-subtitle-line-height: 1.37;
+  --font-heading-line-height: 1.4;
+  --font-block-title-line-height: 1.2;
 }
 
-.conteiner {
+img {
+  width: 100%;
+}
+
+.container {
   max-width: 1200px;
+  padding: 0 15px;
   margin: auto;
+}
+
+body {
+  font-family: "Manrope", sans-serif !important;
+  color: var(--paragraph-text-color);
+}
+
+p {
+  font-size: var(--font-text-size);
+  font-weight: var(--font-text-weight);
+  line-height: var(--font-text-line-height);
+}
+
+a {
+  color: inherit;
+}
+
+.title-of-section {
+  color: var(--accent-text-color);
+  font-size: var(--font-small-size);
+  font-weight: var(--font-project-link);
+  letter-spacing: 2px;
+}
+
+.general-text {
+  color: var(--paragraph-text-color);
+  font-size: var(--font-text-size);
+  margin-top: 25px;
+}
+
+.title-intro {
+  color: var(--text-color);
+  font-size: 51px;
+  margin-top: 20px;
+  font-weight: var(--font-heading-weight);
+}
+
+.intro-subtitle {
+  color: var(--medium-text-color);
+  font-size: var(--font-subtitle-size);
+  margin-top: 25px;
+  font-weight: var(--font-subtitle-weight);
+}
+
+.title-content {
+  color: var(--text-color);
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: var(--font-text-weight);
 }

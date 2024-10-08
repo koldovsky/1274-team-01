@@ -1,0 +1,9 @@
+#single-project__header {
+  max-width: 100%;
+  background-image: url("../img/projects/single-project-header.webp");
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}

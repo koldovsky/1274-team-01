@@ -16,71 +16,46 @@
   padding: 90px 30px;
 }
 
-.our-services__content-description {
-  color: var(--accent-text-color);
-  box-sizing: border-box;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.our-services__header {
-  font-size: 40px;
-  margin-top: 20px;
-  color: var(--text-color);
-}
-
 .our-services__header-text {
-  margin-top: 25px;
-  font-size: 19px;
   color: var(--paragraph-text-color);
-  font-weight: 500;
+}
+
+/*Accordion*/
+
+.accordion {
+  --bs-accordion-btn-icon-width: 1.7rem;
+  --bs-accordion-btn-icon-transform: none;
+}
+  
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url(../img/about-us-our-services-button-icon-before.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/about-us-our-services-button-icon-after.svg);
 }
 
 .our-services__accordion {
   margin-top: 25px;
-  box-sizing: border-box;
-  ul.our-services__accordion-list {
-    list-style-type: none;
-  }
-  .our-services__accordion-item {
-    padding-top: 20px;
-  }
-  .our-services__accordion-item-top-section {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-  }
-  .our-services__accordion-item-header {
+  .our-services__accordion-item-button {
     font-weight: 600;
     font-size: 22px;
     color: var(--text-color);
+    background-color: var(--black-bg-color);
+  }
+  .our-services__accordion-item-button::after {
+    color: var(--text-color);
   }
   .our-services__accordion-item-description {
+    background-color: var(--black-bg-color);
     font-weight: 400;
     font-size: 16px;
     color: var(--paragraph-text-color);
-    padding-bottom: 20px;
   }
-}
-
-.our-services__accordion-button {
-  display: inline-block;
-  border: none;
-  outline: none;
-  padding: 0;
-  background: none;
-  cursor: pointer;
-}
-
-.our-services__accordion-item::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: url("../img/about-us-our-services-line.svg") no-repeat;
-  background-size: 100% auto;
 }
 
 /*Our History*/

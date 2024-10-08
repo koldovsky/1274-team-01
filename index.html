@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prizma Lighting Studio</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -33,38 +29,17 @@
       ></section>
     </header>
     <main>
-      <!--13 Maksym Haiduk -->
+      <!--2 Maksym Haiduk -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.section-about-us.partial.html"
       ></section>
-      <!--8 Mariia Chernyshova-->
+      <!--3 Yuliia Dolhopolova-->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.lighting-solutions.partial.html"
-      ></section>
-      <!--9 Lada Bratsykhina-->
-      <section
-        class="main__catalogs"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.section-catalogs.partial.html"
-      ></section>
-      <!--10 Olena Bal-->
-      <section
-        class="main__news-articles"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.section-news-articles.partial.html"
-      ></section>
-      <!--/ Subscribe section - Olena Bal-->
-      <section
-        class="main__subscribe"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.section-subscribe.partial.html"
+        data-hx-get="index.section-features.partial.html"
       ></section>
       <!--4 Oleh Hanhal -->
       <section
@@ -92,15 +67,42 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.projects.partial.html"
       ></section>
-    </main>
-    <!--11 Stepanenko Roman -->
-    <footer class="footer">
+      <!--8 Mariia Chernyshova-->
       <section
-        class="footer__about"
+        id="collections"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.footer.partial.html"
+        data-hx-get="index.lighting-solutions.partial.html"
       ></section>
-    </footer>
+      <!--9 Lada Bratsykhina-->
+      <section
+        id="products"
+        class="main__catalogs"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-catalogs.partial.html"
+      ></section>
+      <!--10 Olena Bal-->
+      <section
+        class="main__news-articles"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-news-articles.partial.html"
+      ></section>
+      <!--/ Subscribe section - Olena Bal-->
+      <section
+        class="main__subscribe"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-subscribe.partial.html"
+      ></section>
+    </main>
+    <!--11 Stepanenko Roman -->
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>

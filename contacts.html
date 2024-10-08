@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
     <link rel="stylesheet" href="css/contacts.css" />
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -21,7 +17,7 @@
   </head>
   <body>
     <!--1 Maria Olivenbaum -->
-    <header class="index-header">
+    <header id="contacts__header" class="header">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -89,27 +85,46 @@
         </article>
         <form class="collaborate__registration" action="" method="POST">
           <div class="collaborate__registration-container">
-            <input
-              type="text"
-              name="full-name"
-              placeholder="Enter your name*"
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              pattern="\+?[0-9]{1,4}[-\s]?[0-9]{1,15}"
-              placeholder="Enter your phone number*"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your e-mail*"
-              required
-            />
-            <input type="text" name="message" placeholder="Type your message" />
-            <input type="submit" value="Contact Us" />
+            <div class="collaborate__error-container">
+              <input
+                type="text"
+                name="full-name"
+                placeholder="Enter your full name*"
+              />
+              <p class="full-name-error">The name field cannot be empty!</p>
+            </div>
+
+            <div class="collaborate__phone-container">
+              <div class="collaborate__prefix-phone-container">
+                <select class="collaborate__prefix-phone" name="prefix">
+                  <option value="+380">+380</option>
+                  <option value="+380">+48</option>
+                  <option value="+380">+49</option>
+                </select>
+              </div>
+              <div class="collaborate__error-container">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone number*"
+                />
+                <p class="phone-error">The number must consist of 9 digits!</p>
+              </div>
+            </div>
+            
+            <div class="collaborate__error-container">
+              <input type="email" name="email" placeholder="Enter your e-mail*" />
+              <p class="email-error-empty">The email field cannot be empty!</p>
+              <p class="email-error-format">The email must be in the correct format (e.g., user@example.com)!</p>
+            </div>
+            
+            <textarea
+              class="collaborate__message"
+              placeholder="Type your message"
+            ></textarea>
+            <button class="collaborate__contact-us" type="submit">
+              Contact Us
+            </button>
           </div>
         </form>
       </section>
@@ -125,6 +140,15 @@
       >
       </iframe>
     </main>
-    <footer></footer>
+    <!--11 Stepanenko Roman -->
+    <footer class="footer">
+      <section
+        class="footer__about"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></section>
+    </footer>
+    <script src="js/contacts.js"></script>
   </body>
 </html>

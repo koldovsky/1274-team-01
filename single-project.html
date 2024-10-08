@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-    <link rel="stylesheet" href="css/projects.css" />
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
+    <link rel="stylesheet" href="css/single-projects.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -18,7 +14,7 @@
     ></script>
   </head>
   <body>
-    <header class="index-header">
+    <header id="single-project__header" class="header">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -37,6 +33,15 @@
         data-hx-get="projects.CTA-section.partial.html"
       ></section>
     </main>
-    <footer></footer>
+    <!--11 Stepanenko Roman -->
+    <footer class="footer">
+      <section
+        class="footer__about"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></section>
+    </footer>
+    <script src="js/projects.js"></script>
   </body>
 </html>

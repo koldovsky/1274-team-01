@@ -1,0 +1,21 @@
+.cursor-shadow {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--accent-text-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: fadeOut 0.5s linear forwards;
+    z-index: 999;
+    overflow-x: hidden;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

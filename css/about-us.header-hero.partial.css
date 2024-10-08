@@ -1,0 +1,9 @@
+#about-us__header {
+    max-width: 100%;
+    background-image: url("../img/section-about-us/about-us-header.webp");
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }

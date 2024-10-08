@@ -1,0 +1,148 @@
+.header__content {
+  height: 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.header > * {
+  position: relative;
+  z-index: 4;
+}
+
+.logo {
+  max-width: 12.5%;
+  height: auto;
+  z-index: 1000;
+}
+
+.header__nav {
+  background-color: var(--black-bg-color);
+}
+
+.header__nav-container {
+  max-width: 1200px;
+  padding: 30px 15px;
+  margin: auto;
+  background-color: var(--black-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu a:hover {
+  color: var(--accent-text-color);
+}
+
+.header__content h1 {
+  font-size: 40px;
+  color: var(--accent-text-color);
+  font-weight: var(--font-heading-weight);
+}
+
+.header__sub-menu {
+  font-size: 10px;
+  color: var(--paragraph-text-color);
+  letter-spacing: 2px;
+  font-weight: var(--font-small-weight);
+}
+
+.header__sub-menu-current {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .header__menu {
+    z-index: 10 !important;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--accent-gray-bg-color);
+    padding: 0;
+    height: 100vh;
+    z-index: 6 !important;
+  }
+  .nav-links li {
+    text-align: center;
+    margin: 7px 0;
+  }
+  .nav-links a {
+    font-size: var(--font-caption-size-tablet);
+    display: block;
+    padding: 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__content {
+    height: 231px;
+  }
+  .header__content h1 {
+    font-size: 51px;
+  }
+
+  .header__menu {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--paragraph-text-color);
+    align-items: flex-end;
+    padding-top: 0;
+  }
+
+  .header__menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__menu li {
+    margin-left: 20px;
+  }
+
+  .burger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__content {
+    height: 245px;
+  }
+  .header__content h1 {
+    font-size: 62px;
+  }
+}
