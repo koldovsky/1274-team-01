@@ -188,20 +188,27 @@ ul.footer__list {
 }
 .footer__bottom {
   padding: 20px 15px 15px 15px;
-}
-
-.footer__bottom-text {
-  margin: 20px 0 auto auto;
+  font-size: var(--font-caption-size-tablet);
   text-align: center;
 }
-/* .footer__bottom {
+
+
+@media (min-width: 767px) {
+  .footer__bottom {
   display: flex;
   justify-content: space-between;
-  font-size: var(--font-caption-size-tablet);
-  padding: 20px 15px 15px 15px;
-} */
+    
+}
+} 
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
+  .footer__about {
+    display: grid;
+    grid-template-columns: 3.15fr 1.85fr 1.85fr 3.15fr;
+  }
+}
+
+/*@media (min-width: 767px) {
   .footer__contact-info * {
       align-items: stretch !important;
       justify-content: center !important;
