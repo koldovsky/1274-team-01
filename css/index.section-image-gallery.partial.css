@@ -4,7 +4,6 @@
   overflow: hidden;
   background-color: #2e2e2e;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   padding: 15px;
@@ -54,20 +53,20 @@
   overflow: hidden;
   background-color: #2e2e2e;
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* 1 зображення на мобільних */
+  grid-template-columns: repeat(1, 1fr); 
   gap: 15px;
   padding: 15px;
 }
 
 @media (min-width: 600px) {
   .image-gallery {
-      grid-template-columns: repeat(2, 1fr); /* 2 зображення на ширших пристроях */
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 900px) {
   .image-gallery {
-      grid-template-columns: repeat(4, 1fr); /* 3 зображення на комп'ютерах */
+      grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -87,6 +86,4 @@
   opacity: 1;
   transition: opacity 0.5s ease;
 }
-
-/* Ваша решта стилізації ... */
 
