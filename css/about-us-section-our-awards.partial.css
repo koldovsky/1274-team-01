@@ -55,6 +55,10 @@
     transition: filter 0.3s ease-in-out;
 }
 
+.awards__image-wrapper:hover .awards__image {
+    filter: grayscale(0%) brightness(1);
+}
+
 .awards__overlay {
     position: absolute;
     top: 0;
