@@ -18,17 +18,18 @@
   width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
+  z-index: 2;
 }
 
 .header > * {
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .logo {
   max-width: 12.5%;
   height: auto;
+  z-index: 1000;
 }
 
 .header__nav {
@@ -72,8 +73,8 @@
     display: block;
   }
 
-  .header__menu{
-    z-index: 1000;
+  .header__menu {
+    z-index: 10 !important;
   }
 
   .nav-links {
@@ -86,6 +87,7 @@
     background-color: var(--accent-gray-bg-color);
     padding: 0;
     height: 100vh;
+    z-index: 6 !important;
   }
   .nav-links li {
     text-align: center;
