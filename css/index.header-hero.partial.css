@@ -34,7 +34,7 @@ min-height: 400px;
 
 .title-main {
   color: var(--text-color);
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 600;
   margin-top: 20px;
   width: 100%;
@@ -42,7 +42,7 @@ min-height: 400px;
 
 .product-title {
   color: var(--text-color);
-  font-size: 26px;
+  font-size: 24px;
   padding-top: 2vw;
 }
 
@@ -117,7 +117,7 @@ min-height: 400px;
   letter-spacing: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .title-main {
     font-size: 66px;
   }
