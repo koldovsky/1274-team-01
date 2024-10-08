@@ -1,133 +1,182 @@
 /* -- Bekish Khrystyna -- */
 
+/* Загальний стиль для всієї секції */
 .projects-partial {
   background-color: var(--dark-gray-bg-color);
+  padding: 60px 20px;
 }
 
+/* Основна сітка для секції проектів */
 .projects {
-  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Дві колонки */
+  gap: 20px; /* Відстань між колонками */
+  padding: 50px 40px;
   border-radius: 10px;
-  width: 80%;
-  padding: 90px 0 30px;
+  width: 75%;
+  margin: 0 auto; /* Центрування секції */
+}
+
+.projects-shorter-line {
+  grid-column: 1 / span 2; /* Лінія розтягується на обидві колонки */
+  margin-top: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+/* Стиль для лівої частини тексту */
+.projects-title,
+.projects-subtitle {
+  grid-column: 1 / 2; /* Відображення у першій колонці */
+  text-align: left;
 }
 
 .projects-title {
   color: var(--accent-text-color);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 900;
   letter-spacing: 2px;
-  margin-bottom: 10px;
-  text-align: left;
+  margin-bottom: 5px;
 }
 
 .projects-subtitle {
   color: var(--text-color);
-  font-size: 40px;
-  margin-top: 20px;
+  font-size: 42px;
+  margin-top: 10px;
   font-weight: 600;
+}
+
+/* Стиль для правої частини тексту */
+.projects-info {
+  grid-column: 2 / 3; /* Відображення у другій колонці */
   text-align: left;
 }
 
-.projects-info {
-  margin-top: 30px;
-}
-
 .projects-tagline {
-  font-size: var(--font-tagline-size);
+  font-size: 20px;
   color: var(--light-accent-text-color);
+  font-weight: 500;
 }
 
 .projects-description {
   color: var(--medium-text-color);
-  font-size: 19px;
-  margin-top: 25px;
+  font-size: 18px;
+  margin-top: 15px;
   font-weight: 500;
   margin-bottom: 15px;
-  line-height: 1.5;
-  text-align: justify;
+  line-height: 1.6;
 }
 
-.projects-link {
-  font-size: var(--font-small-size);
+.projects-link a {
+  font-size: 14px;
   color: var(--accent-text-color);
-  margin-top: 25px;
-  font-weight: var(--font-project-link);
-  letter-spacing: 2px;
+  margin-top: 20px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-decoration: none;
 }
 
-.projects-shorter-line {
-  margin-top: 45px;
+.projects-link a:hover {
+  text-decoration: underline;
 }
 
+/* Стиль для кожного проекту */
 .projects-list {
-  width: 80%;
-  padding-bottom: 30px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .project {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Дві колонки для проекту */
+  gap: 20px;
+  background-color: var(--lighter-gray-bg-color);
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 30px;
-  background-color: var(--light-gray-bg-color);
+  margin-top: 40px;
 }
 
-.project-title {
-  font-size: var(--font-heading-size-mobile);
-  color: var(--text-color);
-  margin-bottom: 10px;
+/* Заголовки проектів */
+.project-title,
+.project-date {
+  grid-column: 1 / 2; /* Розтягнення заголовків на дві колонки */
   text-align: left;
 }
 
-.project-date {
-  font-size: var(--font-small-size);
-  color: var(--light-accent-text-color);
-  margin-bottom: 15px;
-  font-weight: var(--font-small-weight);
-  letter-spacing: 2px;
+.project-title {
+  font-size: 22px;
+  color: var(--text-color);
+  margin-bottom: 5px;
 }
 
-.project-description {
-  font-size: var(--font-text-size);
+.project-date {
+  font-size: 14px;
+  color: var(--light-accent-text-color);
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Опис проекту */
+.project-description, 
+.project-icon, 
+.project-image-room,
+.project-image-lamp {
+  grid-column: 2 / 3; /* Розтягнення опису на дві колонки */
+  font-size: 16px;
   color: var(--paragraph-text-color);
   margin-bottom: 15px;
   line-height: 1.5;
   text-align: justify;
 }
 
-.project-arrow {
-  margin: 20px 0;
-}
-
 .project-icon {
   width: 50px;
-  height: 50px;
-  color: var(--accent-text-color);
+  color: #d78c43;
 }
 
+/* Зображення проекту */
 .project-images {
+  grid-column: 2 / 3; /* Розтягнення зображень на дві колонки */
   display: flex;
+  gap: 10px;
   justify-content: space-between;
-  margin-top: 15px;
 }
 
-.project-image-room,
-.project-image-lamp {
-  width: 48%;
+.project-image-room img,
+.project-image-lamp img {
+  width: 48%; /* Кожне зображення займає половину ширини контейнера */
   border-radius: 8px;
 }
 
-@media screen and (max-width: 320px) {
-  .projects-partial {
-    max-width: 100%;
+/* Адаптивність для мобільних пристроїв */
+@media screen and (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr; /* Одна колонка на мобільних пристроях */
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .projects-info {
+    margin-top: 20px; /* Відступ між колонками на мобільних пристроях */
+  }
+
+  .project {
+    grid-template-columns: 1fr; /* Одна колонка для проектів */
   }
 
   .project-images {
     flex-direction: column;
   }
 
-  .project-image-room,
-  .project-image-lamp {
-    width: 100%;
-    margin-bottom: 10px;
+  .project-image-room img,
+  .project-image-lamp img {
+    width: 100%; /* Зображення займають всю ширину на мобільних пристроях */
+    margin-bottom: 15px;
+  }
+
+  .projects-shorter-line {
+    grid-column: 1 / span 1; /* Розтягується на всю ширину на мобільних пристроях */
   }
 }
