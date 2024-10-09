@@ -5,6 +5,7 @@ function init() {
   import("./index.services.js");
   import("./index.subscribe-form.js");
   import("./global.burger-menu.js");
+  import("./index.lighting-solutions.partial.js");
   import("./global.footer.js")
 }
 
