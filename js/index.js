@@ -4,7 +4,8 @@ function init() {
   import("./global.cursor-animation.js");
   import("./index.services.js");
   import("./index.subscribe-form.js");
-  import("./global.burger-menu.js")
+  import("./global.burger-menu.js");
+  import("./global.footer.js")
 }
 
 const totalPartials = document.querySelectorAll(
