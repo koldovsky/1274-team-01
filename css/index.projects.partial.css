@@ -18,17 +18,19 @@
 
 .projects-shorter-line {
   grid-column: 1 / span 2;
-  margin-top: 20px;
+  margin: 20px 0 0; /* Встановіть верхній відступ для відстані */
   width: 100%;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.09);
+  align-self: flex-start; /* Вирівнює лінію по лівому краю */
 }
 
 .projects-title,
 .projects-subtitle {
   grid-column: 1 / 2;
-  text-align: left;
+  text-align: left; /* Додає вирівнювання по лівому краю */
   max-width: 500px;
+  margin-left: 0; /* Скидає відступ зліва */
 }
 
 .projects-title {
@@ -41,14 +43,14 @@
 
 .projects-subtitle {
   color: var(--text-color);
-  font-size: 42px;
+  font-size: 40px;
   margin-top: 10px;
   font-weight: 600;
 }
 
 .projects-info {
   grid-column: 2 / 3;
-  text-align: left;
+  text-align: left; /* Додає вирівнювання по лівому краю */
   max-width: 500px;
   margin: 0 auto;
 }
@@ -66,6 +68,7 @@
   font-weight: 500;
   margin-bottom: 15px;
   line-height: 1.6;
+  text-align: left; /* Додає вирівнювання по лівому краю */
 }
 
 .projects-link a {
@@ -105,7 +108,7 @@
 
 .project-title,
 .project-date {
-  text-align: left;
+  text-align: left; /* Додає вирівнювання по лівому краю */
 }
 
 .project-title {
@@ -135,7 +138,7 @@
   color: var(--paragraph-text-color);
   margin-right: 10px; 
   line-height: 1.5;
-  text-align: justify;
+  text-align: left; /* Додає вирівнювання по лівому краю */
   flex: 1; 
 }
 
@@ -151,7 +154,6 @@
   color: #d78c43;
 }
 
-
 .project-images {
   display: flex;
   gap: 10px;
@@ -166,22 +168,26 @@
 
 @media screen and (max-width: 768px) {
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* В один стовпець */
     width: 90%;
     padding: 30px 20px;
   }
 
   .projects-info {
     margin-top: 20px;
+    grid-column: 1 / -1; /* Занять весь стовпець */
+    text-align: left; /* Вирівнювання по лівому краю для мобільних */
   }
 
   .project {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* В один стовпець */
+    padding: 20px; /* Зменшити відступи для мобільних пристроїв */
   }
 
   .project-description-wrapper,
   .project-images {
     width: 100%; 
+    flex-direction: column; /* Стовпчики вертикально */
   }
 
   .project-images {
@@ -190,7 +196,38 @@
 
   .project-image-room,
   .project-image-lamp {
-    width: 100%;
+    width: 100%; /* Встановлює ширину зображень на 100% */
     margin-bottom: 15px;
+  }
+
+  .project-description {
+    margin-right: 0; /* Скинути правий відступ для мобільних */
+    margin-left: 0;
+    text-align: left; /* Вирівнювання по лівому краю для мобільних */
+  }
+
+  .project {
+    grid-template-columns: 1fr; /* Встановлює один стовпець */
+    padding: 20px; /* Зменшує відступи */
+  }
+
+  .project-left,
+  .project-right {
+    grid-column: 1; /* Обидва блоки займають одну колонку */
+  }
+
+  .project-description {
+    margin-bottom: 15px; /* Зменшує відстань знизу */
+  }
+
+  .project-images {
+    flex-direction: column; /* Вирівнює зображення вертикально */
+    margin-top: 10px; /* Додає відстань зверху */
+  }
+
+  .project-image-room,
+  .project-image-lamp {
+    width: 100%; /* Встановлює ширину зображень на 100% */
+    margin-bottom: 10px; /* Додає відстань між зображеннями */
   }
 }
