@@ -1,0 +1,190 @@
+/* Загальні стилі для сторінки */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #121212;
+	color: #f1f1f1;
+}
+/* Контейнер для вирівнювання вмісту */
+.main-article{
+    padding: 20px; 
+    max-width: 1600px; 
+    margin: 0 auto; 
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+}
+/* Заголовок сторінки */
+.info-project {
+	text-align: center;
+	padding-bottom: 30px;
+    display: flex;
+	justify-content: space-between;
+}
+
+.info-project p span{
+    color: #F1D1AF;
+    font-size: 26px;
+}
+
+.info-project p{
+    font-size: 26px;
+}
+
+.info-project h1 {
+	font-size: 2.5rem;
+	color: #ffaa00;
+}
+
+/* Інформація про місце та дату */
+.info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.info div {
+	width: 30%;
+	font-size: 1.2rem;
+}
+/* Секція зображень */
+.images {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+    
+}
+/* .images img {
+	width: 48%;
+	border-radius: 10px;
+} */
+
+.lamp{
+    width: 30%;
+    height: 400px;
+    margin-right: 30px;
+}
+
+.bedroom{
+    width: 70%;
+    height: 400px;
+    border-top-right-radius: 150px 150px;
+    object-fit: cover;
+    left: 0; 
+    bottom: 0; 
+}
+
+/* Огляд проекту */
+.brief, .features, .tech-details, .testimonial {
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.article-header {
+    flex: 1;
+}
+
+.article-text {
+    flex: 3;
+}
+
+.brief h3, .features h3, .tech-details h3, .testimonial h3 {
+    font-size: 2.2rem;
+}
+
+.brief p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.features .article-text .list li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.tech-details .article-text p span{
+    font-size: 1.2rem;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.tech-details .article-text p{
+    font-size: 1.0rem;
+    margin-bottom: 1rem;
+}
+
+/* Список характеристик */
+.list {
+	list-style-type: none;
+	padding-left: 0;
+}
+.list li {
+	padding: 10px 0;
+	font-size: 1.1rem;
+	line-height: 1.5;
+    display: flex;
+    position: relative;
+}
+/* Технічні деталі */
+.tech-details ul {
+	padding-left: 0;
+}
+.tech-details ul li {
+	padding: 10px 0;
+}
+/* Відгуки */
+.testimonial {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	
+}
+.testimonial img {
+	border-radius: 50%;
+	width: 180px;
+	height: 180px;
+	margin-right: 20px;
+}
+.testimonial blockquote {
+	font-size: 1.6rem;
+	font-style: italic;
+	line-height: 1.6;
+    font-weight: bold;
+}
+.testimonial .name {
+    float: right;
+	font-weight: bold;
+	margin-top: 10px;
+    margin-right: 60px;
+	color: #ffaa00;
+}
+/* Мобільна адаптація */
+@media (max-width: 768px) {
+	.info {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.info div {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.images {
+		flex-direction: column;
+	}
+	.images img {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.testimonial {
+		flex-direction: column;
+		text-align: center;
+	}
+	.testimonial img {
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+}
